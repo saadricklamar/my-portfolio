@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0;
+}
+
+span {
+  color: #f82a7b;
+}
+
+.home-button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.5rem;
+  height: 45px;
+  width: 220px;
+}
