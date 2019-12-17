@@ -27,4 +27,10 @@ span {
   font-size: 1.5rem;
   height: 45px;
   width: 220px;
+
+  &:hover {
+    background-color: #17cddf;
+    border: none;
+    cursor: pointer;
+  }
 }
