@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
           <br />
           I'm a full-stack web developer.
         </h1>
-        <button className="home-button">View my work</button>
+        <button className="home-button">
+          View my work
+        </button>
       </header>
     </div>
   );
