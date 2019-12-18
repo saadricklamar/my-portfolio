@@ -9,29 +9,37 @@ main {
   display: flex;
   justify-content: space-evenly;
   padding-right: 30%;
-}
-
-h2 {
-  color: white;
-  font-size: 1.2rem;
-
-  &:hover {
-    color: #f82a7b;
-    cursor: pointer;
-    border-bottom: 2px solid #17cddf;
-    margin-bottom: 10px;
-  }
+  height: 60px;
 }
 
 .home-icon {
   color: white;
-  padding-top: 75%;
+  padding-top: 90%;
   font-size: 1.3rem;
 
   &:hover {
     color: #f82a7b;
     cursor: pointer;
-    border-bottom: 2px solid #17cddf;
-    padding-bottom: 5px;
   }
 }
+
+.nav-buttons {
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  padding-top: 5px;
+  background: none;
+  outline: none;
+
+  &:hover {
+    color: #f82a7b;
+    cursor: pointer;
+  }
+
+  &:focus {
+    color: #f82a7b;
+  }
+}
+

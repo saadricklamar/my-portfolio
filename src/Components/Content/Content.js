@@ -11,11 +11,10 @@ function Content() {
         <Link to="App" smooth={true} duration={1000}>
           <FontAwesomeIcon icon={faHome} className="home-icon" />
         </Link>
-        <h2>About</h2>
-
-        <h2>Skills</h2>
-        <h2>Projects</h2>
-        <h2>Contact</h2>
+        <button className="nav-buttons">About</button>
+        <button className="nav-buttons">Skills</button>
+        <button className="nav-buttons">Projects</button>
+        <button className="nav-buttons">Contact</button>
       </header>
       <main></main>
     </div>
