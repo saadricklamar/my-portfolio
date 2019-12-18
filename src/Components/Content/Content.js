@@ -1,13 +1,15 @@
 import React from "react";
 import "./Content.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 function Content() {
   return (
     <div className="content">
       <header className="content-header">
         <Link to="App" smooth={true} duration={1000}>
-          <h2>Home</h2>{" "}
+          <FontAwesomeIcon icon={faHome} className="home-icon" />
         </Link>
         <h2>About</h2>
 
