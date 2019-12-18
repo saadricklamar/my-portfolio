@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Content from "../Content/Content";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 
 function App() {
   return (
@@ -12,10 +13,12 @@ function App() {
           <br />
           I'm a full-stack web developer.
         </h1>
-        <button className="home-button">
-          View my work
-        </button>
+
+        <Link to="Content" smooth={true} duration={1000}>
+          <button className="home-button">View my work</button>
+        </Link>
       </header>
+      <Content />
     </div>
   );
 }
