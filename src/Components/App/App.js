@@ -14,7 +14,7 @@ function App() {
           I'm a full-stack web developer.
         </h1>
 
-        <Link to="Content" smooth={true} duration={1000}>
+        <Link to="content" smooth={true} duration={1000}>
           <button className="home-button">View my work</button>
         </Link>
       </header>
