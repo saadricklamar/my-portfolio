@@ -123,12 +123,6 @@ p {
   transform: rotate(-60deg);
 }
 
-.browse {
-  position: relative;
-  top: 100px;
-  right: 17%;
-}
-
 #second-hex {
   bottom: 17%;
   height: 230px;
@@ -143,4 +137,19 @@ p {
   left: 1%;
   position: relative;
   width: 305px;
+}
+
+.browse {
+  font-weight: bold;
+  position: relative;
+  right: 17%;
+  top: 100px;
+}
+
+.camera-icon {
+  color: #f82a7b;
+  font-size: 3rem;
+  position: relative;
+  right: 22%;
+  top: 430px;
 }

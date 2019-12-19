@@ -3,6 +3,7 @@ import "./Content.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faCamera} from "@fortawesome/free-solid-svg-icons";
 
 function Content() {
   return (
@@ -34,7 +35,7 @@ function Content() {
             client management. I am passionate about building fluid, intuitive, and dynamic
             UIs.
             <br />
-            <br /> As a Colorado Native, I enjoy hiking, traveling, and
+            <br /> As a Colorado native, I enjoy hiking, traveling, and
             photography.
             <br />
             <br /> When I'm not out exploring, you can find me reading, writing
@@ -84,6 +85,7 @@ function Content() {
           </div>
         </section>
         <div className="browse">Browse My Photograpy</div>
+        <FontAwesomeIcon icon={faCamera} className="camera-icon" />
       </main>
     </div>
   );
