@@ -31,7 +31,7 @@ function Content() {
           <h2>About Me</h2>
           <p>
             I'm a full-stack web developer with a background in teaching and
-            client management. I value building fluid, intuitive, and dynamic
+            client management. I am passionate about building fluid, intuitive, and dynamic
             UIs.
             <br />
             <br /> As a Colorado Native, I enjoy hiking, traveling, and
@@ -62,6 +62,19 @@ function Content() {
                 <img
                   src={require("../../assets/dino.jpeg")}
                   alt="Dinosaur National Monument"
+                  width="350"
+                  height="300"
+                  className="nature"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="hexa" id="third-hex">
+            <div class="hex1">
+              <div class="hex2">
+                <img
+                  src={require("../../assets/butte.jpeg")}
+                  alt="Fall in Crested Butte, Colorado"
                   width="350"
                   height="300"
                   className="nature"

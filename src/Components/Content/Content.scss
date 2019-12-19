@@ -59,7 +59,7 @@ h2 {
 
 p {
   font-size: 1.1rem;
-  width: 40%;
+  width: 50%;
 }
 
 .rhombus-outter,
@@ -133,6 +133,14 @@ p {
   bottom: 17%;
   height: 230px;
   left: 63%;
+  position: relative;
+  width: 305px;
+}
+
+#third-hex {
+  bottom: 33.2%;
+  height: 230px;
+  left: 1%;
   position: relative;
   width: 305px;
 }
