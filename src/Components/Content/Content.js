@@ -4,7 +4,7 @@ import Skills from "../Skills/Skills";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { faCamera} from "@fortawesome/free-solid-svg-icons";
+import { faCamera } from "@fortawesome/free-solid-svg-icons";
 
 function Content() {
   return (
@@ -14,7 +14,9 @@ function Content() {
           <FontAwesomeIcon icon={faHome} className="home-icon" />
         </Link>
         <button className="nav-buttons">About</button>
-        <button className="nav-buttons">Skills</button>
+        <Link to="Skills" smooth={true} duration={1000}>
+          <button className="nav-buttons" id="skills">Skills</button>
+        </Link>
         <button className="nav-buttons">Projects</button>
         <button className="nav-buttons">Contact</button>
       </header>
@@ -33,8 +35,8 @@ function Content() {
           <h2>About Me</h2>
           <p>
             I'm a full-stack web developer with a background in teaching and
-            client management. I am passionate about building fluid, intuitive, and dynamic
-            UIs.
+            client management. I am passionate about building fluid, intuitive,
+            and dynamic UIs.
             <br />
             <br /> As a Colorado native, I enjoy hiking, traveling, and
             photography.
@@ -88,7 +90,7 @@ function Content() {
         <div className="browse">Browse My Photograpy</div>
         <FontAwesomeIcon icon={faCamera} className="camera-icon" />
       </main>
-      <Skills/>
+      <Skills />
     </div>
   );
 }
