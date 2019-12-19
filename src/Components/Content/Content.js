@@ -1,5 +1,6 @@
 import React from "react";
 import "./Content.scss";
+import Skills from "../Skills/Skills";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -87,6 +88,7 @@ function Content() {
         <div className="browse">Browse My Photograpy</div>
         <FontAwesomeIcon icon={faCamera} className="camera-icon" />
       </main>
+      <Skills/>
     </div>
   );
 }
