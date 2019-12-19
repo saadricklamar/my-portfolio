@@ -31,7 +31,7 @@ function Content() {
           <h2>About Me</h2>
           <p>
             I'm a full-stack web developer with a background in teaching and
-            client management. I value building fluid, intuitive, and dynamic
+            client management. I am passionate about building fluid, intuitive, and dynamic
             UIs.
             <br />
             <br /> As a Colorado Native, I enjoy hiking, traveling, and
