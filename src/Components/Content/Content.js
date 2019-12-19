@@ -61,7 +61,7 @@ function Content() {
                   alt="Fall in Granby, Colorado"
                   width="350"
                   height="300"
-                  className="nature"
+                  className="grandby"
                 />
               </div>
             </div>
