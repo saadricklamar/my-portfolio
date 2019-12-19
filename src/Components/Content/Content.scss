@@ -47,9 +47,9 @@ main {
   display: flex;
 }
 
-section {
+.left {
   text-align: left;
-  padding-left: 5%;
+  padding-left: 10%;
 }
 
 h2 {
@@ -82,4 +82,49 @@ p {
 .rhombus-outter .rhombus img {
   width: 100%;
   height: auto;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  right: 15%;
+  margin-top: 5%;
+}
+
+.nature {
+  margin: 1%;
+}
+
+.hexa,
+.hexa div {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+.hexa {
+  width: 325px;
+  height: 230px;
+}
+.hexa div {
+  width: 100%;
+  height: 100%;
+}
+.hexa {
+  transform: rotate(120deg);
+}
+.hex1 {
+  transform: rotate(-60deg);
+}
+.hex2 {
+  transform: rotate(-60deg);
+}
+
+.browse {
+  position: relative;
+  top: 100px;
+  right: 17%;
 }
