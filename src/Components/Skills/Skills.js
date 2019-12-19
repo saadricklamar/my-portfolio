@@ -5,7 +5,10 @@ import { Link, animateScroll as scroll } from "react-scroll";
 function Skills() {
   return (
     <div className="Skills">
-      <p>Hi</p>
+        <main>
+        <p>Hi</p>
+        </main>
+      
     </div>
   );
 }
