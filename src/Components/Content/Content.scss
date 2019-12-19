@@ -10,6 +10,8 @@ main {
   justify-content: space-evenly;
   padding-right: 30%;
   height: 60px;
+  overflow-y: scroll;
+ 
 }
 
 .home-icon {
@@ -43,7 +45,8 @@ main {
   }
 }
 
-#skills {
+#skills,
+#about {
   padding-top: 30%;
 }
 
