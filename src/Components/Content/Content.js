@@ -5,21 +5,27 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
+import Sticky from 'react-stickynode';
+
 
 function Content() {
   return (
     <div className="content">
+      <Sticky top='#header' bottomBoundary='#content'>
       <header className="content-header">
         <Link to="App" smooth={true} duration={1000}>
           <FontAwesomeIcon icon={faHome} className="home-icon" />
         </Link>
-        <button className="nav-buttons">About</button>
+        <Link to="content" smooth={true} duration={1000}>
+        <button className="nav-buttons" id="about">About</button>
+        </Link>
         <Link to="Skills" smooth={true} duration={1000}>
           <button className="nav-buttons" id="skills">Skills</button>
         </Link>
         <button className="nav-buttons">Projects</button>
         <button className="nav-buttons">Contact</button>
       </header>
+      </Sticky>
       <main>
         <section className="left">
           <div class="rhombus-outter">
