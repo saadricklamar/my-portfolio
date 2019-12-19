@@ -56,6 +56,19 @@ function Content() {
               </div>
             </div>
           </div>
+          <div class="hexa" id="second-hex">
+            <div class="hex1">
+              <div class="hex2">
+                <img
+                  src={require("../../assets/dino.jpeg")}
+                  alt="Dinosaur National Monument"
+                  width="350"
+                  height="300"
+                  className="nature"
+                />
+              </div>
+            </div>
+          </div>
         </section>
         <div className="browse">Browse My Photograpy</div>
       </main>
