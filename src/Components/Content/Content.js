@@ -69,6 +69,19 @@ function Content() {
               </div>
             </div>
           </div>
+          <div class="hexa" id="third-hex">
+            <div class="hex1">
+              <div class="hex2">
+                <img
+                  src={require("../../assets/butte.jpeg")}
+                  alt="Fall in Crested Butte, Colorado"
+                  width="350"
+                  height="300"
+                  className="nature"
+                />
+              </div>
+            </div>
+          </div>
         </section>
         <div className="browse">Browse My Photograpy</div>
       </main>
