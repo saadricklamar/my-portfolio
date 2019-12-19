@@ -43,3 +43,43 @@ main {
   }
 }
 
+main {
+  display: flex;
+}
+
+section {
+  text-align: left;
+  padding-left: 5%;
+}
+
+h2 {
+  padding-top: 2%;
+  padding-left: 11%;
+}
+
+p {
+  font-size: 1.1rem;
+  width: 40%;
+}
+
+.rhombus-outter,
+.rhombus-outter div {
+  transform-origin: 35% 35%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: 5% 0 5% 12%;
+  border: 2px solid #17cddf;
+}
+.rhombus-outter {
+  transform: rotate(45deg) translateY(10px);
+}
+.rhombus-outter .rhombus {
+  width: 210px;
+  height: 355px;
+  transform: rotate(-45deg) translateY(-74px);
+}
+.rhombus-outter .rhombus img {
+  width: 100%;
+  height: auto;
+}
