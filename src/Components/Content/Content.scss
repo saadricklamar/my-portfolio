@@ -8,7 +8,6 @@
   justify-content: space-evenly;
   padding-right: 30%;
   height: 60px;
-  overflow-y: scroll;
 }
 
 .home-icon {
@@ -73,7 +72,7 @@ p {
 
 .rhombus-outter,
 .rhombus-outter div {
-  filter: drop-shadow(1px 1px 1px #17cddf);
+  filter: drop-shadow(5px 5px 5px #17cddf);
   height: 150px;
   margin: 5% 0 5% 12%;
   overflow: hidden;
@@ -136,17 +135,17 @@ p {
 }
 
 #second-hex {
-  bottom: 17%;
+  bottom: 16.3%;
   height: 230px;
-  left: 63%;
+  left: 62.3%;
   position: relative;
   width: 305px;
 }
 
 #third-hex {
-  bottom: 33.2%;
+  bottom: 32.8%;
   height: 230px;
-  left: 1%;
+  
   position: relative;
   width: 305px;
 }
