@@ -11,6 +11,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 
 .skills {
@@ -34,7 +35,8 @@
   margin-bottom: 0;
 }
 
-.p-three {
+.p-three,
+.p-four {
   font-size: 1rem;
   margin-bottom: 0;
 }
@@ -73,4 +75,24 @@ hr {
   border-top: 1px solid #ccc;
   margin: 0;
   padding: 0;
+}
+
+#back-end {
+  width: 90px;
+}
+
+#knex,
+#postman {
+  position: relative;
+  right: 30%;
+}
+
+#knex-text {
+  position: relative;
+  right: 10%;
+}
+
+#postman-text {
+  position: relative;
+  right: 20%;
 }
