@@ -9,33 +9,39 @@ function Skills() {
           <section className="skills">
             <h5>JavaScript</h5>
             <section className="skill">
-              <img
-                src={require("../../assets/react.svg")}
-                alt="Kiwi standing on oval"
-                width="50"
-                height="50"
-                className="logo"
-              />
+              <a href="https://reactjs.org/" target="_blank">
+                <img
+                  src={require("../../assets/react.svg")}
+                  alt="Kiwi standing on oval"
+                  width="50"
+                  height="50"
+                  className="logo"
+                />
+              </a>
               <p className="p-one">React</p>
             </section>
             <section className="skill">
-              <img
-                src={require("../../assets/vue.svg")}
-                alt="Kiwi standing on oval"
-                width="50"
-                height="50"
-                className="logo"
-              />
+              <a href="https://vuejs.org/" target="_blank">
+                <img
+                  src={require("../../assets/vue.svg")}
+                  alt="Kiwi standing on oval"
+                  width="50"
+                  height="50"
+                  className="logo"
+                />
+              </a>
               <p className="p-one">Vue.js</p>
             </section>
             <section className="skill">
-              <img
-                src={require("../../assets/jquery.svg")}
-                alt="Kiwi standing on oval"
-                width="50"
-                height="50"
-                className="logo"
-              />
+              <a href="https://jquery.com/" target="_blank">
+                <img
+                  src={require("../../assets/jquery.svg")}
+                  alt="Kiwi standing on oval"
+                  width="50"
+                  height="50"
+                  className="logo"
+                />
+              </a>
               <p className="p-one">Jquery</p>
             </section>
           </section>
