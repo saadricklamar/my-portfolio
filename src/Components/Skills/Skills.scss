@@ -1,22 +1,26 @@
+// Skills Card //
+
 .cards-container {
   display: flex;
   justify-content: left;
 }
 
 .skills-card {
-  margin: 10% 0 0 5%;
-  width: 50%;
-  height: 550px;
   background-color: #e4eeef;
-  padding: 0;
   display: flex;
   flex-direction: column;
+  height: 550px;
+  margin: 10% 0 0 5%;
   overflow: scroll;
+  padding: 0;
+  width: 50%;
 }
 
 .skills {
   display: flex;
 }
+
+// Each Skills Row //
 
 .skill {
   display: flex;
@@ -24,38 +28,10 @@
   margin: 5%;
 }
 
-.skill .p-one {
-  font-size: 1rem;
-  margin: 0 10% 0 24%;
-}
-
-.p-two {
-  font-size: 1rem;
-  padding-left: 10%;
-  margin-bottom: 0;
-}
-
-.p-three,
-.p-four {
-  font-size: 1rem;
-  margin-bottom: 0;
-}
-
-#r-native {
-  padding-right: 10%;
-  position: relative;
-  right: 30%;
-}
-#r-native-text {
-  width: 90px;
-  position: relative;
-  right: 25%;
-}
-
 h5 {
+  font-size: 1rem;
   margin: 10% 0 0 5%;
   padding: 0;
-  font-size: 1rem;
   text-decoration: underline;
 }
 
@@ -77,12 +53,58 @@ hr {
   padding: 0;
 }
 
+// JavaScript Row //
+
+.p-one {
+  font-size: 1rem;
+  margin: 0 10% 0 24%;
+}
+
+// HTML/CSS Row //
+
+.p-two {
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding-left: 10%;
+}
+
+// Native-Apps Row //
+
+#r-native {
+  padding-right: 10%;
+  position: relative;
+  right: 30%;
+}
+#r-native-text {
+  position: relative;
+  right: 25%;
+  width: 90px;
+}
+
+// Back-End Row //
+
 #back-end {
   width: 90px;
 }
 
+// Other Row //
+
+#travis-text {
+  width: 90px;
+}
+
+// Rules that apply to many rows //
+
+.p-three,
+.p-four,
+.p-five {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
 #knex,
-#postman {
+#postman,
+#jest {
   position: relative;
   right: 30%;
 }
@@ -92,7 +114,8 @@ hr {
   right: 10%;
 }
 
-#postman-text {
+#postman-text,
+#mocha-text {
   position: relative;
   right: 20%;
 }
