@@ -13,14 +13,15 @@ function App() {
             children={[
               "Hello",
               "مرحبا",
-              "Bonjour",
-              "Hola",
+              "Ciao",
               "你好",
+              "Hola",
               "Sveiki",
               "नमस्ते",
               "Hej"
             ]}
-            interval={2000}
+            adjustingSpeed={500}
+            springConfig={{stiffness:70, damping: 15} }
           />
           , I'm <span>Saad Baradan.</span>
           <br />
