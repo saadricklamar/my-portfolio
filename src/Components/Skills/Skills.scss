@@ -36,6 +36,10 @@ h5 {
 
 .logo {
   margin-left: 10%;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 hr {
