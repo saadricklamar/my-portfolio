@@ -21,6 +21,18 @@ function Skills() {
               <p className="p-one">React</p>
             </section>
             <section className="skill">
+              <a href="https://reactjs.org/" target="_blank">
+                <img
+                  src={require("../../assets/redux.svg")}
+                  alt="Redux logo"
+                  width="50"
+                  height="50"
+                  className="logo"
+                />
+              </a>
+              <p className="p-one">Redux</p>
+            </section>
+            <section className="skill">
               <a href="https://vuejs.org/" target="_blank">
                 <img
                   src={require("../../assets/vue.svg")}
@@ -108,7 +120,7 @@ function Skills() {
             <h5>Native-Apps</h5>
             <section className="skill">
               <a
-                href="https://developer.mozilla.org/en-US/docs/Archive/CSS3"
+                href="https://kotlinlang.org/"
                 target="_blank"
               >
                 <img
@@ -119,10 +131,10 @@ function Skills() {
                   className="logo"
                 />
               </a>
-              <p className="p-three">Kotlin</p>
+              <p className="p-four">Kotlin</p>
             </section>
             <section className="skill">
-              <a href="https://getbootstrap.com/" target="_blank">
+              <a href="https://www.nativescript.org/" target="_blank">
                 <img
                   src={require("../../assets/nativescript.svg")}
                   alt="NativeScript logo"
@@ -131,11 +143,11 @@ function Skills() {
                   className="logo"
                 />
               </a>
-              <p className="p-three">NativeScript</p>
+              <p className="p-four">NativeScript</p>
             </section>
             <section className="skill">
               <a
-                href="https://html.spec.whatwg.org/#is-this-html5?"
+                href="https://facebook.github.io/react-native/"
                 target="_blank"
               >
                 <img
@@ -153,6 +165,72 @@ function Skills() {
             </section>
           </section>
           <hr />
+          <section className="skills">
+            <h5 id="back-end">Back-End</h5>
+            <section className="skill">
+              <a
+                href="https://nodejs.org/en/"
+                target="_blank"
+              >
+                <img
+                  src={require("../../assets/nodejs.svg")}
+                  alt="Node JS logo"
+                  width="45"
+                  height="45"
+                  className="logo"
+                />
+              </a>
+              <p className="p-three">Node.js</p>
+            </section>
+            <section className="skill">
+              <a href="https://www.postgresql.org/" target="_blank">
+                <img
+                  src={require("../../assets/postgresql.svg")}
+                  alt="Postgress logo"
+                  width="45"
+                  height="45"
+                  className="logo"
+                />
+              </a>
+              <p className="p-three">PostgreSQL</p>
+            </section>
+            <section className="skill">
+              <a
+                href="http://knexjs.org/"
+                target="_blank"
+              >
+                <img
+                  src={require("../../assets/knex.svg")}
+                  alt="Knex logo"
+                  width="45"
+                  height="45"
+                  className="logo"
+                  id="knex"
+                />
+              </a>
+              <p className="p-four" id="knex-text">
+                Knex
+              </p>
+            </section>
+            <section className="skill">
+              <a
+                href="https://www.getpostman.com/"
+                target="_blank"
+              >
+                <img
+                  src={require("../../assets/postman.svg")}
+                  alt="Postman logo"
+                  width="45"
+                  height="45"
+                  className="logo"
+                  id="postman"
+                />
+              </a>
+              <p className="p-four" id="postman-text">
+                Postman
+              </p>
+            </section>
+          </section>
         </article>
       </main>
     </div>
