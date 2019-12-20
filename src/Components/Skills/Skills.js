@@ -104,6 +104,55 @@ function Skills() {
             </section>
           </section>
           <hr />
+          <section className="skills">
+            <h5>Native-Apps</h5>
+            <section className="skill">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Archive/CSS3"
+                target="_blank"
+              >
+                <img
+                  src={require("../../assets/kotlin.svg")}
+                  alt="Kotlin logo"
+                  width="45"
+                  height="45"
+                  className="logo"
+                />
+              </a>
+              <p className="p-three">Kotlin</p>
+            </section>
+            <section className="skill">
+              <a href="https://getbootstrap.com/" target="_blank">
+                <img
+                  src={require("../../assets/nativescript.svg")}
+                  alt="NativeScript logo"
+                  width="45"
+                  height="45"
+                  className="logo"
+                />
+              </a>
+              <p className="p-three">NativeScript</p>
+            </section>
+            <section className="skill">
+              <a
+                href="https://html.spec.whatwg.org/#is-this-html5?"
+                target="_blank"
+              >
+                <img
+                  src={require("../../assets/react-native.svg")}
+                  alt="React Native logo"
+                  width="45"
+                  height="45"
+                  className="logo"
+                  id="r-native"
+                />
+              </a>
+              <p className="p-three" id="r-native-text">
+                React Native
+              </p>
+            </section>
+          </section>
+          <hr />
         </article>
       </main>
     </div>
