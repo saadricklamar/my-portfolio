@@ -119,10 +119,7 @@ function Skills() {
           <section className="skills">
             <h5>Native-Apps</h5>
             <section className="skill">
-              <a
-                href="https://kotlinlang.org/"
-                target="_blank"
-              >
+              <a href="https://kotlinlang.org/" target="_blank">
                 <img
                   src={require("../../assets/kotlin.svg")}
                   alt="Kotlin logo"
@@ -168,10 +165,7 @@ function Skills() {
           <section className="skills">
             <h5 id="back-end">Back-End</h5>
             <section className="skill">
-              <a
-                href="https://nodejs.org/en/"
-                target="_blank"
-              >
+              <a href="https://nodejs.org/en/" target="_blank">
                 <img
                   src={require("../../assets/nodejs.svg")}
                   alt="Node JS logo"
@@ -195,10 +189,7 @@ function Skills() {
               <p className="p-three">PostgreSQL</p>
             </section>
             <section className="skill">
-              <a
-                href="http://knexjs.org/"
-                target="_blank"
-              >
+              <a href="http://knexjs.org/" target="_blank">
                 <img
                   src={require("../../assets/knex.svg")}
                   alt="Knex logo"
@@ -213,10 +204,7 @@ function Skills() {
               </p>
             </section>
             <section className="skill">
-              <a
-                href="https://www.getpostman.com/"
-                target="_blank"
-              >
+              <a href="https://www.getpostman.com/" target="_blank">
                 <img
                   src={require("../../assets/postman.svg")}
                   alt="Postman logo"
@@ -228,6 +216,64 @@ function Skills() {
               </a>
               <p className="p-four" id="postman-text">
                 Postman
+              </p>
+            </section>
+          </section>
+          <hr />
+          <section className="skills">
+            <h5 id="back-end">Other</h5>
+            <section className="skill">
+              <a href="https://github.com/" target="_blank">
+                <img
+                  src={require("../../assets/github.svg")}
+                  alt="Github logo"
+                  width="45"
+                  height="45"
+                  className="logo"
+                />
+              </a>
+              <p className="p-five">Github</p>
+            </section>
+            <section className="skill">
+              <a href="https://travis-ci.org/" target="_blank">
+                <img
+                  src={require("../../assets/travis-ci.svg")}
+                  alt="Travis CI logo"
+                  width="45"
+                  height="45"
+                  className="logo"
+                />
+              </a>
+              <p className="p-five" id="travis-text">
+                Travis CI
+              </p>
+            </section>
+            <section className="skill">
+              <a href="https://mochajs.org/" target="_blank">
+                <img
+                  src={require("../../assets/Jest.svg")}
+                  alt="Jest logo"
+                  width="45"
+                  height="45"
+                  className="logo"
+                  id="jest"
+                />
+              </a>
+              <p className="p-five">Jest</p>
+            </section>
+            <section className="skill">
+              <a href="https://www.getpostman.com/" target="_blank">
+                <img
+                  src={require("../../assets/mocha.svg")}
+                  alt="Mocha logo"
+                  width="45"
+                  height="45"
+                  className="logo"
+                  id="postman"
+                />
+              </a>
+              <p className="p-five" id="mocha-text">
+                Mocha
               </p>
             </section>
           </section>
