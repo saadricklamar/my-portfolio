@@ -1,5 +1,7 @@
 import React from "react";
 import "./Skills.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 function Skills() {
   return (
@@ -277,6 +279,12 @@ function Skills() {
               </p>
             </section>
           </section>
+        </article>
+        <article className="resume-section">
+          <a href={require("../../assets/Resume.pdf")} target="_blank">
+            <FontAwesomeIcon icon={faFilePdf} className="resume-icon" />
+          </a>
+          <button className="resume">My Resume</button>
         </article>
       </main>
     </div>

@@ -20,8 +20,9 @@ function App() {
               "नमस्ते",
               "Hej"
             ]}
+            interval={1500}
             adjustingSpeed={500}
-            springConfig={{stiffness:70, damping: 15} }
+            springConfig={{ stiffness: 70, damping: 15 }}
           />
           , I'm <span>Saad Baradan.</span>
           <br />
