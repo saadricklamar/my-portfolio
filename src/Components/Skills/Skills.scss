@@ -142,3 +142,35 @@ hr {
   position: relative;
   right: 20%;
 }
+
+// Resume Section //
+
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.resume {
+  background: none;
+  border: none;
+  color: black;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  height: 0;
+  outline: none;
+  width: 260px;
+}
+
+.resume-icon {
+  color: #f82a7b;
+  font-size: 10rem;
+
+  &:hover {
+    color: #17cddf;
+    cursor: pointer;
+  }
+}
