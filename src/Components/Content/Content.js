@@ -5,26 +5,30 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
-import Sticky from 'react-stickynode';
-
+import Sticky from "react-stickynode";
+import Popup from "reactjs-popup";
 
 function Content() {
   return (
     <div className="content">
-      <Sticky top='#header' bottomBoundary='#content'>
-      <header className="content-header">
-        <Link to="App" smooth={true} duration={1000}>
-          <FontAwesomeIcon icon={faHome} className="home-icon" />
-        </Link>
-        <Link to="content" smooth={true} duration={1000}>
-        <button className="nav-buttons" id="about">About</button>
-        </Link>
-        <Link to="Skills" smooth={true} duration={1000}>
-          <button className="nav-buttons" id="skills">Skills</button>
-        </Link>
-        <button className="nav-buttons">Projects</button>
-        <button className="nav-buttons">Contact</button>
-      </header>
+      <Sticky top="#header" bottomBoundary="#content">
+        <header className="content-header">
+          <Link to="App" smooth={true} duration={1000}>
+            <FontAwesomeIcon icon={faHome} className="home-icon" />
+          </Link>
+          <Link to="content" smooth={true} duration={1000}>
+            <button className="nav-buttons" id="about">
+              About
+            </button>
+          </Link>
+          <Link to="Skills" smooth={true} duration={1000}>
+            <button className="nav-buttons" id="skills">
+              Skills
+            </button>
+          </Link>
+          <button className="nav-buttons">Projects</button>
+          <button className="nav-buttons">Contact</button>
+        </header>
       </Sticky>
       <main>
         <section className="left">
@@ -93,7 +97,24 @@ function Content() {
             </div>
           </div>
         </section>
-        <div className="browse">Browse My Photograpy</div>
+        <Popup
+          trigger={<button className="browse"> Browse My Photograpy</button>}
+          modal
+          closeOnDocumentClick
+        >
+          <article className="popup">
+            <img
+              src={require("../../assets/dino.jpeg")}
+              alt="Dinosaur National Monument"
+              width="600"
+              height="400"
+              className="nature"
+            />
+            <figcaption>
+              Echo Park at Dinosaur National Monument, Colorado
+            </figcaption>
+          </article>
+        </Popup>
         <FontAwesomeIcon icon={faCamera} className="camera-icon" />
       </main>
       <Skills />

@@ -14,7 +14,7 @@ function Skills() {
               <a href="https://reactjs.org/" target="_blank">
                 <img
                   src={require("../../assets/react.svg")}
-                  alt="Kiwi standing on oval"
+                  alt="React logo"
                   width="50"
                   height="50"
                   className="logo"
