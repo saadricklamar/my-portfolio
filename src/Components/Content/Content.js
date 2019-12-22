@@ -1,12 +1,12 @@
 import React from "react";
 import "./Content.scss";
 import Skills from "../Skills/Skills";
+import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
 import Sticky from "react-stickynode";
-import Popup from "reactjs-popup";
 
 function Content() {
   return (
@@ -97,24 +97,7 @@ function Content() {
             </div>
           </div>
         </section>
-        <Popup
-          trigger={<button className="browse"> Browse My Photograpy</button>}
-          modal
-          closeOnDocumentClick
-        >
-          <article className="popup">
-            <img
-              src={require("../../assets/dino.jpeg")}
-              alt="Dinosaur National Monument"
-              width="600"
-              height="400"
-              className="nature"
-            />
-            <figcaption>
-              Echo Park at Dinosaur National Monument, Colorado
-            </figcaption>
-          </article>
-        </Popup>
+        <PhotoGallery />
         <FontAwesomeIcon icon={faCamera} className="camera-icon" />
       </main>
       <Skills />
