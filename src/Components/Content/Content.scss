@@ -145,7 +145,7 @@ p {
 #third-hex {
   bottom: 32.8%;
   height: 230px;
-  
+
   position: relative;
   width: 305px;
 }
@@ -153,8 +153,18 @@ p {
 .browse {
   font-weight: bold;
   position: relative;
-  right: 17%;
+  font-size: 1rem;
+  height: 0;
+  right: 16%;
   top: 100px;
+  background: none;
+  outline: none;
+  border: none;
+
+  &:hover {
+    color: #f82a7b;
+    cursor: pointer;
+  }
 }
 
 .camera-icon {
@@ -163,4 +173,9 @@ p {
   position: relative;
   right: 22%;
   top: 430px;
+}
+
+.popup {
+  height: 420px;
+  border-radius: 50%;
 }
