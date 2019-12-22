@@ -1,0 +1,21 @@
+.browse {
+  font-weight: bold;
+  position: relative;
+  font-size: 1rem;
+  height: 0;
+  right: 9%;
+  top: 100px;
+  background: none;
+  outline: none;
+  border: none;
+
+  &:hover {
+    color: #f82a7b;
+    cursor: pointer;
+  }
+}
+
+.popup {
+  height: 420px;
+  border-radius: 50%;
+}

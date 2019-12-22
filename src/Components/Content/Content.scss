@@ -100,7 +100,7 @@ p {
   justify-content: center;
   margin-top: 5%;
   position: relative;
-  right: 15%;
+  right: 7%;
 }
 
 .grandby {
@@ -150,32 +150,10 @@ p {
   width: 305px;
 }
 
-.browse {
-  font-weight: bold;
-  position: relative;
-  font-size: 1rem;
-  height: 0;
-  right: 16%;
-  top: 100px;
-  background: none;
-  outline: none;
-  border: none;
-
-  &:hover {
-    color: #f82a7b;
-    cursor: pointer;
-  }
-}
-
 .camera-icon {
   color: #f82a7b;
   font-size: 3rem;
   position: relative;
-  right: 22%;
+  right: 15%;
   top: 430px;
-}
-
-.popup {
-  height: 420px;
-  border-radius: 50%;
 }
