@@ -33,6 +33,11 @@ function Content() {
             </button>
           </Link>
           <button className="nav-buttons">Contact</button>
+          <a href={require("../../assets/Resume.pdf")} target="_blank">
+            <button className="nav-buttons" id="resume">
+              Resume
+            </button>
+          </a>
         </header>
       </Sticky>
       <main>
