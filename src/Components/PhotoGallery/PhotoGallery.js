@@ -10,7 +10,148 @@ function PhotoGallery() {
       modal
       closeOnDocumentClick
     >
-      <div className="popup"></div>
+      <div className="popup">
+        <Carousel className="carousel" zoomScale={0.2}>
+          <div>
+            <img
+              src={require("../../assets/fall.jpeg")}
+              alt="Fall in Grandby, Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>Fall in Grandby, Colorado</figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/dino.jpeg")}
+              alt="Dinosaur National Monument"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>
+              Echo Park at Dinosaur National Monument, Colorado
+            </figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/butte.jpeg")}
+              alt="Kebler Pass near Crested Butte, Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>Kebler Pass near Crested Butte, Colorado</figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/black-canyon.jpg")}
+              alt="Sunset at Black Canyon of the Gunnison, Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>
+              Sunset at Black Canyon of the Gunnison, Colorado
+            </figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/clear-creek.jpeg")}
+              alt="Clear Creek Falls, Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>Clear Creek Falls, Colorado</figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/dead-horse.jpeg")}
+              alt="Dead Horse State Park, Utah"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>Dead Horse State Park, Utah</figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/dallas-divide.jpeg")}
+              alt="The Dallas Divide on the road to Telluride, Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>
+              The Dallas Divide on the road to Telluride, Colorado
+            </figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/paonia.jpeg")}
+              alt="Paonia River Park in Paonia, Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>Paonia River Park in Paonia, Colorado</figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/plaza-blanca.jpg")}
+              alt="Plaza Blanca, New Mexico"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>Plaza Blanca, New Mexico</figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/state-forest.jpg")}
+              alt="State Forest State Park, Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>State Forest State Park, Colorado</figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/lake-agnes.jpg")}
+              alt="Lake Agnes, Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>Lake Agnes, Colorado</figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/dominguez.jpg")}
+              alt="Dominguez Escalante National Converstation Area, Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>
+              Dominguez Escalante National Converstation Area, Colorado
+            </figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/ouray.jpg")}
+              alt="Ouray, Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>Ouray, Colorado</figcaption>
+          </div>
+        </Carousel>
+      </div>
     </Popup>
   );
 }
