@@ -1,6 +1,7 @@
 import React from "react";
 import "./PhotoGallery.scss";
 import Popup from "reactjs-popup";
+import Carousel from "nuka-carousel";
 
 function PhotoGallery() {
   return (
@@ -9,18 +10,7 @@ function PhotoGallery() {
       modal
       closeOnDocumentClick
     >
-      <article className="popup">
-        <img
-          src={require("../../assets/dino.jpeg")}
-          alt="Dinosaur National Monument"
-          width="600"
-          height="400"
-          className="nature"
-        />
-        <figcaption>
-          Echo Park at Dinosaur National Monument, Colorado
-        </figcaption>
-      </article>
+      <div className="popup"></div>
     </Popup>
   );
 }
