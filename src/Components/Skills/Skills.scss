@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   height: 550px;
-  margin: 8% 0 0 5%;
+  margin: 8% auto;
   overflow: scroll;
   padding: 0;
   width: 60%;
@@ -104,6 +104,17 @@ hr {
   width: 90px;
 }
 
+#v-native {
+  position: relative;
+  right: 90%;
+}
+
+#v-native-text {
+  position: relative;
+  right: 75%;
+  width: 90px;
+}
+
 // Back-End Row //
 
 #back-end {
@@ -113,6 +124,7 @@ hr {
 // Other Row //
 
 #travis-text {
+  margin-left: 20%;
   width: 90px;
 }
 
@@ -141,36 +153,4 @@ hr {
 #mocha-text {
   position: relative;
   right: 20%;
-}
-
-// Resume Section //
-
-.resume-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 8%;
-  margin-bottom: 6%;
-}
-
-.resume {
-  background: none;
-  border: none;
-  color: black;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  height: 0;
-  outline: none;
-  width: 260px;
-}
-
-.resume-icon {
-  color: #f82a7b;
-  font-size: 6rem;
-
-  &:hover {
-    color: #17cddf;
-    cursor: pointer;
-  }
 }

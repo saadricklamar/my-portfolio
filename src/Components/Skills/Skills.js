@@ -162,6 +162,21 @@ function Skills() {
                 React Native
               </p>
             </section>
+            <section className="skill">
+              <a href="https://vue-native.io/" target="_blank">
+                <img
+                  src={require("../../assets/vue.svg")}
+                  alt="Vue Native logo"
+                  width="45"
+                  height="45"
+                  className="logo"
+                  id="v-native"
+                />
+              </a>
+              <p className="p-three" id="v-native-text">
+                Vue Native
+              </p>
+            </section>
           </section>
           <hr />
           <section className="skills">
@@ -279,12 +294,6 @@ function Skills() {
               </p>
             </section>
           </section>
-        </article>
-        <article className="resume-section">
-          <a href={require("../../assets/Resume.pdf")} target="_blank">
-            <FontAwesomeIcon icon={faFilePdf} className="resume-icon" />
-          </a>
-          <button className="resume">My Resume</button>
         </article>
       </main>
     </div>
