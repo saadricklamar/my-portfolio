@@ -48,18 +48,20 @@ function Content() {
             </div>
           </div>
           <h2>About Me</h2>
-          <p>
-            I'm a full-stack web developer with a background in teaching and
-            client management. I am passionate about building fluid, intuitive,
-            and dynamic UIs.
-            <br />
-            <br /> As a Colorado native, I enjoy hiking, traveling, and
-            photography.
-            <br />
-            <br /> When I'm not out exploring, you can find me reading, writing
-            fiction, watching the NBA, doing puzzles, and walking my dog,
-            Sophie.
-          </p>
+          <div className="p-about-me">
+            <p>
+              I'm a full-stack web developer with a background in teaching and
+              client management. I am passionate about building fluid,
+              intuitive, and dynamic UIs.
+              <br />
+              <br /> As a Colorado native, I enjoy hiking, traveling, and
+              photography.
+              <br />
+              <br /> When I'm not out exploring, you can find me reading,
+              writing fiction, watching the NBA, doing puzzles, and walking my
+              dog, Sophie.
+            </p>
+          </div>
         </section>
         <section className="right">
           <div class="hexa">
