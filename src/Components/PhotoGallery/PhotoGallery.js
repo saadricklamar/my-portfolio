@@ -58,6 +58,16 @@ function PhotoGallery() {
           </div>
           <div>
             <img
+              src={require("../../assets/white-sands.jpg")}
+              alt="White Sands National Monument, New Mexico"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>White Sands National Monument, New Mexico</figcaption>
+          </div>
+          <div>
+            <img
               src={require("../../assets/clear-creek.jpeg")}
               alt="Clear Creek Falls, Colorado"
               width="580"
@@ -68,13 +78,13 @@ function PhotoGallery() {
           </div>
           <div>
             <img
-              src={require("../../assets/dead-horse.jpeg")}
-              alt="Dead Horse State Park, Utah"
+              src={require("../../assets/dead-horse.jpg")}
+              alt="Dead Horse Point State Park, Utah"
               width="580"
               height="400"
               className="photo"
             />
-            <figcaption>Dead Horse State Park, Utah</figcaption>
+            <figcaption>Dead Horse Point State Park, Utah</figcaption>
           </div>
           <div>
             <img
@@ -110,6 +120,26 @@ function PhotoGallery() {
           </div>
           <div>
             <img
+              src={require("../../assets/blue-lake.jpg")}
+              alt="Blue Lakes Trail, Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>Blue Lakes Trail, Colorado</figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/first-blue.jpg")}
+              alt="Blue Lake near Telluride, Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>Blue Lake near Telluride, Colorado</figcaption>
+          </div>
+          <div>
+            <img
               src={require("../../assets/state-forest.jpg")}
               alt="State Forest State Park, Colorado"
               width="580"
@@ -142,6 +172,16 @@ function PhotoGallery() {
           </div>
           <div>
             <img
+              src={require("../../assets/tent-rock.jpg")}
+              alt="Tent Rock National Monument, New Mexico"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>Tent Rock National Monument, New Mexico</figcaption>
+          </div>
+          <div>
+            <img
               src={require("../../assets/ouray.jpg")}
               alt="Ouray, Colorado"
               width="580"
@@ -149,6 +189,26 @@ function PhotoGallery() {
               className="photo"
             />
             <figcaption>Ouray, Colorado</figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/telluride.jpg")}
+              alt="Telluride Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>Telluride, Colorado</figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/arches.jpg")}
+              alt="Arches National Park, Utah"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption>Arches National Park, Utah</figcaption>
           </div>
         </Carousel>
       </div>
