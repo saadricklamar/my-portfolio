@@ -1,6 +1,7 @@
 import React from "react";
 import "./Content.scss";
 import Skills from "../Skills/Skills";
+import Projects from "../Projects/Projects";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,7 +27,11 @@ function Content() {
               Skills
             </button>
           </Link>
-          <button className="nav-buttons">Projects</button>
+          <Link to="projects" smooth={true} duration={1000}>
+            <button className="nav-buttons" id="project">
+              Projects
+            </button>
+          </Link>
           <button className="nav-buttons">Contact</button>
         </header>
       </Sticky>
@@ -101,6 +106,7 @@ function Content() {
         <FontAwesomeIcon icon={faCamera} className="camera-icon" />
       </main>
       <Skills />
+      <Projects />
     </div>
   );
 }
