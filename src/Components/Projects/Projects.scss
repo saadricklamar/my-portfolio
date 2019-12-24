@@ -4,6 +4,8 @@
   flex-direction: column;
 }
 
+// Project Header //
+
 .projects-header {
   display: flex;
   justify-content: center;
@@ -35,10 +37,14 @@
   }
 }
 
+// Project Cards //
+
 .projects-container {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 60%;
 }
 
 .project {
