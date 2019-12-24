@@ -75,6 +75,22 @@ function Projects() {
             </a>
           </div>
         </article>
+        <article className="project">
+          <img
+            src={require("../../assets/shakesbeer.png")}
+            alt="Home page of Shakesbeer project"
+            className="project-image"
+          />
+          <div className="middle">
+            <p className="text">ShakesBeer</p>
+            <a
+              href="https://github.com/saadricklamar/shakesbeer"
+              target="_blank"
+            >
+              <button className="learn-more">Learn More</button>
+            </a>
+          </div>
+        </article>
       </section>
     </main>
   );
