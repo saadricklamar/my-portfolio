@@ -27,6 +27,54 @@ function Projects() {
             </a>
           </div>
         </article>
+        <article className="project">
+          <img
+            src={require("../../assets/harvard-art.png")}
+            alt="Home page of Harvard Art Museum Project"
+            className="project-image"
+          />
+          <div className="middle">
+            <p className="text">Harvard Art Museum</p>
+            <a
+              href="https://github.com/saadricklamar/harvard-art"
+              target="_blank"
+            >
+              <button className="learn-more">Learn More</button>
+            </a>
+          </div>
+        </article>
+        <article className="project">
+          <img
+            src={require("../../assets/vue-calculator.png")}
+            alt="Home page of Vue Calculator project"
+            className="project-image"
+          />
+          <div className="middle">
+            <p className="text">Vue Calculator</p>
+            <a
+              href="https://github.com/saadricklamar/vue-calculator"
+              target="_blank"
+            >
+              <button className="learn-more">Learn More</button>
+            </a>
+          </div>
+        </article>
+        <article className="project">
+          <img
+            src={require("../../assets/movie-tracker.png")}
+            alt="Home page of Movie Tracker project"
+            className="project-image"
+          />
+          <div className="middle">
+            <p className="text">Movie Tracker</p>
+            <a
+              href="https://github.com/saadricklamar/movie-tracker"
+              target="_blank"
+            >
+              <button className="learn-more">Learn More</button>
+            </a>
+          </div>
+        </article>
       </section>
     </main>
   );
