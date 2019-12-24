@@ -8,7 +8,7 @@ function Projects() {
         <button className="project-buttons">All</button>
         <button className="project-buttons">React</button>
         <button className="project-buttons">Vue.js</button>
-        <button className="project-buttons">Mobile</button>
+        <button className="project-buttons">Node.js</button>
       </header>
       <section className="projects-container">
         <article className="project">
@@ -85,6 +85,22 @@ function Projects() {
             <p className="text">ShakesBeer</p>
             <a
               href="https://github.com/saadricklamar/shakesbeer"
+              target="_blank"
+            >
+              <button className="learn-more">Learn More</button>
+            </a>
+          </div>
+        </article>
+        <article className="project">
+          <img
+            src={require("../../assets/philosophers.png")}
+            alt="Philosophers Restful API"
+            className="project-image"
+          />
+          <div className="middle">
+            <p className="text">Philosophers Back-End</p>
+            <a
+              href="https://github.com/saadricklamar/philosophers-backend"
               target="_blank"
             >
               <button className="learn-more">Learn More</button>
