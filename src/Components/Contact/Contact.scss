@@ -1,3 +1,58 @@
 .contact-page {
   min-height: 100vh;
+  background: #17cddf;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto 10% auto;
+}
+
+h3 {
+  position: relative;
+  bottom: 5%;
+}
+
+.name,
+.email {
+  height: 30px;
+  margin: 1% 0 1% 0;
+}
+
+.message {
+  height: 100px;
+  margin-top: 2%;
+}
+
+.name,
+.email,
+.message {
+  background: #282c34;
+  border: 1px solid #282c34;
+  padding-left: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+::placeholder {
+  padding-left: 1%;
+  color: white;
+}
+
+.submit {
+  height: 40px;
+  font-size: 1rem;
+  width: 100px;
+  background: none;
+  margin-top: 5%;
+  border: 2px solid white;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    color: #282c34;
+    background: white;
+  }
 }
