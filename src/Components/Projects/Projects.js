@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ProjectsHeader from "../ProjectsHeader/ProjectsHeader";
 import "./Projects.scss";
 
 export class Projects extends Component {
@@ -44,20 +45,12 @@ export class Projects extends Component {
     if (this.state.all) {
       return (
         <main className="projects">
-          <header className="projects-header">
-            <button className="project-buttons" onClick={this.renderAll}>
-              All
-            </button>
-            <button className="project-buttons" onClick={this.renderReact}>
-              React
-            </button>
-            <button className="project-buttons" onClick={this.renderVue}>
-              Vue.js
-            </button>
-            <button className="project-buttons" onClick={this.renderNode}>
-              Node.js
-            </button>
-          </header>
+          <ProjectsHeader
+            renderAll={this.renderAll}
+            renderReact={this.renderReact}
+            renderVue={this.renderVue}
+            renderNode={this.renderNode}
+          />
           <section className="projects-container">
             <article className="project">
               <img
@@ -162,20 +155,12 @@ export class Projects extends Component {
     if (this.state.node) {
       return (
         <main className="projects">
-          <header className="projects-header">
-            <button className="project-buttons" onClick={this.renderAll}>
-              All
-            </button>
-            <button className="project-buttons" onClick={this.renderReact}>
-              React
-            </button>
-            <button className="project-buttons" onClick={this.renderVue}>
-              Vue.js
-            </button>
-            <button className="project-buttons" onClick={this.renderNode}>
-              Node.js
-            </button>
-          </header>
+          <ProjectsHeader
+            renderAll={this.renderAll}
+            renderReact={this.renderReact}
+            renderVue={this.renderVue}
+            renderNode={this.renderNode}
+          />
           <section className="projects-container">
             <article className="project">
               <img
@@ -200,20 +185,12 @@ export class Projects extends Component {
     if (this.state.react) {
       return (
         <main className="projects">
-          <header className="projects-header">
-            <button className="project-buttons" onClick={this.renderAll}>
-              All
-            </button>
-            <button className="project-buttons" onClick={this.renderReact}>
-              React
-            </button>
-            <button className="project-buttons" onClick={this.renderVue}>
-              Vue.js
-            </button>
-            <button className="project-buttons" onClick={this.renderNode}>
-              Node.js
-            </button>
-          </header>
+          <ProjectsHeader
+            renderAll={this.renderAll}
+            renderReact={this.renderReact}
+            renderVue={this.renderVue}
+            renderNode={this.renderNode}
+          />
           <section className="projects-container">
             <article className="project">
               <img
@@ -270,20 +247,12 @@ export class Projects extends Component {
     if (this.state.vue) {
       return (
         <main className="projects">
-          <header className="projects-header">
-            <button className="project-buttons" onClick={this.renderAll}>
-              All
-            </button>
-            <button className="project-buttons" onClick={this.renderReact}>
-              React
-            </button>
-            <button className="project-buttons" onClick={this.renderVue}>
-              Vue.js
-            </button>
-            <button className="project-buttons" onClick={this.renderNode}>
-              Node.js
-            </button>
-          </header>
+          <ProjectsHeader
+            renderAll={this.renderAll}
+            renderReact={this.renderReact}
+            renderVue={this.renderVue}
+            renderNode={this.renderNode}
+          />
           <section className="projects-container">
             <article className="project">
               <img
