@@ -3,6 +3,7 @@ import "./Content.scss";
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
+import Contact from "../Contact/Contact";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -32,7 +33,11 @@ function Content() {
               Projects
             </button>
           </Link>
-          <button className="nav-buttons">Contact</button>
+          <Link to="contact-page" smooth={true} duration={1000}>
+            <button className="nav-buttons" id="contact">
+              Contact
+            </button>
+          </Link>
           <a href={require("../../assets/Resume.pdf")} target="_blank">
             <button className="nav-buttons" id="resume">
               Resume
@@ -114,6 +119,7 @@ function Content() {
       </main>
       <Skills />
       <Projects />
+      <Contact />
     </div>
   );
 }
