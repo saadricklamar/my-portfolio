@@ -20,6 +20,35 @@ export class Contact extends Component {
           ></textarea>
           <button className="submit">Submit</button>
         </form>
+        <section className="social-media">
+          <a href="https://twitter.com/Saadrick_Lamar" target="_blank">
+            <img
+              src={require("../../assets/twitter.svg")}
+              alt="Mocha logo"
+              width="75"
+              height="75"
+              className="social-icon"
+            />
+          </a>
+          <a href="https://github.com/saadricklamar" target="_blank">
+            <img
+              src={require("../../assets/github.svg")}
+              alt="Mocha logo"
+              width="75"
+              height="75"
+              className="social-icon"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/saad-baradan/" target="_blank">
+            <img
+              src={require("../../assets/linkedin.svg")}
+              alt="Mocha logo"
+              width="75"
+              height="75"
+              className="social-icon"
+            />
+          </a>
+        </section>
       </main>
     );
   }

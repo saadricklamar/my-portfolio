@@ -1,13 +1,16 @@
 .contact-page {
   min-height: 100vh;
   background: #17cddf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-form {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0 auto 10% auto;
+  margin: 10% auto 10% auto;
 }
 
 h3 {
@@ -54,5 +57,17 @@ h3 {
     cursor: pointer;
     color: #282c34;
     background: white;
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icon {
+  padding: 20%;
+  &:hover {
+    filter: invert(0.4) saturate(10) hue-rotate(360deg) brightness(1.9);
   }
 }
