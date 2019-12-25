@@ -2,6 +2,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: #f1f1ee;
+  background: #f9f9f7;
 }
 
 // Project Header //
@@ -56,7 +58,7 @@
   display: block;
   height: 200px;
   width: 300px;
-  transition: 1s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
@@ -95,9 +97,9 @@
   top: 60px;
   width: 50%;
   height: 40px;
-  border: 2px solid #f82a7b;
+  border: 1px solid #f82a7b;
   font-size: 1rem;
-  background: white;
+  background: #f9f9f7;
 
   &:hover {
     background: #f82a7b;
