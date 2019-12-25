@@ -10,7 +10,7 @@
   font-family: "Titillium Web", sans-serif;
   font-size: 2rem;
   height: 50px;
-  margin: 5%;
+  margin: 8% 1% 5% 0;
   outline: none;
   width: 170px;
 
@@ -19,6 +19,7 @@
     border-radius: 2px;
     color: white;
     cursor: pointer;
+    transition: 1s ease;
   }
 
   &:focus {
