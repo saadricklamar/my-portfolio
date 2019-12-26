@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import * as emailjs from "emailjs-com";
 import "./Contact.scss";
 
 export class Contact extends Component {
@@ -16,10 +17,27 @@ export class Contact extends Component {
     this.setState({ [name]: value });
   };
 
+  handleSubmit = e => {
+    e.preventDefault();
+    const { name, email, message } = this.state;
+    let templateParams = {
+      name: name,
+      email: email,
+      message: message
+    };
+
+    emailjs.send(
+      "saadbaradan_gmail_com",
+      "template_p46w7sB4",
+      templateParams,
+      "user_QRhXIxXogP1PX8gcIGBn5"
+    );
+  };
+
   render() {
     return (
       <main className="contact-page">
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={this.handleSubmit}>
           <h3>Want to work together or have a question?</h3>
           <input
             className="name"
