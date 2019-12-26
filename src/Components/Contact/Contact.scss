@@ -1,21 +1,23 @@
 .contact-page {
-  min-height: 100vh;
+  align-items: center;
   background: #17cddf;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 100vh;
 }
+
+// Form //
 
 .contact-form {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   margin: 10% auto 10% auto;
 }
 
 h3 {
-  position: relative;
   margin-bottom: 10%;
+  position: relative;
 }
 
 .name,
@@ -34,35 +36,37 @@ h3 {
 .message {
   background: #282c34;
   border: 1px solid #282c34;
-  padding-left: 5px;
   color: white;
-  font-weight: bold;
   font-size: 0.9rem;
+  font-weight: bold;
+  padding-left: 5px;
 }
 
 ::placeholder {
-  padding-left: 1%;
   color: white;
+  padding-left: 1%;
 }
 
 .submit {
-  height: 40px;
+  background: none;
+  border: 2px solid white;
+  color: white;
   font-family: "Titillium Web", sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
-  width: 100px;
-  background: none;
-  margin-top: 5%;
+  height: 40px;
   margin-bottom: 0;
-  border: 2px solid white;
-  color: white;
+  margin-top: 5%;
+  width: 100px;
 
   &:hover {
-    cursor: pointer;
-    color: #282c34;
     background: white;
+    color: #282c34;
+    cursor: pointer;
   }
 }
+
+// Social Media Icons //
 
 .social-media {
   display: flex;
