@@ -15,7 +15,7 @@
 
 h3 {
   position: relative;
-  bottom: 5%;
+  margin-bottom: 10%;
 }
 
 .name,
@@ -37,6 +37,7 @@ h3 {
   padding-left: 5px;
   color: white;
   font-weight: bold;
+  font-size: 0.9rem;
 }
 
 ::placeholder {
@@ -46,10 +47,13 @@ h3 {
 
 .submit {
   height: 40px;
-  font-size: 1rem;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
   width: 100px;
   background: none;
   margin-top: 5%;
+  margin-bottom: 0;
   border: 2px solid white;
   color: white;
 
@@ -66,7 +70,7 @@ h3 {
 }
 
 .social-icon {
-  padding: 20%;
+  padding: 0 20% 0 20%;
   &:hover {
     filter: invert(0.4) saturate(10) hue-rotate(360deg) brightness(1.9);
   }
