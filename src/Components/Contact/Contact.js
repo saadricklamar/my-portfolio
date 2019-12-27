@@ -43,7 +43,6 @@ export class Contact extends Component {
           <input
             className="name"
             name="name"
-            refs="name"
             placeholder="Name"
             onChange={this.handleFormChange}
           ></input>
