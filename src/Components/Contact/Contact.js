@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import * as emailjs from "emailjs-com";
+import ReactTooltip from "react-tooltip";
 import "./Contact.scss";
 
 export class Contact extends Component {
@@ -25,13 +26,13 @@ export class Contact extends Component {
       email: email,
       message: message
     };
-
     emailjs.send(
       "saadbaradan_gmail_com",
       "template_p46w7sB4",
       templateParams,
       "user_QRhXIxXogP1PX8gcIGBn5"
     );
+    e.target.reset();
   };
 
   render() {
@@ -42,6 +43,7 @@ export class Contact extends Component {
           <input
             className="name"
             name="name"
+            refs="name"
             placeholder="Name"
             onChange={this.handleFormChange}
           ></input>
@@ -60,7 +62,12 @@ export class Contact extends Component {
           <button className="submit">Submit</button>
         </form>
         <section className="social-media">
-          <a href="https://twitter.com/Saadrick_Lamar" target="_blank">
+          <ReactTooltip />
+          <a
+            href="https://twitter.com/Saadrick_Lamar"
+            target="_blank"
+            data-tip="My Twitter"
+          >
             <img
               src={require("../../assets/twitter.svg")}
               alt="Mocha logo"
@@ -69,7 +76,12 @@ export class Contact extends Component {
               className="social-icon"
             />
           </a>
-          <a href="https://github.com/saadricklamar" target="_blank">
+          <ReactTooltip />
+          <a
+            href="https://github.com/saadricklamar"
+            target="_blank"
+            data-tip="My Github"
+          >
             <img
               src={require("../../assets/github.svg")}
               alt="Mocha logo"
@@ -78,7 +90,12 @@ export class Contact extends Component {
               className="social-icon"
             />
           </a>
-          <a href="https://www.linkedin.com/in/saad-baradan/" target="_blank">
+          <ReactTooltip />
+          <a
+            href="https://www.linkedin.com/in/saad-baradan/"
+            target="_blank"
+            data-tip="My Linkedin"
+          >
             <img
               src={require("../../assets/linkedin.svg")}
               alt="Mocha logo"
