@@ -60,9 +60,10 @@ function Content() {
           <h2>About Me</h2>
           <div className="p-about-me">
             <p>
-              I'm a full-stack web developer with a background in teaching and
-              client management. I am passionate about building fluid,
-              intuitive, and dynamic UIs.
+              I'm a full-stack web developer who is passionate about building
+              fluid, intuitive, and dynamic UIs. I enjoy practicing Test Driven
+              Development, learning new ways to animate and transform web pages,
+              and providing users with a delightful UI experience.
               <br />
               <br /> As a Colorado native, I enjoy hiking, traveling, and
               photography.
