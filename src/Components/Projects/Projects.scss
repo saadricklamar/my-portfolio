@@ -1,9 +1,15 @@
+html {
+  width: 100%;
+}
+
 .projects {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background: #f1f1ee;
   background: #f9f9f7;
+  z-index: -1;
+  box-sizing: border-box;
 }
 
 // Project Cards //

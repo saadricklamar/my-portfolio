@@ -118,6 +118,7 @@ function Content() {
         <PhotoGallery />
         <FontAwesomeIcon icon={faCamera} className="camera-icon" />
       </main>
+
       <Skills />
       <Projects />
       <Contact />
