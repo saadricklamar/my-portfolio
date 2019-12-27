@@ -41,9 +41,12 @@
   }
 }
 
-#skills,
-#about {
+#skills {
   padding-top: 30%;
+}
+
+#about {
+  padding-top: 25%;
 }
 
 #project,
@@ -57,6 +60,7 @@
 main {
   min-height: 100vh;
   display: flex;
+  z-index: -1;
 }
 
 // Left Section of Main //
@@ -75,7 +79,6 @@ p {
   font-size: 1.1rem;
   width: 50%;
   text-align: justify;
-  // text-justify: inter-word;
 }
 
 .rhombus-outter,
@@ -87,6 +90,7 @@ p {
   transform-origin: 35% 35%;
   width: 150px;
 }
+
 .rhombus-outter {
   transform: rotate(45deg) translateY(10px);
 }
@@ -123,6 +127,7 @@ p {
   transform-origin: 50% 50%;
   width: 300px;
 }
+
 .hexa {
   filter: drop-shadow(5px 5px 5px #c8d2d3);
   height: 230px;
@@ -163,4 +168,44 @@ p {
   position: relative;
   right: 16%;
   top: 450px;
+}
+
+// Media Queiries //
+
+@media (max-width: 965px) {
+  main {
+    flex-direction: column;
+    position: relative;
+    right: 7%;
+  }
+
+  p {
+    margin: 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .rhombus-outter,
+  .rhombus-outter div {
+    margin: 5% 38% 5% auto;
+  }
+
+  #second-hex {
+    bottom: 563.3%;
+    left: 23.3%;
+    position: relative;
+  }
+
+  #third-hex {
+    bottom: 32.2%;
+
+    position: relative;
+  }
+
+  .right {
+    display: none;
+  }
 }
