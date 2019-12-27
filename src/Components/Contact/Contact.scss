@@ -76,6 +76,6 @@ h3 {
 .social-icon {
   padding: 0 20% 0 20%;
   &:hover {
-    filter: invert(0.4) saturate(10) hue-rotate(360deg) brightness(1.9);
+    cursor: pointer;
   }
 }
