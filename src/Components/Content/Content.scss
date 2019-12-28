@@ -63,6 +63,10 @@ main {
   z-index: -1;
 }
 
+.mobile-gallery {
+  display: none;
+}
+
 // Left Section of Main //
 
 .left {
@@ -176,7 +180,19 @@ p {
   main {
     flex-direction: column;
     position: relative;
-    right: 7%;
+    right: 4%;
+  }
+
+  .mobile-gallery {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    width: 74%;
+  }
+
+  .mobile-carousel {
+    margin: 0 auto;
+    padding-bottom: 20px;
   }
 
   p {

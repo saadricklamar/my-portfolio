@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
 import Sticky from "react-stickynode";
+import Carousel from "nuka-carousel";
 
 function Content() {
   return (
@@ -118,7 +119,34 @@ function Content() {
         <PhotoGallery />
         <FontAwesomeIcon icon={faCamera} className="camera-icon" />
       </main>
-
+      <section className="mobile-gallery">
+        <Carousel className="mobile-carousel">
+          <div>
+            <img
+              src={require("../../assets/fall.jpeg")}
+              alt="Fall in Grandby, Colorado"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption className="mobile-fig">
+              Fall in Grandby, Colorado
+            </figcaption>
+          </div>
+          <div>
+            <img
+              src={require("../../assets/dino.jpeg")}
+              alt="Dinosaur National Monument"
+              width="580"
+              height="400"
+              className="photo"
+            />
+            <figcaption className="mobile-fig">
+              Echo Park at Dinosaur National Monument, Colorado
+            </figcaption>
+          </div>
+        </Carousel>
+      </section>
       <Skills />
       <Projects />
       <Contact />
