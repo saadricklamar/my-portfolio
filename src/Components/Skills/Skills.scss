@@ -159,3 +159,13 @@ hr {
   position: relative;
   right: 20%;
 }
+
+@media (max-width: 965px) {
+  .skills-card {
+    margin: 15% auto 0 12%;
+    width: 80%;
+  }
+
+  .cards-container {
+  }
+}

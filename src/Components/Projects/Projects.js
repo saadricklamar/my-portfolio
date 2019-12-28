@@ -64,7 +64,7 @@ export class Projects extends Component {
                   href="https://github.com/saadricklamar/cycle-city"
                   target="_blank"
                 >
-                  <button className="learn-more">Learn More</button>
+                  <button className="learn-more">LEARN MORE</button>
                 </a>
               </div>
             </article>
@@ -80,7 +80,7 @@ export class Projects extends Component {
                   href="https://github.com/saadricklamar/harvard-art"
                   target="_blank"
                 >
-                  <button className="learn-more">Learn More</button>
+                  <button className="learn-more">LEARN MORE</button>
                 </a>
               </div>
             </article>
@@ -96,7 +96,7 @@ export class Projects extends Component {
                   href="https://github.com/saadricklamar/vue-calculator"
                   target="_blank"
                 >
-                  <button className="learn-more">Learn More</button>
+                  <button className="learn-more">LEARN MORE</button>
                 </a>
               </div>
             </article>
@@ -112,7 +112,7 @@ export class Projects extends Component {
                   href="https://github.com/saadricklamar/movie-tracker"
                   target="_blank"
                 >
-                  <button className="learn-more">Learn More</button>
+                  <button className="learn-more">LEARN MORE</button>
                 </a>
               </div>
             </article>
@@ -128,7 +128,7 @@ export class Projects extends Component {
                   href="https://github.com/saadricklamar/shakesbeer"
                   target="_blank"
                 >
-                  <button className="learn-more">Learn More</button>
+                  <button className="learn-more">LEARN MORE</button>
                 </a>
               </div>
             </article>
@@ -144,7 +144,7 @@ export class Projects extends Component {
                   href="https://github.com/saadricklamar/philosophers-backend"
                   target="_blank"
                 >
-                  <button className="learn-more">Learn More</button>
+                  <button className="learn-more">LEARN MORE</button>
                 </a>
               </div>
             </article>
