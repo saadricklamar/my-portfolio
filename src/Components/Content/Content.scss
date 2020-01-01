@@ -72,7 +72,7 @@ main {
 
 h2 {
   padding-left: 11%;
-  padding-top: 8%;
+  padding-top: 6%;
 }
 
 p {
@@ -82,7 +82,7 @@ p {
 
 .rhombus-outter,
 .rhombus-outter div {
-  filter: drop-shadow(5px 5px 5px #17cddf);
+  filter: drop-shadow(4px 4px 4px #17cddf);
   height: 150px;
   margin: 5% 0 5% 12%;
   overflow: hidden;
@@ -207,5 +207,45 @@ p {
 
   .right {
     display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .rhombus-outter,
+  .rhombus-outter div {
+    margin: 5% 36% 5% auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .rhombus-outter,
+  .rhombus-outter div {
+    margin: 5% 32% 5% auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .rhombus-outter,
+  .rhombus-outter div {
+    margin: 5% 28% 5% auto;
+  }
+
+  h2 {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 380px) {
+  .rhombus-outter,
+  .rhombus-outter div {
+    margin: 5% 22% 5% auto;
+  }
+
+  h2 {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 15%;
   }
 }
