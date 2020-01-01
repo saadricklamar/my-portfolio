@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
 import Sticky from "react-stickynode";
-import Carousel from "nuka-carousel";
 
 function Content() {
   return (
@@ -62,9 +61,7 @@ function Content() {
           <div className="p-about-me">
             <p>
               I'm a full-stack web developer who is passionate about building
-              fluid, intuitive, and dynamic UIs. I enjoy practicing Test Driven
-              Development, learning new ways to animate and transform web pages,
-              and providing users with a delightful UI experience.
+              fluid, intuitive, and dynamic UIs.
               <br />
               <br /> As a Colorado native, I enjoy hiking, traveling, and
               photography.
