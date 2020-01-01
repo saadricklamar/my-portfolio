@@ -166,7 +166,7 @@ p {
   font-size: 3rem;
   position: relative;
   right: 17%;
-  top: 485px;
+  top: 470px;
 }
 
 // Media Queiries //
@@ -221,6 +221,11 @@ p {
   .rhombus-outter,
   .rhombus-outter div {
     margin: 5% 32% 5% auto;
+  }
+
+  .content-header {
+    padding-right: 10%;
+    height: 60px;
   }
 }
 
