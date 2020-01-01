@@ -72,13 +72,12 @@ main {
 
 h2 {
   padding-left: 11%;
-  padding-top: 5%;
+  padding-top: 8%;
 }
 
 p {
   font-size: 1.1rem;
   width: 50%;
-  text-align: justify;
 }
 
 .rhombus-outter,
@@ -110,7 +109,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 7%;
   position: relative;
   right: 7%;
 }
@@ -166,8 +165,8 @@ p {
   color: #282c34;
   font-size: 3rem;
   position: relative;
-  right: 16%;
-  top: 450px;
+  right: 17%;
+  top: 485px;
 }
 
 // Media Queiries //
@@ -181,6 +180,7 @@ p {
 
   p {
     margin: 0 auto;
+    text-align: center;
   }
 
   h2 {
