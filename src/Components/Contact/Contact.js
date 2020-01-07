@@ -65,6 +65,7 @@ export class Contact extends Component {
           <a
             href="https://twitter.com/Saadrick_Lamar"
             target="_blank"
+            rel="noopener noreferrer"
             data-tip="My Twitter"
           >
             <img
@@ -79,6 +80,7 @@ export class Contact extends Component {
           <a
             href="https://github.com/saadricklamar"
             target="_blank"
+            rel="noopener noreferrer"
             data-tip="My Github"
           >
             <img
@@ -93,6 +95,7 @@ export class Contact extends Component {
           <a
             href="https://www.linkedin.com/in/saad-baradan/"
             target="_blank"
+            rel="noopener noreferrer"
             data-tip="My Linkedin"
           >
             <img

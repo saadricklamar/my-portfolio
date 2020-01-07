@@ -38,7 +38,11 @@ function Content() {
               Contact
             </button>
           </Link>
-          <a href={require("../../assets/Resume.pdf")} target="_blank">
+          <a
+            href={require("../../assets/Resume.pdf")}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="nav-buttons" id="resume">
               Resume
             </button>
@@ -47,8 +51,8 @@ function Content() {
       </Sticky>
       <main>
         <section className="left">
-          <div class="rhombus-outter">
-            <div class="rhombus">
+          <div className="rhombus-outter">
+            <div className="rhombus">
               <img
                 src={require("../../me.jpg")}
                 alt="me at Niagara Falls"
@@ -73,9 +77,9 @@ function Content() {
           </div>
         </section>
         <section className="right">
-          <div class="hexa">
-            <div class="hex1">
-              <div class="hex2">
+          <div className="hexa">
+            <div className="hex1">
+              <div className="hex2">
                 <img
                   src={require("../../assets/fall.jpeg")}
                   alt="Fall in Granby, Colorado"
@@ -86,9 +90,9 @@ function Content() {
               </div>
             </div>
           </div>
-          <div class="hexa" id="second-hex">
-            <div class="hex1">
-              <div class="hex2">
+          <div className="hexa" id="second-hex">
+            <div className="hex1">
+              <div className="hex2">
                 <img
                   src={require("../../assets/dino.jpeg")}
                   alt="Dinosaur National Monument"
@@ -99,9 +103,9 @@ function Content() {
               </div>
             </div>
           </div>
-          <div class="hexa" id="third-hex">
-            <div class="hex1">
-              <div class="hex2">
+          <div className="hexa" id="third-hex">
+            <div className="hex1">
+              <div className="hex2">
                 <img
                   src={require("../../assets/butte.jpeg")}
                   alt="Fall in Crested Butte, Colorado"

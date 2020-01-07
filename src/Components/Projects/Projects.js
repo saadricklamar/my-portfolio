@@ -63,6 +63,7 @@ export class Projects extends Component {
                 <a
                   href="https://github.com/saadricklamar/cycle-city"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="learn-more">LEARN MORE</button>
                 </a>
@@ -79,6 +80,7 @@ export class Projects extends Component {
                 <a
                   href="https://github.com/saadricklamar/harvard-art"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="learn-more">LEARN MORE</button>
                 </a>
@@ -95,6 +97,7 @@ export class Projects extends Component {
                 <a
                   href="https://github.com/saadricklamar/vue-calculator"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="learn-more">LEARN MORE</button>
                 </a>
@@ -111,6 +114,7 @@ export class Projects extends Component {
                 <a
                   href="https://github.com/saadricklamar/movie-tracker"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="learn-more">LEARN MORE</button>
                 </a>
@@ -127,6 +131,7 @@ export class Projects extends Component {
                 <a
                   href="https://github.com/saadricklamar/shakesbeer"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="learn-more">LEARN MORE</button>
                 </a>
@@ -143,6 +148,7 @@ export class Projects extends Component {
                 <a
                   href="https://github.com/saadricklamar/philosophers-backend"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="learn-more">LEARN MORE</button>
                 </a>
@@ -173,6 +179,7 @@ export class Projects extends Component {
                 <a
                   href="https://github.com/saadricklamar/philosophers-backend"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="learn-more">Learn More</button>
                 </a>
@@ -203,6 +210,7 @@ export class Projects extends Component {
                 <a
                   href="https://github.com/saadricklamar/cycle-city"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="learn-more">Learn More</button>
                 </a>
@@ -219,6 +227,7 @@ export class Projects extends Component {
                 <a
                   href="https://github.com/saadricklamar/movie-tracker"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="learn-more">Learn More</button>
                 </a>
@@ -235,6 +244,7 @@ export class Projects extends Component {
                 <a
                   href="https://github.com/saadricklamar/shakesbeer"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="learn-more">Learn More</button>
                 </a>
@@ -265,6 +275,7 @@ export class Projects extends Component {
                 <a
                   href="https://github.com/saadricklamar/harvard-art"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="learn-more">Learn More</button>
                 </a>
@@ -281,6 +292,7 @@ export class Projects extends Component {
                 <a
                   href="https://github.com/saadricklamar/vue-calculator"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button className="learn-more">Learn More</button>
                 </a>
