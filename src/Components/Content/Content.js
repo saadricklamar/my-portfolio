@@ -13,7 +13,7 @@ import Sticky from "react-stickynode";
 function Content() {
   return (
     <div className="content">
-      <Sticky top="#header" bottomBoundary="#content">
+      <Sticky top="#header" enabled={true} bottomBoundary="#content" innerZ={3}>
         <header className="content-header">
           <Link to="App" smooth={true} duration={1000}>
             <FontAwesomeIcon icon={faHome} className="home-icon" />
