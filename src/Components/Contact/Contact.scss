@@ -20,6 +20,7 @@
 }
 
 h3 {
+  margin-top: 0;
   margin-bottom: 10%;
   position: relative;
 }
@@ -78,9 +79,15 @@ h3 {
 }
 
 .social-icon {
-  padding: 0 20% 0 20%;
+  padding: 50% 20% 0 20%;
   &:hover {
     cursor: pointer;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-form {
+    margin-top: 15%;
   }
 }
 
@@ -95,5 +102,10 @@ h3 {
 
   .social-media {
     padding-top: 20%;
+  }
+
+  .social-icon {
+    width: 60px;
+    height: 60px;
   }
 }
