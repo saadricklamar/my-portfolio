@@ -85,9 +85,29 @@ h3 {
   }
 }
 
+// Copyright //
+
+.copyright {
+  color: white;
+  padding-top: 5%;
+}
+
+span {
+  color: #f82a7b;
+  font-weight: bold;
+}
+
 @media (max-width: 800px) {
   .contact-form {
     margin-top: 15%;
+  }
+
+  .social-icon {
+    padding: 80% 20% 0 20%;
+  }
+
+  .copyright {
+    padding-top: 5%;
   }
 }
 
@@ -101,7 +121,7 @@ h3 {
   }
 
   .social-media {
-    padding-top: 20%;
+    padding-top: 15%;
   }
 
   .social-icon {
