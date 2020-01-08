@@ -39,7 +39,7 @@ function Content() {
             </button>
           </Link>
           <a
-            href={require("../../assets/Resume.pdf")}
+            href={require("../../assets/SaadBaradanResume.pdf")}
             target="_blank"
             rel="noopener noreferrer"
           >
