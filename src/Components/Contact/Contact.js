@@ -107,6 +107,9 @@ export class Contact extends Component {
             />
           </a>
         </section>
+        <p className="copyright">
+          SAAD BARADAN <span> &#169;2019</span>
+        </p>
       </main>
     );
   }
