@@ -7,7 +7,7 @@
   width: 100vw;
   position: relative;
   margin-left: -50vw;
-  height: 100px;
+  // height: 100px;
   left: 50%;
 }
 
@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10% auto 10% auto;
+  margin: 10% auto 5% auto;
 }
 
 h3 {
@@ -86,11 +86,15 @@ h3 {
 }
 
 @media (max-width: 500px) {
+  .contact-form {
+    margin-top: 20%;
+  }
+
   h3 {
     font-size: 1rem;
   }
 
   .social-media {
-    padding-top: 50%;
+    padding-top: 20%;
   }
 }
