@@ -29,3 +29,10 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 800px) {
+  .project-buttons {
+    width: 120px;
+    margin: 15% 1% 5% 0;
+  }
+}
