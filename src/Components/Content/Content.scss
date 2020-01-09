@@ -60,6 +60,11 @@
 main {
   min-height: 100vh;
   display: flex;
+  background: #f7f7f5;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
 }
 
 // Left Section of Main //

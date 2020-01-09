@@ -3,6 +3,10 @@
 .cards-container {
   display: flex;
   justify-content: left;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
 }
 
 .skills-card {
