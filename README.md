@@ -8,4 +8,6 @@ Coming soon...
 
 ## Skills and Projects Page
 
-![2019-12-24 12 53 11](https://user-images.githubusercontent.com/42000931/71424170-71647380-264c-11ea-9a3f-23980f8ad040.gif)
+![2020-01-09 16 33 05](https://user-images.githubusercontent.com/42000931/72113460-c9160680-32fd-11ea-9950-89c9231c1d48.gif)
+
+
