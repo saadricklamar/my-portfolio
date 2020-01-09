@@ -9,7 +9,8 @@ export class Projects extends Component {
       all: true,
       react: false,
       vue: false,
-      node: false
+      node: false,
+      activeState: false
     };
   }
 
@@ -50,6 +51,7 @@ export class Projects extends Component {
             renderReact={this.renderReact}
             renderVue={this.renderVue}
             renderNode={this.renderNode}
+            activeState={this.state.activeState}
           />
           <section className="projects-container">
             <article className="project">
