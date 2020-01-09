@@ -167,7 +167,7 @@ function PhotoGallery() {
               className="photo"
             />
             <figcaption>
-              Dominguez Escalante National Converstation Area, Colorado
+              Dominguez Escalante National Conservation Area, Colorado
             </figcaption>
           </div>
           <div>
