@@ -239,6 +239,20 @@ p {
     padding-left: 0;
     padding-top: 15%;
   }
+
+  .content-header {
+    padding-right: 5%;
+    height: 50px;
+  }
+
+  .nav-buttons {
+    font-size: 1rem;
+  }
+
+  .home-icon {
+    font-size: 1rem;
+    padding-top: 100%;
+  }
 }
 
 @media (max-width: 380px) {
@@ -251,5 +265,20 @@ p {
     text-align: center;
     padding-left: 0;
     padding-top: 15%;
+  }
+
+  .content-header {
+    padding-right: 5%;
+    height: 40px;
+  }
+
+  .nav-buttons {
+    font-size: 0.6rem;
+    padding-top: 30px;
+  }
+
+  .home-icon {
+    font-size: 0.8rem;
+    padding-top: 70%;
   }
 }
