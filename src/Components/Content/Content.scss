@@ -71,12 +71,17 @@ main {
 
 h2 {
   padding-left: 11%;
-  padding-top: 6%;
+  padding-top: 8%;
 }
 
 p {
   font-size: 1.1rem;
-  width: 50%;
+  width: 70%;
+}
+
+.p-about-me {
+  position: relative;
+  right: 10%;
 }
 
 .rhombus-outter,
@@ -170,7 +175,7 @@ p {
 
 // Media Queiries //
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   main {
     flex-direction: column;
     position: relative;
@@ -180,6 +185,11 @@ p {
   p {
     margin: 0 auto;
     text-align: center;
+  }
+
+  .p-about-me {
+    position: relative;
+    right: 0;
   }
 
   h2 {
