@@ -1,4 +1,5 @@
 import React from "react";
+import "./MobileHeader.scss";
 
 function MobileHeader() {
   return (
