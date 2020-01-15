@@ -150,48 +150,6 @@ function PhotoGallery() {
           </div>
           <div>
             <img
-              src={require("../../assets/lake-agnes.jpg")}
-              alt="Lake Agnes, Colorado"
-              width="580"
-              height="400"
-              className="photo"
-            />
-            <figcaption>Lake Agnes, Colorado</figcaption>
-          </div>
-          <div>
-            <img
-              src={require("../../assets/dominguez.jpg")}
-              alt="Dominguez Escalante National Converstation Area, Colorado"
-              width="580"
-              height="400"
-              className="photo"
-            />
-            <figcaption>
-              Dominguez Escalante National Conservation Area, Colorado
-            </figcaption>
-          </div>
-          <div>
-            <img
-              src={require("../../assets/tent-rock.jpg")}
-              alt="Tent Rock National Monument, New Mexico"
-              width="580"
-              height="400"
-              className="photo"
-            />
-            <figcaption>Tent Rock National Monument, New Mexico</figcaption>
-          </div>
-          <div>
-            <img
-              src={require("../../assets/ouray.jpg")}
-              alt="Ouray, Colorado"
-              width="580"
-              height="400"
-              className="photo"
-            />
-            <figcaption>Ouray, Colorado</figcaption>
-          </div>
-          <div>
-            <img
               src={require("../../assets/telluride.jpg")}
               alt="Telluride Colorado"
               width="580"

@@ -4,6 +4,7 @@ import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import Contact from "../Contact/Contact";
+import MobileHeader from "../MobileHeader/MobileHeader";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -13,6 +14,7 @@ import Sticky from "react-stickynode";
 function Content() {
   return (
     <div className="content">
+      <MobileHeader />
       <Sticky top="#header" enabled={true} bottomBoundary="#content" innerZ={3}>
         <header className="content-header">
           <Link to="App" smooth={true} duration={1000}>
