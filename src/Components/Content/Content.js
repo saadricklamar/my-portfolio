@@ -65,7 +65,9 @@ function Content() {
           <div className="p-about-me">
             <p>
               I'm a full-stack web developer who is passionate about building
-              fluid, intuitive, and dynamic UIs.
+              fluid, intuitive, and dynamic UIs. I enjoy practicing Test Driven
+              Development, mastering React and Vue.js, and learning new
+              technologies.
               <br />
               <br /> As a Colorado native, I enjoy hiking, traveling, and
               photography.
