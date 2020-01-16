@@ -9,36 +9,52 @@ export class Contact extends Component {
     this.state = {
       name: "",
       email: "",
-      message: ""
+      message: "",
+      formCompleted: false,
+      isDisabled: true
     };
   }
 
   handleFormChange = e => {
     const { name, value } = e.target;
     this.setState({ [name]: value });
+    if (
+      this.state.name !== "" &&
+      this.state.email !== "" &&
+      this.state.message !== ""
+    ) {
+      this.setState({ formCompleted: true });
+    }
   };
 
   handleSubmit = e => {
     e.preventDefault();
-    const { name, email, message } = this.state;
-    let templateParams = {
-      name: name,
-      email: email,
-      message: message
-    };
-    emailjs.send(
-      "saadbaradan_gmail_com",
-      "template_p46w7sB4",
-      templateParams,
-      "user_QRhXIxXogP1PX8gcIGBn5"
-    );
-    e.target.reset();
+    const { name, email, message, formCompleted } = this.state;
+    if (formCompleted) {
+      this.setState({ isDisabled: false });
+      let templateParams = {
+        name: name,
+        email: email,
+        message: message
+      };
+      emailjs.send(
+        "saadbaradan_gmail_com",
+        "template_p46w7sB4",
+        templateParams,
+        "user_QRhXIxXogP1PX8gcIGBn5"
+      );
+      e.target.reset();
+    }
   };
 
   render() {
     return (
       <main className="contact-page" id="mobile-contact">
-        <form className="contact-form" onSubmit={this.handleSubmit}>
+        <form
+          className="contact-form"
+          onSubmit={this.handleSubmit}
+          disabled={this.state.isDisabled}
+        >
           <h3>Want to work together or have a question?</h3>
           <input
             className="name"
