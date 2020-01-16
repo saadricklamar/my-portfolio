@@ -37,7 +37,7 @@ export class Contact extends Component {
 
   render() {
     return (
-      <main className="contact-page">
+      <main className="contact-page" id="mobile-contact">
         <form className="contact-form" onSubmit={this.handleSubmit}>
           <h3>Want to work together or have a question?</h3>
           <input
