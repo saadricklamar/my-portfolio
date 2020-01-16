@@ -45,7 +45,7 @@ export class Projects extends Component {
   render() {
     if (this.state.all) {
       return (
-        <main className="projects">
+        <main className="projects" id="mobile-projects">
           <ProjectsHeader
             renderAll={this.renderAll}
             renderReact={this.renderReact}
@@ -162,7 +162,7 @@ export class Projects extends Component {
     }
     if (this.state.node) {
       return (
-        <main className="projects">
+        <main className="projects" id="mobile-projects">
           <ProjectsHeader
             renderAll={this.renderAll}
             renderReact={this.renderReact}
@@ -193,7 +193,7 @@ export class Projects extends Component {
     }
     if (this.state.react) {
       return (
-        <main className="projects">
+        <main className="projects" id="mobile-projects">
           <ProjectsHeader
             renderAll={this.renderAll}
             renderReact={this.renderReact}
@@ -258,7 +258,7 @@ export class Projects extends Component {
     }
     if (this.state.vue) {
       return (
-        <main className="projects">
+        <main className="projects" id="mobile-projects">
           <ProjectsHeader
             renderAll={this.renderAll}
             renderReact={this.renderReact}

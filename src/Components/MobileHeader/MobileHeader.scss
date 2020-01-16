@@ -3,4 +3,118 @@
 }
 
 @media (max-width: 420px) {
+  .mobile-header {
+    background-color: #282c34;
+    border-bottom: 4px solid #17cddf;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    display: block;
+    height: 60px;
+  }
+
+  .mobile-header ul {
+    background-color: #282c34;
+    height: 229px;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .mobile-header li a {
+    border-bottom: 2px solid #17cddf;
+    border-right: 1px solid gray;
+    color: white;
+    display: block;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .mobile-header li a:hover {
+    background-color: #17cddf;
+    overflow: hidden;
+  }
+
+  .mobile-header .menu-icon {
+    display: none;
+  }
+
+  .mobile-header .home-icon {
+    color: white;
+    display: block;
+    float: left;
+    font-size: 1.3rem;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+
+  .mobile-header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .mobile-header .menu-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+
+  .mobile-header .menu-icon .navicon {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+
+  .mobile-header .menu-icon .navicon:before,
+  .mobile-header .menu-icon .navicon:after {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+
+  .mobile-header .menu-icon .navicon:before {
+    top: 5px;
+  }
+
+  .mobile-header .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  .mobile-header .menu-btn {
+    display: none;
+  }
+
+  .mobile-header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+
+  .mobile-header .menu-btn:checked ~ .menu-icon .navicon {
+    background: black;
+  }
+
+  .mobile-header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .mobile-header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .mobile-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .mobile-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
 }

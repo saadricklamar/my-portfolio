@@ -270,6 +270,12 @@ p {
   }
 }
 
+@media (max-width: 420px) {
+  .content-header {
+    display: none;
+  }
+}
+
 @media (max-width: 380px) {
   .rhombus-outter,
   .rhombus-outter div {

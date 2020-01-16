@@ -6,7 +6,7 @@ import TextLoop from "react-text-loop";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="mobile-home">
       <header className="App-header">
         <h1>
           <TextLoop

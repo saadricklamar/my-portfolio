@@ -5,7 +5,7 @@ import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 function Skills() {
   return (
-    <div className="Skills">
+    <div className="Skills" id="mobile-skills">
       <main className="cards-container">
         <article className="skills-card">
           <section className="skills">

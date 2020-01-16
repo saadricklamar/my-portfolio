@@ -13,7 +13,7 @@ import Sticky from "react-stickynode";
 
 function Content() {
   return (
-    <div className="content">
+    <div className="content" id="mobile-about">
       <MobileHeader />
       <Sticky top="#header" enabled={true} bottomBoundary="#content" innerZ={3}>
         <header className="content-header">
