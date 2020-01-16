@@ -33,6 +33,7 @@ function MobileHeader() {
               href={require("../../assets/SaadBaradanResume.pdf")}
               target="_blank"
               rel="noopener noreferrer"
+              id="mobile-resume"
             >
               Resume
             </a>

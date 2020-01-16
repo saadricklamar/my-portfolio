@@ -13,7 +13,7 @@
 
   .mobile-header ul {
     background-color: #282c34;
-    height: 229px;
+    height: 235px;
     list-style: none;
     margin: 0;
     overflow: hidden;
@@ -30,6 +30,10 @@
     padding: 10px 20px;
     text-align: left;
     text-decoration: none;
+  }
+
+  #mobile-resume {
+    border-bottom: none;
   }
 
   .mobile-header li a:hover {
