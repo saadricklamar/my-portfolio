@@ -11,7 +11,8 @@ export class Contact extends Component {
       email: "",
       message: "",
       formCompleted: false,
-      isDisabled: true
+      isDisabled: true,
+      userMessage: ""
     };
   }
 
@@ -44,6 +45,7 @@ export class Contact extends Component {
         "user_QRhXIxXogP1PX8gcIGBn5"
       );
       e.target.reset();
+      this.setState({ userMessage: "Thank you! I'll be in touch." });
     }
   };
 
@@ -76,6 +78,7 @@ export class Contact extends Component {
           ></textarea>
           <button className="submit">Submit</button>
         </form>
+        <p className="fade-out">{this.state.userMessage}</p>
         <section className="social-media">
           <ReactTooltip />
           <a

@@ -26,7 +26,7 @@ function App() {
           />
           , I'm <span>Saad Baradan.</span>
           <br />
-          I'm a full-stack web developer.
+          I'm a Software Engineer.
         </h1>
 
         <Link to="content" smooth={true} duration={1000}>

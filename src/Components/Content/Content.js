@@ -66,17 +66,17 @@ function Content() {
           <h2>About Me</h2>
           <div className="p-about-me">
             <p>
-              I'm a full-stack web developer who is passionate about building
-              fluid, intuitive, and dynamic UIs. I enjoy practicing Test Driven
-              Development, mastering React and Vue.js, and learning new
-              technologies.
+              I'm a Software Engineer with an emphasis on Front-End
+              Technologies. I'm passionate about building fluid, intuitive, and
+              dynamic UIs. I enjoy practicing Test Driven Development, mastering
+              React and Vue.js, and learning new technologies.
               <br />
               <br /> As a Colorado native, I enjoy hiking, traveling, and
               photography.
               <br />
               <br /> When I'm not out exploring, you can find me reading,
               writing fiction, watching the NBA, doing puzzles, and walking my
-              dog, Sophie.
+              dog, Gizmo.
             </p>
           </div>
         </section>
