@@ -122,7 +122,6 @@ function Content() {
           </div>
         </section>
         <PhotoGallery />
-        <FontAwesomeIcon icon={faCamera} className="camera-icon" />
       </main>
       <Skills />
       <Projects />
