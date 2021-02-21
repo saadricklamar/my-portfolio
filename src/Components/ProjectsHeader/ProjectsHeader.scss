@@ -4,6 +4,21 @@
   margin: 5% auto 0 auto;
 }
 
+#focus {
+  background: none;
+  border: none;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2rem;
+  height: 50px;
+  margin: 8% 1% 5% 0;
+  outline: none;
+  width: 170px;
+  background: #f82a7b;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+}
+
 .project-buttons {
   background: none;
   border: none;

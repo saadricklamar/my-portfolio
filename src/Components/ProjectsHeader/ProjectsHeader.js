@@ -1,10 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import "./ProjectsHeader.scss";
 
 function ProjectsHeader(props) {
   return (
     <header className="projects-header">
-      <button className="project-buttons" onClick={props.renderAll}>
+      <button
+        className="project-buttons"
+        id={`${props.allButton}`}
+        onClick={props.renderAll}
+      >
         All
       </button>
       <button className="project-buttons" onClick={props.renderReact}>
