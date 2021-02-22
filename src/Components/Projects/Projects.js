@@ -10,36 +10,48 @@ export class Projects extends Component {
       react: false,
       vue: false,
       node: false,
-      activeState: false
+      allButtonId: ""
     };
   }
 
+  componentDidMount = () => {
+    this.setState({ allButtonId: "focus" });
+  };
+
   renderAll = () => {
-    this.setState({ vue: false });
-    this.setState({ node: false });
-    this.setState({ react: false });
-    this.setState({ all: true });
+    this.setState({
+      vue: false,
+      node: false,
+      react: false,
+      all: true
+    });
   };
 
   renderReact = () => {
-    this.setState({ all: false });
-    this.setState({ vue: false });
-    this.setState({ node: false });
-    this.setState({ react: true });
+    this.setState({
+      all: false,
+      vue: false,
+      node: false,
+      react: true
+    });
   };
 
   renderVue = () => {
-    this.setState({ all: false });
-    this.setState({ react: false });
-    this.setState({ node: false });
-    this.setState({ vue: true });
+    this.setState({
+      all: false,
+      react: false,
+      node: false,
+      vue: true
+    });
   };
 
   renderNode = () => {
-    this.setState({ all: false });
-    this.setState({ react: false });
-    this.setState({ vue: false });
-    this.setState({ node: true });
+    this.setState({
+      all: false,
+      react: false,
+      vue: false,
+      node: true
+    });
   };
 
   render() {
@@ -51,7 +63,7 @@ export class Projects extends Component {
             renderReact={this.renderReact}
             renderVue={this.renderVue}
             renderNode={this.renderNode}
-            activeState={this.state.activeState}
+            allButton={this.state.allButtonId}
           />
           <section className="projects-container">
             <article className="project">
