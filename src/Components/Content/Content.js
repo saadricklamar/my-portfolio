@@ -8,7 +8,6 @@ import MobileHeader from "../MobileHeader/MobileHeader";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { faCamera } from "@fortawesome/free-solid-svg-icons";
 import Sticky from "react-stickynode";
 
 function Content() {

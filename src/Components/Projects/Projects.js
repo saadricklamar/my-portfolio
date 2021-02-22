@@ -15,9 +15,7 @@ export class Projects extends Component {
   }
 
   componentDidMount = () => {
-    window.addEventListener("scroll", event => {
-      this.setState({ allButtonId: "focus" });
-    });
+    this.setState({ allButtonId: "focus" });
   };
 
   renderAll = () => {
