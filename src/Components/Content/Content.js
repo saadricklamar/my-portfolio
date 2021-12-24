@@ -1,5 +1,6 @@
 import React from "react";
 import "./Content.scss";
+import Experience from "../Experience/Experience";
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
@@ -16,25 +17,30 @@ function Content() {
       <MobileHeader />
       <Sticky top="#header" enabled={true} bottomBoundary="#content" innerZ={3}>
         <header className="content-header">
-          <Link to="App" smooth={true} duration={1000}>
+          <Link to="App" smooth={true} duration={500}>
             <FontAwesomeIcon icon={faHome} className="home-icon" />
           </Link>
-          <Link to="content" smooth={true} duration={1000}>
+          <Link to="content" smooth={true} duration={500}>
             <button className="nav-buttons" id="about">
               About
             </button>
           </Link>
-          <Link to="Skills" smooth={true} duration={1000}>
+          <Link to="Experience" smooth={true} duration={500}>
+            <button className="nav-buttons" id="experience">
+              Experience
+            </button>
+          </Link>
+          <Link to="Skills" smooth={true} duration={500}>
             <button className="nav-buttons" id="skills">
               Skills
             </button>
           </Link>
-          <Link to="projects" smooth={true} duration={1000}>
+          <Link to="projects" smooth={true} duration={500}>
             <button className="nav-buttons" id="project">
               Projects
             </button>
           </Link>
-          <Link to="contact-page" smooth={true} duration={1000}>
+          <Link to="contact-page" smooth={true} duration={500}>
             <button className="nav-buttons" id="contact">
               Contact
             </button>
@@ -65,12 +71,12 @@ function Content() {
           <h2>About Me</h2>
           <div className="p-about-me">
             <p>
-              I'm a Software Engineer with an emphasis on Front-End
-              Technologies. I'm passionate about building fluid, intuitive, and
-              dynamic UIs. I enjoy practicing Test Driven Development, mastering
-              React and Vue.js, and learning new technologies.
+              I'm a Software Engineer with a passion for Front End Technologies.
+              I enjoy building fluid, intuitive, and dynamic UIs. My favorite
+              frameworks are React and Vue.js. My favorite design tools are
+              Figma and Canva.
               <br />
-              <br /> As a Colorado native, I enjoy hiking, traveling, and
+              <br /> As a Colorado native, I enjoy hiking, camping, and
               photography.
               <br />
               <br /> When I'm not out exploring, you can find me reading,
@@ -122,7 +128,9 @@ function Content() {
         </section>
         <PhotoGallery />
       </main>
+      <Experience />
       <Skills />
+
       <Projects />
       <Contact />
     </div>
