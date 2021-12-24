@@ -1,0 +1,101 @@
+// Containers
+.Experience {
+  background: url(../../assets/experience-background.jpeg) no-repeat center
+    center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#experience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 200px;
+}
+
+// Style Accordion Buttons used to open and close the accordion panel
+.accordion {
+  background-color: #f82a7cf1;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  height: 80px;
+  outline: none;
+  padding: 18px 0 0 18px;
+  text-align: left;
+  transition: 0.4s;
+  width: 1000px;
+}
+
+.accordion:hover {
+  background-color: #952954;
+}
+
+#loyal-button,
+#iqgeo-button {
+  border-bottom: 1px solid white;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+  bottom: 50px;
+  margin-left: 920px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+// Style the accordion panel. Note: hidden by default
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: block;
+  overflow: hidden;
+  width: 965px;
+  height: 250px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar-corner {
+    background: #e4eeef;
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #17cddf;
+    border-radius: 4px;
+  }
+}
+
+#iqgeo-details,
+#loyal-details,
+#iqgeo-list,
+#zillow-details {
+  width: 100%;
+  text-align: left;
+  font-family: "Titillium Web", sans-serif;
+}
+
+#iqgeo-link,
+#zillow-link {
+  text-decoration: none;
+  color: #06c5d6;
+  font-weight: bold;
+
+  &:hover {
+    color: gray;
+  }
+}

@@ -12,11 +12,11 @@ export class Contact extends Component {
       message: "",
       formCompleted: false,
       isDisabled: true,
-      userMessage: ""
+      userMessage: "",
     };
   }
 
-  handleFormChange = e => {
+  handleFormChange = (e) => {
     const { name, value } = e.target;
     this.setState({ [name]: value });
     if (
@@ -28,7 +28,7 @@ export class Contact extends Component {
     }
   };
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
     const { name, email, message, formCompleted } = this.state;
     if (formCompleted) {
@@ -36,7 +36,7 @@ export class Contact extends Component {
       let templateParams = {
         name: name,
         email: email,
-        message: message
+        message: message,
       };
       emailjs.send(
         "saadbaradan_gmail_com",
@@ -127,7 +127,7 @@ export class Contact extends Component {
           </a>
         </section>
         <p className="copyright">
-          SAAD BARADAN <span> &#169;2019</span>
+          SAAD BARADAN <span> &#169;2021</span>
         </p>
       </main>
     );

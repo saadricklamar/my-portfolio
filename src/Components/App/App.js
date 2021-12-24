@@ -18,7 +18,7 @@ function App() {
               "Hola",
               "Sveiki",
               "नमस्ते",
-              "Hej"
+              "Hej",
             ]}
             interval={1500}
             adjustingSpeed={500}
@@ -29,7 +29,7 @@ function App() {
           I'm a Software Engineer.
         </h1>
 
-        <Link to="content" smooth={true} duration={1000}>
+        <Link to="content" smooth={true} duration={500}>
           <button className="home-button">View my work</button>
         </Link>
       </header>
