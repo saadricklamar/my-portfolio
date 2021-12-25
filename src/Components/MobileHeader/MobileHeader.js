@@ -8,7 +8,7 @@ function MobileHeader() {
   let [dropDown, toggle] = useState("0px");
 
   const handleClick = () => {
-    dropDown === "0px" ? toggle("275px") : toggle("0px");
+    dropDown === "0px" ? toggle("290px") : toggle("0px");
   };
 
   return (
@@ -26,10 +26,7 @@ function MobileHeader() {
         <label className="menu-icon" for="menu-btn">
           <span className="navicon"></span>
         </label>
-        <ul
-          className="menu"
-          style={{ "max-height": `${dropDown}`, height: "300px" }}
-        >
+        <ul className="menu" style={{ "max-height": `${dropDown}` }}>
           <li>
             <a href="#mobile-about" onClick={handleClick}>
               About
