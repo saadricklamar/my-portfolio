@@ -19,7 +19,7 @@ const Experience = () => {
   };
 
   return (
-    <main className="Experience">
+    <main className="Experience" id="mobile-experience">
       <section id="experience-container">
         {/*Loyal Health Card */}
         <button id="loyal-button" onClick={handleLoyalToggle} class="accordion">
@@ -120,9 +120,9 @@ const Experience = () => {
               vis-a-vis a host of different CRM Platforms. Although this was a
               non-software role, Zillow was instrumental in driving me towards a
               career in software engineering. Also, I learned invaluable lessons
-              about the importance of company culture and values. My day to day
-              involved the following tasks:
-              <ul>
+              about the importance of company culture and a strong set of core
+              values. My day to day involved the following tasks:
+              <ul id="zillow-list">
                 <li>
                   Coach real estate agents on the products, tools, and services
                   provided by Zillow Group.
