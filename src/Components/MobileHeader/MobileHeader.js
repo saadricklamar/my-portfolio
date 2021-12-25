@@ -20,6 +20,9 @@ function MobileHeader() {
             <a href="#mobile-about">About</a>
           </li>
           <li>
+            <a href="#mobile-experience">Experience</a>
+          </li>
+          <li>
             <a href="#mobile-skills">Skills</a>
           </li>
           <li>

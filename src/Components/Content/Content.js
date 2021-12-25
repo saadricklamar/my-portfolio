@@ -130,7 +130,6 @@ function Content() {
       </main>
       <Experience />
       <Skills />
-
       <Projects />
       <Contact />
     </div>
