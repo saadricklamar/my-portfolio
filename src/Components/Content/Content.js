@@ -57,76 +57,43 @@ function Content() {
         </header>
       </Sticky>
       <main>
-        <section className="left">
-          <div className="rhombus-outter">
-            <div className="rhombus">
-              <img
-                src={require("../../me.jpg")}
-                alt="me at Niagara Falls"
-                width="255"
-                height="320"
-              />
+        <section className="main-content">
+          <PhotoGallery />
+          <section className="details-content">
+            <h1 className="welcome-greeting">Welcome,</h1>
+            <div>
+              <p className="about-me-details">
+                I'm a Software Engineer with a passion for Front End
+                Technologies. I enjoy building fluid, intuitive, and dynamic
+                UIs. My favorite frameworks are{" "}
+                <a href="https://reactjs.org/" target="blank" id="react-link">
+                  {" "}
+                  React
+                </a>{" "}
+                and
+                <a href="https://vuejs.org/" target="blank" id="vue-link">
+                  {" "}
+                  Vue.js
+                </a>
+                . My favorite design tools are
+                <a href="https://www.figma.com/" target="blank" id="figma-link">
+                  {" "}
+                  Figma
+                </a>{" "}
+                and{" "}
+                <a href="https://www.canva.com/" target="blank" id="canva-link">
+                  {" "}
+                  Canva
+                </a>
+                . <br />
+                <br /> When I'm not coding, you can find me hiking , camping ,
+                reading , watching the NBA, walking my dog , Gizmo , and
+                practicing photography, which you can view by clicking the
+                camera icon.
+              </p>
             </div>
-          </div>
-          <h2>About Me</h2>
-          <div className="p-about-me">
-            <p>
-              I'm a Software Engineer with a passion for Front End Technologies.
-              I enjoy building fluid, intuitive, and dynamic UIs. My favorite
-              frameworks are React and Vue.js. My favorite design tools are
-              Figma and Canva.
-              <br />
-              <br /> As a Colorado native, I enjoy hiking, camping, and
-              photography.
-              <br />
-              <br /> When I'm not out exploring, you can find me reading,
-              writing fiction, watching the NBA, doing puzzles, and walking my
-              dog, Gizmo.
-            </p>
-          </div>
+          </section>
         </section>
-        <section className="right">
-          <div className="hexa">
-            <div className="hex1">
-              <div className="hex2">
-                <img
-                  src={require("../../assets/fall.jpeg")}
-                  alt="Fall in Granby, Colorado"
-                  width="350"
-                  height="300"
-                  className="grandby"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="hexa" id="second-hex">
-            <div className="hex1">
-              <div className="hex2">
-                <img
-                  src={require("../../assets/dino.jpeg")}
-                  alt="Dinosaur National Monument"
-                  width="350"
-                  height="300"
-                  className="nature"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="hexa" id="third-hex">
-            <div className="hex1">
-              <div className="hex2">
-                <img
-                  src={require("../../assets/butte.jpeg")}
-                  alt="Fall in Crested Butte, Colorado"
-                  width="350"
-                  height="300"
-                  className="nature"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        <PhotoGallery />
       </main>
       <Experience />
       <Skills />

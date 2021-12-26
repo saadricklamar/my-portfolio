@@ -14,7 +14,7 @@ function MobileHeader() {
   return (
     <Sticky top="#header" enabled={true} bottomBoundary="#content" innerZ={3}>
       <header className="mobile-header">
-        <a href="#mobile-home" className="logo">
+        <a href="#mobile-home" className="logo" onClick={handleClick}>
           <FontAwesomeIcon icon={faHome} className="home-icon" />
         </a>
         <input
