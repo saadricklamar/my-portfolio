@@ -2,11 +2,13 @@ import React from "react";
 import "./PhotoGallery.scss";
 import Popup from "reactjs-popup";
 import Carousel from "nuka-carousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCameraRetro } from "@fortawesome/free-solid-svg-icons";
 
 function PhotoGallery() {
   return (
     <Popup
-      trigger={<button className="browse"> Browse My Photograpy</button>}
+      trigger={<FontAwesomeIcon icon={faCameraRetro} className="browse" />}
       modal
       closeOnDocumentClick
     >

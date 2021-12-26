@@ -71,168 +71,67 @@ main {
   left: 50%;
 }
 
-// Left Section of Main //
-
-.left {
-  text-align: left;
-  padding-left: 10%;
-}
-
-h2 {
-  padding-left: 11%;
-  padding-top: 8%;
-}
-
-p {
-  font-size: 1.1rem;
-  width: 70%;
-}
-
-.p-about-me {
-  position: relative;
-  right: 10%;
-}
-
-.rhombus-outter,
-.rhombus-outter div {
-  filter: drop-shadow(4px 4px 4px #17cddf);
-  height: 150px;
-  margin: 5% 0 5% 12%;
-  overflow: hidden;
-  transform-origin: 35% 35%;
-  width: 150px;
-}
-
-.rhombus-outter {
-  transform: rotate(45deg) translateY(10px);
-}
-.rhombus-outter .rhombus {
-  height: 355px;
-  transform: rotate(-45deg) translateY(-74px);
-  width: 210px;
-}
-.rhombus-outter .rhombus img {
-  height: auto;
+.main-content {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/white-sands.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  padding-left: 5%;
   width: 100%;
+  padding-top: 18%;
 }
 
-// Right Section of Main //
-
-.right {
+.details-content {
+  width: 50%;
+  padding-left: 2%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 7%;
-  position: relative;
-  right: 7%;
+}
+
+.welcome-greeting {
+  text-align: left;
+  padding: 0 0 0 0;
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.about-me-details {
+  text-align: left;
+  font-size: 1.1rem;
+  width: 100%;
+  font-weight: bold;
+  -webkit-text-stroke-width: 0.2px;
 }
 
 .grandby {
   margin: 1%;
 }
 
-.hexa,
-.hexa div {
-  height: 300px;
-  margin: 0 auto;
-  overflow: hidden;
-  transform-origin: 50% 50%;
-  width: 300px;
+#react-link,
+#vue-link,
+#figma-link,
+#canva-link {
+  text-decoration: none;
 }
 
-.hexa {
-  filter: drop-shadow(5px 5px 5px #c8d2d3);
-  height: 230px;
-  width: 325px;
+#react-link {
+  color: #61dbfb;
 }
-.hexa div {
-  height: 100%;
-  width: 100%;
+#vue-link {
+  color: #42b883;
 }
-.hexa {
-  transform: rotate(120deg);
+#figma-link {
+  color: #e8f715;
 }
-.hex1 {
-  transform: rotate(-60deg);
-}
-.hex2 {
-  transform: rotate(-60deg);
-}
-
-#second-hex {
-  bottom: 16.3%;
-  height: 230px;
-  left: 62.3%;
-  position: relative;
-  width: 305px;
-}
-
-#third-hex {
-  bottom: 32.8%;
-  height: 230px;
-  position: relative;
-  width: 305px;
+#canva-link {
+  color: #00c4cc;
 }
 
 // Media Queiries //
 
-@media (max-width: 900px) {
-  main {
-    flex-direction: column;
-    position: relative;
-    right: 4%;
-  }
-
-  p {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .p-about-me {
-    position: relative;
-    right: 0;
-  }
-
-  h2 {
-    text-align: center;
-    padding-left: 0;
-  }
-
-  .rhombus-outter,
-  .rhombus-outter div {
-    margin: 5% 38% 5% auto;
-  }
-
-  #second-hex {
-    bottom: 563.3%;
-    left: 23.3%;
-    position: relative;
-  }
-
-  #third-hex {
-    bottom: 32.2%;
-
-    position: relative;
-  }
-
-  .right {
-    display: none;
-  }
-}
-
-@media (max-width: 850px) {
-  .rhombus-outter,
-  .rhombus-outter div {
-    margin: 5% 36% 5% auto;
-  }
-}
-
 @media (max-width: 750px) {
-  .rhombus-outter,
-  .rhombus-outter div {
-    margin: 5% 32% 5% auto;
-  }
-
   .content-header {
     padding-right: 10%;
     height: 60px;
@@ -240,29 +139,27 @@ p {
 }
 
 @media (max-width: 550px) {
-  .rhombus-outter,
-  .rhombus-outter div {
-    margin: 5% 28% 5% auto;
-  }
-
-  h2 {
-    text-align: center;
-    padding-left: 0;
-    padding-top: 15%;
-  }
-
   .content-header {
     padding-right: 5%;
     height: 50px;
   }
-
   .nav-buttons {
     font-size: 1rem;
   }
-
   .home-icon {
     font-size: 1rem;
     padding-top: 100%;
+  }
+  .details-content {
+    width: 60%;
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+  .welcome-greeting {
+    font-size: 30px;
+  }
+  .about-me-details {
+    font-size: 1rem;
   }
 }
 
@@ -270,14 +167,13 @@ p {
   .content-header {
     display: none;
   }
+  .details-content {
+    width: 80%;
+    padding-top: 10%;
+  }
 }
 
 @media (max-width: 380px) {
-  .rhombus-outter,
-  .rhombus-outter div {
-    margin: 5% 22% 5% auto;
-  }
-
   h2 {
     text-align: center;
     padding-left: 0;
@@ -297,5 +193,15 @@ p {
   .home-icon {
     font-size: 0.8rem;
     padding-top: 70%;
+  }
+  .details-content {
+    width: 70%;
+    padding-top: 5%;
+  }
+}
+
+@media (max-width: 325px) {
+  .details-content {
+    padding-top: 0px;
   }
 }
