@@ -58,7 +58,6 @@ function Content() {
       </Sticky>
       <main>
         <section className="main-content">
-          <PhotoGallery />
           <section className="details-content">
             <h1 className="welcome-greeting">Welcome,</h1>
             <div>
@@ -88,13 +87,14 @@ function Content() {
                 . <br />
                 <br /> When I'm not coding, you can find me hiking , camping ,
                 reading , watching the NBA, walking my dog , Gizmo , and
-                practicing photography, which you can view by clicking the
-                camera icon.
+                practicing photography, which you can view by clicking{" "}
+                <PhotoGallery />.
               </p>
             </div>
           </section>
         </section>
       </main>
+
       <Experience />
       <Skills />
       <Projects />
