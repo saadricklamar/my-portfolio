@@ -17,30 +17,30 @@ function Content() {
       <MobileHeader />
       <Sticky top="#header" enabled={true} bottomBoundary="#content" innerZ={3}>
         <header className="content-header">
-          <Link to="App" smooth={true} duration={500}>
+          <Link to="App" smooth={true} duration={300}>
             <FontAwesomeIcon icon={faHome} className="home-icon" />
           </Link>
-          <Link to="content" smooth={true} duration={500}>
+          <Link to="content" smooth={true} duration={300}>
             <button className="nav-buttons" id="about">
               About
             </button>
           </Link>
-          <Link to="Experience" smooth={true} duration={500}>
+          <Link to="Experience" smooth={true} duration={300}>
             <button className="nav-buttons" id="experience">
               Experience
             </button>
           </Link>
-          <Link to="Skills" smooth={true} duration={500}>
+          <Link to="Skills" smooth={true} duration={300}>
             <button className="nav-buttons" id="skills">
               Skills
             </button>
           </Link>
-          <Link to="projects" smooth={true} duration={500}>
+          <Link to="projects" smooth={true} duration={300}>
             <button className="nav-buttons" id="project">
               Projects
             </button>
           </Link>
-          <Link to="contact-page" smooth={true} duration={500}>
+          <Link to="contact-page" smooth={true} duration={300}>
             <button className="nav-buttons" id="contact">
               Contact
             </button>
@@ -92,6 +92,9 @@ function Content() {
               </p>
             </div>
           </section>
+          <p id="white-sands-caption">
+            White Sands National Monument, New Mexico
+          </p>
         </section>
       </main>
 
