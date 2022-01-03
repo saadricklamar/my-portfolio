@@ -109,6 +109,14 @@ main {
   -webkit-text-stroke-width: 0.2px;
 }
 
+#white-sands-caption {
+  position: absolute;
+  bottom: 60px;
+  right: 16px;
+  font-style: italic;
+  font-weight: bold;
+}
+
 .grandby {
   margin: 1%;
 }
@@ -162,6 +170,8 @@ main {
     width: 60%;
     padding-left: 5%;
     padding-top: 5%;
+    margin-left: 12%;
+    margin-top: 5%;
   }
   .welcome-greeting {
     font-size: 30px;
@@ -178,6 +188,7 @@ main {
   .details-content {
     width: 80%;
     padding-top: 10%;
+    margin-left: 5%;
   }
 }
 
@@ -205,6 +216,7 @@ main {
   .details-content {
     width: 70%;
     padding-top: 5%;
+    margin-left: 8%;
   }
 }
 
