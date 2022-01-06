@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App" id="mobile-home">
       <header className="App-header">
-        <h1>
+        <h1 id="landing-greeting">
           <TextLoop
             children={[
               "Hello",

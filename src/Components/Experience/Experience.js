@@ -22,12 +22,16 @@ const Experience = () => {
     <main className="Experience" id="mobile-experience">
       <section id="experience-container">
         {/*Loyal Health Card */}
-        <button id="loyal-button" onClick={handleLoyalToggle} class="accordion">
+        <button
+          id="loyal-button"
+          onClick={handleLoyalToggle}
+          className="accordion"
+        >
           Loyal Health - Front End Engineer
-          <i class="arrow down"></i>
+          <i className="arrow down"></i>
         </button>
         <section
-          class="panel"
+          className="panel"
           id="loyal-panel"
           style={{ display: `${openLoyal}` }}
         >
@@ -41,12 +45,16 @@ const Experience = () => {
         </section>
 
         {/*IQGeo Card */}
-        <button id="iqgeo-button" onClick={handleIqgeoToggle} class="accordion">
+        <button
+          id="iqgeo-button"
+          onClick={handleIqgeoToggle}
+          className="accordion"
+        >
           IQGeo - Delivery Software Engineer
-          <i class="arrow down"></i>
+          <i className="arrow down"></i>
         </button>
         <section
-          class="panel"
+          className="panel"
           id="iqgeo-panel"
           style={{ display: `${openIqgeo}` }}
         >
@@ -97,13 +105,13 @@ const Experience = () => {
         <button
           id="zillow-button"
           onClick={handleZillowToggle}
-          class="accordion"
+          className="accordion"
         >
           Zillow - Client Engagement Specialist
-          <i class="arrow down"></i>
+          <i className="arrow down"></i>
         </button>
         <section
-          class="panel"
+          className="panel"
           id="zillow-panel"
           style={{ display: `${openZillow}` }}
         >
