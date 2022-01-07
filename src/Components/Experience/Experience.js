@@ -27,7 +27,7 @@ const Experience = () => {
           onClick={handleLoyalToggle}
           className="accordion"
         >
-          Loyal Health - Front End Engineer
+          Loyal Health - Software Engineer, Frontend
           <i className="arrow down"></i>
         </button>
         <section
