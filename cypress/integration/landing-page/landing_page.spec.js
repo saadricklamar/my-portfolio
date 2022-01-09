@@ -11,4 +11,7 @@ describe("Landing Page", () => {
   it("displays a 'view my work' button", () => {
     cy.get(".home-button").should("have.text", "View my work");
   });
+  it("should go to the content page after clicking the 'view my work' button", () => {
+    cy.get(".home-button").click().get("div").should("have.class", "content");
+  });
 });

@@ -16,7 +16,9 @@ function PhotoGallery() {
               height="500"
               className="photo"
             />
-            <figcaption>Dead Horse Point State Park, Utah</figcaption>
+            <figcaption id="caption-photo-1">
+              Dead Horse Point State Park, Utah
+            </figcaption>
           </div>
           <div>
             <img
@@ -26,7 +28,7 @@ function PhotoGallery() {
               height="500"
               className="photo"
             />
-            <figcaption>
+            <figcaption id="caption-photo-2">
               Sunset at Black Canyon of the Gunnison, Colorado
             </figcaption>
           </div>
@@ -38,7 +40,9 @@ function PhotoGallery() {
               height="500"
               className="photo"
             />
-            <figcaption>Saguaro National Park, Arizona</figcaption>
+            <figcaption id="caption-photo-3">
+              Saguaro National Park, Arizona
+            </figcaption>
           </div>
           <div>
             <img
@@ -48,7 +52,7 @@ function PhotoGallery() {
               height="500"
               className="photo"
             />
-            <figcaption>
+            <figcaption id="caption-photo-4">
               Spring in Organ National Monument, New Mexico
             </figcaption>
           </div>
@@ -60,7 +64,9 @@ function PhotoGallery() {
               height="500"
               className="photo"
             />
-            <figcaption>American Lakes Trail, Colorado</figcaption>
+            <figcaption id="caption-photo-5">
+              American Lakes Trail, Colorado
+            </figcaption>
           </div>
           <div>
             <img
@@ -70,7 +76,9 @@ function PhotoGallery() {
               height="500"
               className="photo"
             />
-            <figcaption>Kebler Pass near Crested Butte, Colorado</figcaption>
+            <figcaption id="caption-photo-6">
+              Kebler Pass near Crested Butte, Colorado
+            </figcaption>
           </div>
           <div>
             <img
@@ -80,7 +88,9 @@ function PhotoGallery() {
               height="500"
               className="photo"
             />
-            <figcaption>Colorado National Monument</figcaption>
+            <figcaption id="caption-photo-7">
+              Colorado National Monument
+            </figcaption>
           </div>
 
           <div>
@@ -91,7 +101,9 @@ function PhotoGallery() {
               height="500"
               className="photo"
             />
-            <figcaption>White Sands National Monument, New Mexico</figcaption>
+            <figcaption id="caption-photo-8">
+              White Sands National Monument, New Mexico
+            </figcaption>
           </div>
 
           <div>
@@ -102,7 +114,7 @@ function PhotoGallery() {
               height="500"
               className="photo"
             />
-            <figcaption>
+            <figcaption id="caption-photo-9">
               The Dallas Divide on the road to Telluride, Colorado
             </figcaption>
           </div>
@@ -115,7 +127,9 @@ function PhotoGallery() {
               height="500"
               className="photo"
             />
-            <figcaption>Plaza Blanca, New Mexico</figcaption>
+            <figcaption id="caption-photo-10">
+              Plaza Blanca, New Mexico
+            </figcaption>
           </div>
           <div>
             <img
@@ -125,7 +139,9 @@ function PhotoGallery() {
               height="500"
               className="photo"
             />
-            <figcaption>Blue Lakes Trail, Colorado</figcaption>
+            <figcaption id="caption-photo-11">
+              Blue Lakes Trail, Colorado
+            </figcaption>
           </div>
           <div>
             <img
@@ -135,7 +151,9 @@ function PhotoGallery() {
               height="500"
               className="photo"
             />
-            <figcaption>Blue Lake near Telluride, Colorado</figcaption>
+            <figcaption id="caption-photo-12">
+              Blue Lake near Telluride, Colorado
+            </figcaption>
           </div>
 
           <div>
@@ -146,7 +164,9 @@ function PhotoGallery() {
               height="500"
               className="photo"
             />
-            <figcaption>Arches National Park, Utah</figcaption>
+            <figcaption id="caption-photo-13">
+              Arches National Park, Utah
+            </figcaption>
           </div>
         </Carousel>
       </div>
