@@ -1,45 +1,6 @@
+
 // Header //
 
-.content-header {
-  background-color: #282c34;
-  border-bottom: 4px solid #17cddf;
-  border-top: 1px solid black;
-  display: flex;
-  justify-content: space-evenly;
-  padding-right: 30%;
-  height: 60px;
-}
-
-.home-icon {
-  color: white;
-  padding-top: 90%;
-  font-size: 1.3rem;
-
-  &:hover {
-    color: #f82a7b;
-    cursor: pointer;
-  }
-}
-
-.nav-buttons {
-  color: white;
-  font-size: 1.2rem;
-  border: none;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: bold;
-  padding-top: 5px;
-  background: none;
-  outline: none;
-
-  &:hover {
-    color: #f82a7b;
-    cursor: pointer;
-  }
-
-  &:focus {
-    color: #f82a7b;
-  }
-}
 
 #skills {
   padding-top: 30%;
@@ -76,7 +37,6 @@ main {
     url(../../assets/white-sands.jpg) no-repeat center center fixed;
   background-size: cover;
   color: white;
-  font-family: "Titillium Web", sans-serif;
   padding-left: 5%;
   width: 100%;
   padding-top: 12%;
@@ -102,13 +62,6 @@ main {
   text-shadow: 2px 2px 20px black;
 }
 
-.about-me-details {
-  text-align: left;
-  font-size: 1.1rem;
-  width: 100%;
-  font-weight: bold;
-  text-shadow: 2px 2px 20px black;
-}
 
 #white-sands-caption {
   position: absolute;

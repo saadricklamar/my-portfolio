@@ -3,6 +3,7 @@
   color: #f82a7b;
   z-index: 10;
   font-size: 1.1rem;
+  font-weight: 800;
   &:hover {
     color: black;
     cursor: pointer;
@@ -27,7 +28,6 @@
 figcaption {
   font-size: 16px;
   font-weight: bold;
-  font-family: "Titillium Web", sans-serif;
   color: black;
   text-align: center;
   text-shadow: none;
