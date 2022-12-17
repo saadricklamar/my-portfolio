@@ -21,14 +21,14 @@
     "nuka-carousel": "^4.6.0",
     "react": "^17.0.2",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0",
+    "react-scripts": "5.0.1",
     "react-scroll": "^1.7.14",
     "react-stickynode": "^2.1.1",
     "react-text-loop": "^2.3.0",
     "react-tooltip": "^3.11.1",
     "react-tsparticles": "^1.18.12",
     "reactjs-popup": "^1.5.0",
-    "serve": "^11.3.0",
+    "serve": "^14.1.2",
     "styled-components": "^5.3.6"
   },
   "scripts": {
