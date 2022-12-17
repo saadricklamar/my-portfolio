@@ -28,7 +28,7 @@
     "react-tooltip": "^3.11.1",
     "react-tsparticles": "^1.18.12",
     "reactjs-popup": "^1.5.0",
-    "serve": "^11.3.0",
+    "serve": "^14.1.2",
     "styled-components": "^5.3.6"
   },
   "scripts": {
