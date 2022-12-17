@@ -36,7 +36,6 @@
 .middle {
   -ms-transform: translate(-50%, -50%);
   bottom: 180px;
-  font-family: "Titillium Web", sans-serif;
   left: 50%;
   opacity: 0;
   position: relative;
@@ -72,10 +71,12 @@
   position: relative;
   top: 60px;
   width: 50%;
+  text-transform: uppercase;
 
   &:hover {
     background: #f82a7b;
     color: white;
     cursor: pointer;
+    font-weight: 800;
   }
 }

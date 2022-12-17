@@ -3,7 +3,7 @@ import "./PhotoGallery.scss";
 import Popup from "reactjs-popup";
 import Carousel from "nuka-carousel";
 
-function PhotoGallery() {
+export const PhotoGallery = () => {
   return (
     <Popup trigger={<p className="browse">here</p>} modal closeOnDocumentClick>
       <div className="popup">
@@ -172,6 +172,6 @@ function PhotoGallery() {
       </div>
     </Popup>
   );
-}
+};
 
 export default PhotoGallery;
