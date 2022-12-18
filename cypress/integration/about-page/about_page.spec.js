@@ -63,9 +63,6 @@ describe("About/Content Page", () => {
       .get("main")
       .should("have.class", "Experience");
   });
-  it("should go to the Skills page after clicking the 'Skills' button", () => {
-    cy.get("#skills").click().get("div").should("have.class", "Skills");
-  });
   it("should go to the Projects page after clicking the 'Projects' button", () => {
     cy.get("#project").click().get("main").should("have.class", "projects");
   });

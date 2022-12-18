@@ -31,6 +31,7 @@ span {
   height: 50px;
   transition: all 1s ease;
   width: 180px;
+  border-radius: 5px;
 
   &:before {
     -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);

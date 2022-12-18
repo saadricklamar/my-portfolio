@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Main } from "../Content/styles";
 import "./Experience.scss";
 
 const Experience = () => {
@@ -19,7 +20,7 @@ const Experience = () => {
   };
 
   return (
-    <main className="Experience" id="mobile-experience">
+    <Main className="Experience" id="mobile-experience">
       <section id="experience-container">
         {/*Loyal Health Card */}
         <button
@@ -152,7 +153,7 @@ const Experience = () => {
           </section>
         </section>
       </section>
-    </main>
+    </Main>
   );
 };
 

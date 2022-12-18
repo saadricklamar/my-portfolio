@@ -38,11 +38,6 @@ function MobileHeader() {
             </a>
           </li>
           <li>
-            <a href="#mobile-skills" onClick={handleClick}>
-              Skills
-            </a>
-          </li>
-          <li>
             <a href="#mobile-projects" onClick={handleClick}>
               Projects
             </a>

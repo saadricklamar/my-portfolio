@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.scss";
 import Content from "../Content/Content";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import TextLoop from "react-text-loop";
 
-function App() {
+export const App = () => {
+  const [clickOrScroll, setEvent] = useState(false);
+
+  const setSlider = () => {
+    setEvent(true);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setEvent(true);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="App" id="mobile-home">
       <header className="App-header">
@@ -31,12 +48,14 @@ function App() {
         </h1>
 
         <Link to="content" smooth={true} duration={500}>
-          <button className="home-button">View my work</button>
+          <button className="home-button" onClick={setSlider}>
+            View my work
+          </button>
         </Link>
       </header>
-      <Content />
+      <Content clickOrScroll={clickOrScroll} />
     </div>
   );
-}
+};
 
 export default App;

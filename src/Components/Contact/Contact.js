@@ -103,7 +103,7 @@ export class Contact extends Component {
             data-tip="My Github"
           >
             <img
-              src={require("../../assets/github.svg")}
+              src={require("../../assets/git.svg")}
               alt="Mocha logo"
               width="75"
               height="75"
