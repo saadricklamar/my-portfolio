@@ -53,7 +53,7 @@ export const App = () => {
           </button>
         </Link>
       </header>
-      <Content clickOrScroll={clickOrScroll} onScroll={setSlider} />
+      <Content clickOrScroll={clickOrScroll} />
     </div>
   );
 };
