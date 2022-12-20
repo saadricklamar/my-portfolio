@@ -106,9 +106,9 @@ export const SkillContainer = styled.div`
   position: relative;
   right: -600px;
   -webkit-animation: slide 0.5s backwards;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: .5s;
   animation: slide 0.5s forwards;
-  animation-delay: 1s;
+  animation-delay: .5s;
   animation-play-state: ${(props) =>
     props.clickOrScroll ? "running" : "paused"};
   @-webkit-keyframes slide {

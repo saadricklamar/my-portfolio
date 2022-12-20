@@ -88,7 +88,7 @@ export class Contact extends Component {
             data-tip="My Twitter"
           >
             <img
-              src={require("../../assets/twitter.svg")}
+              src={require("../../assets/twitter.svg").default}
               alt="Mocha logo"
               width="75"
               height="75"
@@ -103,7 +103,7 @@ export class Contact extends Component {
             data-tip="My Github"
           >
             <img
-              src={require("../../assets/git.svg")}
+              src={require("../../assets/git.svg").default}
               alt="Mocha logo"
               width="75"
               height="75"
@@ -118,7 +118,7 @@ export class Contact extends Component {
             data-tip="My Linkedin"
           >
             <img
-              src={require("../../assets/linkedin.svg")}
+              src={require("../../assets/linkedin.svg").default}
               alt="Mocha logo"
               width="75"
               height="75"

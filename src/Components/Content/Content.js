@@ -99,107 +99,104 @@ export const Content = ({ clickOrScroll }) => {
           <SkillsTitle>Skills</SkillsTitle>
           <SkillContainer clickOrScroll={clickOrScroll}>
             <SkillCard>
-              <StyledImg
-                src={require("../../assets/js.svg")}
-                alt="JavaScript logo"
-              />
+              <StyledImg src={require("../../assets/js.svg").default} alt="JavaScript logo" />
               <SkillText>JavaScript</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
-                src={require("../../assets/ts.svg")}
+                src={require("../../assets/ts.svg").default}
                 alt="TypeScript logo"
               />
               <SkillText>TypeScript</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
-                src={require("../../assets/react.svg")}
+                src={require("../../assets/react.svg").default}
                 alt="React logo"
               />
               <SkillText>React</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
-                src={require("../../assets/vue.svg")}
+                src={require("../../assets/vue.svg").default}
                 alt="Vue.js logo"
               />
               <SkillText>Vue.js</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
-                src={require("../../assets/html.svg")}
+                src={require("../../assets/html.svg").default}
                 alt="Html logo"
               />
               <SkillText>HTML</SkillText>
             </SkillCard>
             <SkillCard>
-              <StyledImg src={require("../../assets/css.svg")} alt="CSS logo" />
+              <StyledImg src={require("../../assets/css.svg").default} alt="CSS logo" />
               <SkillText>CSS</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
-                src={require("../../assets/sass.svg")}
+                src={require("../../assets/sass.svg").default}
                 alt="SASS logo"
               />
               <SkillText>SASS</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
-                src={require("../../assets/webpack.svg")}
+                src={require("../../assets/webpack.svg").default}
                 alt="Webpack logo"
               />
               <SkillText>Webpack</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
-                src={require("../../assets/postgresql.svg")}
+                src={require("../../assets/postgresql.svg").default}
                 alt="Postgres SQL logo"
               />
               <SkillText>PostgreSQL</SkillText>
             </SkillCard>
             <SkillCard>
-              <StyledImg src={require("../../assets/git.svg")} alt="Git logo" />
+              <StyledImg src={require("../../assets/git.svg").default} alt="Git logo" />
               <SkillText>Git</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
-                src={require("../../assets/linux.svg")}
+                src={require("../../assets/linux.svg").default}
                 alt="Linux logo"
               />
               <SkillText>Linux</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
-                src={require("../../assets/circleci.svg")}
+                src={require("../../assets/circleci.svg").default}
                 alt="Circle CI logo"
               />
               <SkillText>Circle CI</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
-                src={require("../../assets/Jest.svg")}
+                src={require("../../assets/Jest.svg").default}
                 alt="Jest logo"
               />
               <SkillText>Jest</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
-                src={require("../../assets/empath.svg")}
+                src={require("../../assets/empath.svg").default}
                 alt="Hand sharing heart icon symbolizing empathy"
               />
               <SkillText>Empath</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
-                src={require("../../assets/collaborative.svg")}
+                src={require("../../assets/collaborative.svg").default}
                 alt="Hands locked together icon symbolizing colloboration"
               />
               <SkillText>Collaborative</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
-                src={require("../../assets/positive.svg")}
+                src={require("../../assets/positive.svg").default}
                 alt="Brain thinking smiley face icon symbolizing being positive"
               />
               <SkillText>Positive</SkillText>
