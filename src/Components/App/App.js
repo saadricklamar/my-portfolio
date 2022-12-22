@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useReducer } from "react";
 import "./App.scss";
 import Content from "../Content/Content";
 import { Link } from "react-scroll";
@@ -6,9 +6,21 @@ import TextLoop from "react-text-loop";
 
 export const App = () => {
   const [clickOrScroll, setEvent] = useState(false);
+  const [navButtons, setNavButtons] = useReducer(
+    (state, updates) => ({ ...state, ...updates }),
+    {
+      about: true,
+      experience: false,
+      projects: false,
+      contact: false,
+    }
+  );
 
   const setSlider = () => {
     setEvent(true);
+    setNavButtons({
+      about: true,
+    });
   };
 
   useEffect(() => {
@@ -53,7 +65,11 @@ export const App = () => {
           </button>
         </Link>
       </header>
-      <Content clickOrScroll={clickOrScroll} />
+      <Content
+        clickOrScroll={clickOrScroll}
+        navButtons={navButtons}
+        setNavButtons={setNavButtons}
+      />
     </div>
   );
 };

@@ -1,157 +1,204 @@
-import React, { useState } from "react";
-import { Main } from "../Content/styles";
+import React, { useEffect, useState } from "react";
+import {
+  ButtonContainer,
+  Date,
+  Header,
+  JobTitle,
+  Link,
+  ListContainer,
+  ListItem,
+  LogoButton,
+  Main,
+  Span,
+  StyledImg,
+  Triangle,
+  WorkCard,
+  WorkSection,
+} from "./styles";
 import "./Experience.scss";
 
 const Experience = () => {
-  let [openLoyal, ToggleLoyal] = useState("none");
-  let [openIqgeo, ToggleIqgeo] = useState("none");
-  let [openZillow, ToggleZillow] = useState("none");
+  let [loyal, FocusLoyal] = useState(false);
+  let [iqgeo, FocusIqGeo] = useState(false);
+  let [zillow, FocusZillow] = useState(false);
 
-  const handleLoyalToggle = () => {
-    openLoyal === "none" ? ToggleLoyal("block") : ToggleLoyal("none");
+  useEffect(() => {
+    FocusLoyal(true);
+  }, []);
+
+  const handleClick = (e) => {
+    const id = e.currentTarget.id;
+    if (id === "loyal") {
+      FocusLoyal(true);
+      FocusIqGeo(false);
+      FocusZillow(false);
+    } else if (id === "iqgeo") {
+      FocusIqGeo(true);
+      FocusLoyal(false);
+      FocusZillow(false);
+    } else {
+      FocusZillow(true);
+      FocusIqGeo(false);
+      FocusLoyal(false);
+    }
   };
 
-  const handleIqgeoToggle = () => {
-    openIqgeo === "none" ? ToggleIqgeo("block") : ToggleIqgeo("none");
-  };
+  let workSection = (
+    <WorkSection>
+      <JobTitle>
+        Front End Engineer{" "}
+        <Span>
+          @{" "}
+          <Link href="https://loyalhealth.com/" target="blank">
+            Loyal Health
+          </Link>
+        </Span>
+        <br />
+        <Date>January 2022 - Present</Date>
+      </JobTitle>
+      <ListContainer>
+        <ListItem>
+          Utilize TypeScript, React, & Cypress to build out new features,
+          troubleshoot bugs, and re-factor codebase
+        </ListItem>
+        <ListItem>
+          Communicate & collaborate with multi-disciplinary teams of engineers,
+          designers, and product managers on a daily basis
+        </ListItem>
+        <ListItem>
+          Help drive technical and design direction for consumer facing
+          applications used by dozens of health systems
+        </ListItem>
+        <ListItem>
+          Provide mentorship to summer interns through weekly meetings and pair
+          programming sessions to better understand software engineering
+          practices and principles
+        </ListItem>
+        <ListItem>
+          Drive implementation of Micro-Frontend Architecture for numerous
+          consumer facing applications
+        </ListItem>
+        <ListItem>
+          Lead conversion of application codebase from JavaScript to TypeScript
+        </ListItem>
+      </ListContainer>
+    </WorkSection>
+  );
 
-  const handleZillowToggle = () => {
-    openZillow === "none" ? ToggleZillow("block") : ToggleZillow("none");
-  };
+  if (iqgeo) {
+    workSection = (
+      <WorkSection>
+        <JobTitle>
+          Delivery Software Engineer{" "}
+          <Span>
+            @{" "}
+            <Link href="https://www.iqgeo.com/" target="blank">
+              IQGeo
+            </Link>
+          </Span>
+          <br />
+          <Date>January 2020 - January 2022</Date>
+        </JobTitle>
+        <ListContainer>
+          <ListItem>
+            Utilize JavaScript, HTML5/CSS3, & React to enhance GUIs and build
+            out new features
+          </ListItem>
+          <ListItem>
+            Use UX/UI tools such as Adobe and Figma to create various design
+            documents in collaboration with managers & clients
+          </ListItem>
+          <ListItem>
+            Utilize Python & PostgreSQL to bring in new data and enhance Back
+            End functionality
+          </ListItem>
+          <ListItem>
+            Use Linux to develop, test, and deploy software to various
+            environments (QA, STG, & PROD)
+          </ListItem>
+          <ListItem>
+            Use FogBugz & Jira to track, troubleshoot, and resolve bugs for
+            clients in a timely manner
+          </ListItem>
+        </ListContainer>
+      </WorkSection>
+    );
+  } else if (zillow) {
+    workSection = (
+      <WorkSection>
+        <JobTitle>
+          Client Engagement Specialist{" "}
+          <Span>
+            @{" "}
+            <Link href="https://www.zillow.com/" target="blank">
+              Zillow
+            </Link>
+          </Span>
+          <br />
+          <Date>September 2015 - January 2019</Date>
+        </JobTitle>
+        <ListContainer>
+          <ListItem>
+            Provide customer service outreach to consumers seeking real estate
+            via phone, text, and email
+          </ListItem>
+          <ListItem>
+            Coach real estate agents on the products, tools, and services
+            provided by Zillow
+          </ListItem>
+          <ListItem>
+            Top productivity and metric performer for entire tenure qualifying
+            for every bonus
+          </ListItem>
+          <ListItem>
+            Use CRM's such as Salesforce and Big Purple dot to manage Zillow
+            clients
+          </ListItem>
+          <ListItem>
+            Recruit and interview real estate agents for advertising
+            opportunities
+          </ListItem>
+        </ListContainer>
+      </WorkSection>
+    );
+  }
 
   return (
     <Main className="Experience" id="mobile-experience">
-      <section id="experience-container">
-        {/*Loyal Health Card */}
-        <button
-          id="loyal-button"
-          onClick={handleLoyalToggle}
-          className="accordion"
-        >
-          Loyal Health - Software Engineer, Frontend
-          <i className="arrow down"></i>
-        </button>
-        <section
-          className="panel"
-          id="loyal-panel"
-          style={{ display: `${openLoyal}` }}
-        >
-          <section>
-            <p id="loyal-details">
-              <u>January 2022 - Present</u>
-              <br />
-              Details Coming Soon...
-            </p>
-          </section>
-        </section>
-
-        {/*IQGeo Card */}
-        <button
-          id="iqgeo-button"
-          onClick={handleIqgeoToggle}
-          className="accordion"
-        >
-          IQGeo - Delivery Software Engineer
-          <i className="arrow down"></i>
-        </button>
-        <section
-          className="panel"
-          id="iqgeo-panel"
-          style={{ display: `${openIqgeo}` }}
-        >
-          <section>
-            <p id="iqgeo-details">
-              <u>January 2020 - January 2022</u>
-              <br />
-              At{" "}
-              <a href="https://www.iqgeo.com/" target="blank" id="iqgeo-link">
-                {" "}
-                IQGeo
-              </a>
-              , I spent my days customizing a web based geo-spatial platform for
-              clients, enhancing both front and back end functionality, and
-              responding to client’s software needs as they arise. My day to day
-              involved the following tasks:
-            </p>
-            <ul id="iqgeo-list">
-              <li>
-                Utilize JavaScript, React, HTML5/CSS3 and other technologies to
-                build new features and enhancements for clients.
-              </li>
-              <li>
-                Collaborate with clients to create various design documents
-                (LOE, SRS, & LLD).
-              </li>
-              <li>
-                Oversee code deployments to various environments (QA, STG, &
-                PROD).
-              </li>
-              <li>Use Linux servers to develop, test, and deploy software.</li>
-              <li>
-                Use FogBugz/Jira to track, troubleshoot, and resolve bugs for
-                clients in a timely manner.
-              </li>
-              <li>
-                Perform regular maintenance and troubleshooting of Linux
-                servers.
-              </li>
-              <li>
-                Implement new installs of myWorld and other IQGeo products.
-              </li>
-            </ul>
-          </section>
-        </section>
-
-        {/*Zillow Card */}
-        <button
-          id="zillow-button"
-          onClick={handleZillowToggle}
-          className="accordion"
-        >
-          Zillow - Client Engagement Specialist
-          <i className="arrow down"></i>
-        </button>
-        <section
-          className="panel"
-          id="zillow-panel"
-          style={{ display: `${openZillow}` }}
-        >
-          <section>
-            <p id="zillow-details">
-              <u>Septempber 2015 - January 2019</u>
-              <br />
-              At{" "}
-              <a href="https://www.zillow.com/" target="blank" id="zillow-link">
-                {" "}
-                Zillow
-              </a>
-              , I spent my days connecting consumers and real estate agents
-              vis-a-vis a host of different CRM Platforms. Although this was a
-              non-software role, Zillow was instrumental in driving me towards a
-              career in software engineering. Also, I learned invaluable lessons
-              about the importance of company culture and a strong set of core
-              values. My day to day involved the following tasks:
-              <ul id="zillow-list">
-                <li>
-                  Coach real estate agents on the products, tools, and services
-                  provided by Zillow Group.
-                </li>
-                <li>
-                  Use CRM’s such as Salesforce and Big Purple Dot to manage
-                  Zillow Group clients.
-                </li>
-                <li>
-                  Provide customer service outreach to consumers seeking real
-                  estate via phone, text, and email.
-                </li>
-                <li>
-                  Top productivity and metric performer for entire tenure
-                  qualifying for every max quarterly bonus.
-                </li>
-              </ul>
-            </p>
-          </section>
-        </section>
+      <section>
+        <Header>
+          <StyledImg
+            src={require("../../assets/worked.svg").default}
+            alt="Working icon"
+          />{" "}
+          <h1>Where I've Worked</h1>
+        </Header>
+        <WorkCard>
+          <ButtonContainer>
+            <LogoButton focus={loyal} onClick={handleClick} id="loyal">
+              <StyledImg
+                src={require("../../assets/loyal.svg").default}
+                alt="Working icon"
+              />
+              <Triangle focus={loyal} />
+            </LogoButton>
+            <LogoButton focus={iqgeo} onClick={handleClick} id="iqgeo">
+              <StyledImg
+                src={require("../../assets/iqgeo.svg").default}
+                alt="Working icon"
+              />
+              <Triangle focus={iqgeo} />
+            </LogoButton>
+            <LogoButton focus={zillow} onClick={handleClick} id="zillow">
+              <StyledImg
+                src={require("../../assets/zillow.svg").default}
+                alt="Working icon"
+              />
+              <Triangle focus={zillow} />
+            </LogoButton>
+          </ButtonContainer>
+          <section>{workSection}</section>
+        </WorkCard>
       </section>
     </Main>
   );

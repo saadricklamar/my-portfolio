@@ -10,7 +10,7 @@ export class Projects extends Component {
       react: false,
       vue: false,
       node: false,
-      allButtonId: ""
+      allButtonId: "",
     };
   }
 
@@ -23,7 +23,7 @@ export class Projects extends Component {
       vue: false,
       node: false,
       react: false,
-      all: true
+      all: true,
     });
   };
 
@@ -32,7 +32,7 @@ export class Projects extends Component {
       all: false,
       vue: false,
       node: false,
-      react: true
+      react: true,
     });
   };
 
@@ -41,7 +41,7 @@ export class Projects extends Component {
       all: false,
       react: false,
       node: false,
-      vue: true
+      vue: true,
     });
   };
 
@@ -50,7 +50,7 @@ export class Projects extends Component {
       all: false,
       react: false,
       vue: false,
-      node: true
+      node: true,
     });
   };
 
