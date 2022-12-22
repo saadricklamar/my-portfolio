@@ -25,7 +25,7 @@ export const HomeIcon = styled(FontAwesomeIcon)`
 `;
 
 export const NavButton = styled.button`
-  color: white;
+  color: ${(props) => (props.active ? "#f82a7b" : "white")};
   font-size: 1.2rem;
   border: none;
   font-weight: bold;
@@ -37,10 +37,6 @@ export const NavButton = styled.button`
     color: #f82a7b;
     cursor: pointer;
   }
-
-  &:focus {
-    color: #f82a7b;
-  }
 `;
 
 // Containers //
@@ -49,9 +45,7 @@ export const Main = styled.main`
   display: flex;
   flex-direction: row;
   justify-content: center;
-
   min-height: 100vh;
-  background: #f7f7f5;
   width: 100vw;
   position: relative;
   margin-left: -50vw;
@@ -60,11 +54,12 @@ export const Main = styled.main`
 
 export const LeftContainer = styled.section`
   width: 100%;
-  background: #fffcf7;
+  background: white;
 `;
 
 export const RightContainer = styled.section`
   width: 70%;
+  background: #17cddf;
 `;
 
 export const Flex = styled.section`
@@ -106,9 +101,9 @@ export const SkillContainer = styled.div`
   position: relative;
   right: -600px;
   -webkit-animation: slide 0.5s backwards;
-  -webkit-animation-delay: .5s;
+  -webkit-animation-delay: 0.5s;
   animation: slide 0.5s forwards;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
   animation-play-state: ${(props) =>
     props.clickOrScroll ? "running" : "paused"};
   @-webkit-keyframes slide {
@@ -125,9 +120,10 @@ export const SkillContainer = styled.div`
 `;
 
 export const SkillsTitle = styled.p`
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
-  color: #282c34;
+  color: white;
+  margin: 20px 0;
 `;
 
 export const SkillCard = styled.div`

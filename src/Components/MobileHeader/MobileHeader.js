@@ -26,7 +26,7 @@ function MobileHeader() {
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="navicon"></span>
         </label>
-        <ul className="menu" style={{ "max-height": `${dropDown}` }}>
+        <ul className="menu" style={{ maxHeight: `${dropDown}` }}>
           <li>
             <a href="#mobile-about" onClick={handleClick}>
               About

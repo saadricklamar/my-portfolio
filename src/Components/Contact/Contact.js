@@ -82,21 +82,6 @@ export class Contact extends Component {
         <section className="social-media">
           <ReactTooltip />
           <a
-            href="https://twitter.com/Saadrick_Lamar"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-tip="My Twitter"
-          >
-            <img
-              src={require("../../assets/twitter.svg").default}
-              alt="Mocha logo"
-              width="75"
-              height="75"
-              className="social-icon"
-            />
-          </a>
-          <ReactTooltip />
-          <a
             href="https://github.com/saadricklamar"
             target="_blank"
             rel="noopener noreferrer"
@@ -127,7 +112,7 @@ export class Contact extends Component {
           </a>
         </section>
         <p className="copyright">
-          SAAD BARADAN <span> &#169;2021</span>
+          SAAD BARADAN <span> &#169;2023</span>
         </p>
       </main>
     );

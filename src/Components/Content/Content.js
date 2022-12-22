@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useReducer } from "react";
 import "./Content.scss";
 import Experience from "../Experience/Experience";
 import Projects from "../Projects/Projects";
@@ -26,33 +26,75 @@ import {
   Welcome,
 } from "./styles";
 
-export const Content = ({ clickOrScroll }) => {
+export const Content = ({ clickOrScroll, navButtons, setNavButtons }) => {
+  const handleClick = (e) => {
+    const id = e.currentTarget.id;
+    id === "about"
+      ? setNavButtons({ about: true })
+      : setNavButtons({ about: false });
+    id === "experience"
+      ? setNavButtons({ experience: true })
+      : setNavButtons({ experience: false });
+    id === "project"
+      ? setNavButtons({ projects: true })
+      : setNavButtons({ projects: false });
+    id === "contact"
+      ? setNavButtons({ contact: true })
+      : setNavButtons({ contact: false });
+  };
+
   return (
     <div className="content" id="mobile-about">
       <MobileHeader />
       <Sticky top="#header" enabled={true} bottomBoundary="#content" innerZ={3}>
         <Header>
           <Link to="App" smooth={true} duration={300}>
-            <HomeIcon icon={faHome} />
+            <HomeIcon icon={faHome} onClick={handleClick} id="home" />
           </Link>
           <Link to="content" smooth={true} duration={300}>
-            <NavButton id="about">About</NavButton>
+            <NavButton
+              id="about"
+              active={navButtons.about}
+              onClick={handleClick}
+            >
+              About
+            </NavButton>
           </Link>
           <Link to="Experience" smooth={true} duration={300}>
-            <NavButton id="experience">Experience</NavButton>
+            <NavButton
+              id="experience"
+              active={navButtons.experience}
+              onClick={handleClick}
+            >
+              Experience
+            </NavButton>
           </Link>
           <Link to="projects" smooth={true} duration={300}>
-            <NavButton id="project">Projects</NavButton>
+            <NavButton
+              id="project"
+              active={navButtons.projects}
+              onClick={handleClick}
+            >
+              Projects
+            </NavButton>
           </Link>
           <Link to="contact-page" smooth={true} duration={300}>
-            <NavButton id="contact">Contact</NavButton>
+            <NavButton
+              id="contact"
+              active={navButtons.contact}
+              onClick={handleClick}
+            >
+              Contact
+            </NavButton>
           </Link>
           <a
             href={require("../../assets/SaadBaradanResume.pdf")}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <NavButton id="resume">Resume</NavButton>
+            <NavButton id="resume" active={false}>
+              Resume
+            </NavButton>
           </a>
         </Header>
       </Sticky>
@@ -85,9 +127,10 @@ export const Content = ({ clickOrScroll }) => {
                 Canva
               </a> */}
               <br />
-              <br /> When I'm not coding, you can find me hiking, camping,
-              reading, watching the NBA, walking my dog, Gizmo, and practicing
-              photography, which you can view <PhotoGallery />.
+              <br /> When I'm not coding, you can find me teaching philosophy,
+              traveling the world with my wife, hiking, reading, walking my dog,
+              Gizmo, and practicing photography, which you can view{" "}
+              <PhotoGallery />.
               <br />
               <br />
               You can learn more about me by viewing my Experience, Projects,
@@ -99,7 +142,10 @@ export const Content = ({ clickOrScroll }) => {
           <SkillsTitle>Skills</SkillsTitle>
           <SkillContainer clickOrScroll={clickOrScroll}>
             <SkillCard>
-              <StyledImg src={require("../../assets/js.svg").default} alt="JavaScript logo" />
+              <StyledImg
+                src={require("../../assets/js.svg").default}
+                alt="JavaScript logo"
+              />
               <SkillText>JavaScript</SkillText>
             </SkillCard>
             <SkillCard>
@@ -131,7 +177,10 @@ export const Content = ({ clickOrScroll }) => {
               <SkillText>HTML</SkillText>
             </SkillCard>
             <SkillCard>
-              <StyledImg src={require("../../assets/css.svg").default} alt="CSS logo" />
+              <StyledImg
+                src={require("../../assets/css.svg").default}
+                alt="CSS logo"
+              />
               <SkillText>CSS</SkillText>
             </SkillCard>
             <SkillCard>
@@ -156,7 +205,10 @@ export const Content = ({ clickOrScroll }) => {
               <SkillText>PostgreSQL</SkillText>
             </SkillCard>
             <SkillCard>
-              <StyledImg src={require("../../assets/git.svg").default} alt="Git logo" />
+              <StyledImg
+                src={require("../../assets/git.svg").default}
+                alt="Git logo"
+              />
               <SkillText>Git</SkillText>
             </SkillCard>
             <SkillCard>
@@ -205,7 +257,6 @@ export const Content = ({ clickOrScroll }) => {
         </RightContainer>
       </Main>
       <Experience />
-      {/* <Skills /> */}
       <Projects />
       <Contact />
     </div>
