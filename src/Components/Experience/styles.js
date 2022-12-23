@@ -80,7 +80,6 @@ export const Date = styled.span`
 `;
 
 export const WorkSection = styled.section`
-  //background: #17cddf17;
   background: #17cddf2e;
   display: flex;
   flex-direction: column;
@@ -100,3 +99,92 @@ export const ListItem = styled.li`
   list-style-type: disclosure-closed;
   margin: 5px;
 `;
+
+//Media Queries Styling
+// @media (max-width: 1250px) {
+//   .accordion {
+//     width: 90%;
+//   }
+//   .panel {
+//     width: 86%;
+//   }
+//   .arrow {
+//     margin-left: 90%;
+//   }
+//   #experience-container {
+//     margin-left: 10%;
+//   }
+// }
+
+// @media (max-width: 950px) {
+//   .accordion {
+//     width: 90%;
+//   }
+//   .panel {
+//     width: 85.7%;
+//   }
+//   .arrow {
+//     margin-left: 90%;
+//   }
+//   #experience-container {
+//     margin-left: 10%;
+//   }
+// }
+
+// @media (max-width: 825px) {
+//   .accordion {
+//     width: 90%;
+//     font-size: 18px;
+//   }
+//   .panel {
+//     width: 84.6%;
+//   }
+//   .arrow {
+//     bottom: 30px;
+//   }
+//   #experience-container {
+//     margin-left: 10%;
+//   }
+// }
+
+// @media (max-width: 650px) {
+//   .accordion {
+//     width: 90%;
+//     font-size: 14px;
+//   }
+//   .panel {
+//     width: 82.1%;
+//   }
+//   .arrow {
+//     bottom: 30px;
+//   }
+//   #experience-container {
+//     margin-left: 10%;
+//   }
+// }
+
+// @media (max-width: 450px) {
+//   .accordion {
+//     width: 90%;
+//     font-size: 11px;
+//   }
+//   .panel {
+//     width: 80.5%;
+//     font-size: 12px;
+//   }
+//   .arrow {
+//     bottom: 40px;
+//     padding: 2px;
+//   }
+//   #experience-container {
+//     margin-left: 10%;
+//   }
+//   #iqgeo-details,
+//   #loyal-details,
+//   #zillow-details {
+//     font-size: 12px;
+//   }
+//   u {
+//     font-size: 11px;
+//   }
+// }

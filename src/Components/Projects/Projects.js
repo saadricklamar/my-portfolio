@@ -1,322 +1,215 @@
-import React, { Component } from "react";
-import ProjectsHeader from "../ProjectsHeader/ProjectsHeader";
-import "./Projects.scss";
+import React, { useEffect, useReducer, useState } from "react";
+import {
+  Main,
+  Container,
+  Card,
+  Image,
+  Overlay,
+  ProjectName,
+  Button,
+  Header,
+  NavButton,
+} from "./styles";
 
-export class Projects extends Component {
-  constructor() {
-    super();
-    this.state = {
+export const Projects = () => {
+  const [cards, setCards] = useState();
+  const [navButtons, setNavButtons] = useReducer(
+    (state, updates) => ({ ...state, ...updates }),
+    {
       all: true,
       react: false,
       vue: false,
       node: false,
-      allButtonId: "",
-    };
-  }
+    }
+  );
 
-  componentDidMount = () => {
-    this.setState({ allButtonId: "focus" });
-  };
+  const cycleCity = (
+    <Card>
+      <Image
+        src={require("../../assets/cycle-city.png")}
+        alt="Home page of Cycle City Project"
+        className="project-image"
+      />
+      <Overlay className="overlay">
+        <ProjectName>Cycle City</ProjectName>
+        <a
+          href="https://github.com/saadricklamar/cycle-city"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button>LEARN MORE</Button>
+        </a>
+      </Overlay>
+    </Card>
+  );
 
-  renderAll = () => {
-    this.setState({
-      vue: false,
-      node: false,
-      react: false,
-      all: true,
-    });
-  };
+  const harvardArt = (
+    <Card>
+      <Image
+        src={require("../../assets/harvard-art.png")}
+        alt="Home page of Harvard Art Museum Project"
+      />
+      <Overlay className="overlay">
+        <ProjectName>Harvard Art Museum</ProjectName>
+        <a
+          href="https://github.com/saadricklamar/harvard-art"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button>LEARN MORE</Button>
+        </a>
+      </Overlay>
+    </Card>
+  );
 
-  renderReact = () => {
-    this.setState({
-      all: false,
-      vue: false,
-      node: false,
-      react: true,
-    });
-  };
+  const vueCalculator = (
+    <Card>
+      <Image
+        src={require("../../assets/vue-calculator.png")}
+        alt="Home page of Vue Calculator project"
+      />
+      <Overlay className="overlay">
+        <ProjectName>Vue Calculator</ProjectName>
+        <a
+          href="https://github.com/saadricklamar/vue-calculator"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button>LEARN MORE</Button>
+        </a>
+      </Overlay>
+    </Card>
+  );
 
-  renderVue = () => {
-    this.setState({
-      all: false,
-      react: false,
-      node: false,
-      vue: true,
-    });
-  };
+  const movieTracker = (
+    <Card>
+      <Image
+        src={require("../../assets/movie-tracker.png")}
+        alt="Home page of Movie Tracker project"
+      />
+      <Overlay className="overlay">
+        <ProjectName>Movie Tracker</ProjectName>
+        <a
+          href="https://github.com/saadricklamar/movie-tracker"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button>LEARN MORE</Button>
+        </a>
+      </Overlay>
+    </Card>
+  );
 
-  renderNode = () => {
-    this.setState({
-      all: false,
-      react: false,
-      vue: false,
-      node: true,
-    });
-  };
+  const shakesBeer = (
+    <Card>
+      <Image
+        src={require("../../assets/shakesbeer.png")}
+        alt="Home page of Shakesbeer project"
+      />
+      <Overlay className="overlay">
+        <ProjectName>ShakesBeer</ProjectName>
+        <a
+          href="https://github.com/saadricklamar/shakesbeer"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button>LEARN MORE</Button>
+        </a>
+      </Overlay>
+    </Card>
+  );
 
-  render() {
-    if (this.state.all) {
-      return (
-        <main className="projects" id="mobile-projects">
-          <ProjectsHeader
-            renderAll={this.renderAll}
-            renderReact={this.renderReact}
-            renderVue={this.renderVue}
-            renderNode={this.renderNode}
-            allButton={this.state.allButtonId}
-          />
-          <section className="projects-container">
-            <article className="project">
-              <img
-                src={require("../../assets/cycle-city.png")}
-                alt="Home page of Cycle City Project"
-                className="project-image"
-              />
-              <div className="middle">
-                <p className="text">Cycle City</p>
-                <a
-                  href="https://github.com/saadricklamar/cycle-city"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="learn-more">LEARN MORE</button>
-                </a>
-              </div>
-            </article>
-            <article className="project">
-              <img
-                src={require("../../assets/harvard-art.png")}
-                alt="Home page of Harvard Art Museum Project"
-                className="project-image"
-              />
-              <div className="middle">
-                <p className="text">Harvard Art Museum</p>
-                <a
-                  href="https://github.com/saadricklamar/harvard-art"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="learn-more">LEARN MORE</button>
-                </a>
-              </div>
-            </article>
-            <article className="project">
-              <img
-                src={require("../../assets/vue-calculator.png")}
-                alt="Home page of Vue Calculator project"
-                className="project-image"
-              />
-              <div className="middle">
-                <p className="text">Vue Calculator</p>
-                <a
-                  href="https://github.com/saadricklamar/vue-calculator"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="learn-more">LEARN MORE</button>
-                </a>
-              </div>
-            </article>
-            <article className="project">
-              <img
-                src={require("../../assets/movie-tracker.png")}
-                alt="Home page of Movie Tracker project"
-                className="project-image"
-              />
-              <div className="middle">
-                <p className="text">Movie Tracker</p>
-                <a
-                  href="https://github.com/saadricklamar/movie-tracker"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="learn-more">LEARN MORE</button>
-                </a>
-              </div>
-            </article>
-            <article className="project">
-              <img
-                src={require("../../assets/shakesbeer.png")}
-                alt="Home page of Shakesbeer project"
-                className="project-image"
-              />
-              <div className="middle">
-                <p className="text">ShakesBeer</p>
-                <a
-                  href="https://github.com/saadricklamar/shakesbeer"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="learn-more">LEARN MORE</button>
-                </a>
-              </div>
-            </article>
-            <article className="project">
-              <img
-                src={require("../../assets/philosophers.png")}
-                alt="Philosophers Restful API"
-                className="project-image"
-              />
-              <div className="middle">
-                <p className="text">Philosophers Back-End</p>
-                <a
-                  href="https://github.com/saadricklamar/philosophers-backend"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="learn-more">LEARN MORE</button>
-                </a>
-              </div>
-            </article>
-          </section>
-        </main>
+  const philosophersBackEnd = (
+    <Card>
+      <Image
+        src={require("../../assets/philosophers.png")}
+        alt="Philosophers Restful API"
+      />
+      <Overlay className="overlay">
+        <ProjectName>Philosophers Back-End</ProjectName>
+        <a
+          href="https://github.com/saadricklamar/philosophers-backend"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button>Learn More</Button>
+        </a>
+      </Overlay>
+    </Card>
+  );
+
+  useEffect(() => {
+    setCards(
+      <Container>
+        {cycleCity}
+        {harvardArt}
+        {vueCalculator}
+        {movieTracker}
+        {shakesBeer}
+        {philosophersBackEnd}
+      </Container>
+    );
+  }, []);
+
+  const handleClick = (e) => {
+    const id = e.currentTarget.id;
+    if (id === "all") {
+      setNavButtons({ all: true, react: false, vue: false, node: false });
+      setCards(
+        <Container>
+          {cycleCity}
+          {harvardArt}
+          {vueCalculator}
+          {movieTracker}
+          {shakesBeer}
+          {philosophersBackEnd}
+        </Container>
       );
     }
-    if (this.state.node) {
-      return (
-        <main className="projects" id="mobile-projects">
-          <ProjectsHeader
-            renderAll={this.renderAll}
-            renderReact={this.renderReact}
-            renderVue={this.renderVue}
-            renderNode={this.renderNode}
-          />
-          <section className="projects-container">
-            <article className="project">
-              <img
-                src={require("../../assets/philosophers.png")}
-                alt="Philosophers Restful API"
-                className="project-image"
-              />
-              <div className="middle">
-                <p className="text">Philosophers Back-End</p>
-                <a
-                  href="https://github.com/saadricklamar/philosophers-backend"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="learn-more">Learn More</button>
-                </a>
-              </div>
-            </article>
-          </section>
-        </main>
+    if (id === "react") {
+      setNavButtons({ all: false, react: true, vue: false, node: false });
+      setCards(
+        <Container>
+          {cycleCity}
+          {movieTracker}
+          {shakesBeer}
+        </Container>
       );
     }
-    if (this.state.react) {
-      return (
-        <main className="projects" id="mobile-projects">
-          <ProjectsHeader
-            renderAll={this.renderAll}
-            renderReact={this.renderReact}
-            renderVue={this.renderVue}
-            renderNode={this.renderNode}
-          />
-          <section className="projects-container">
-            <article className="project">
-              <img
-                src={require("../../assets/cycle-city.png")}
-                alt="Home page of Cycle City Project"
-                className="project-image"
-              />
-              <div className="middle">
-                <p className="text">Cycle City</p>
-                <a
-                  href="https://github.com/saadricklamar/cycle-city"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="learn-more">Learn More</button>
-                </a>
-              </div>
-            </article>
-            <article className="project">
-              <img
-                src={require("../../assets/movie-tracker.png")}
-                alt="Home page of Movie Tracker project"
-                className="project-image"
-              />
-              <div className="middle">
-                <p className="text">Movie Tracker</p>
-                <a
-                  href="https://github.com/saadricklamar/movie-tracker"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="learn-more">Learn More</button>
-                </a>
-              </div>
-            </article>
-            <article className="project">
-              <img
-                src={require("../../assets/shakesbeer.png")}
-                alt="Home page of Shakesbeer project"
-                className="project-image"
-              />
-              <div className="middle">
-                <p className="text">ShakesBeer</p>
-                <a
-                  href="https://github.com/saadricklamar/shakesbeer"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="learn-more">Learn More</button>
-                </a>
-              </div>
-            </article>
-          </section>
-        </main>
+    if (id === "vue") {
+      setNavButtons({ all: false, react: false, vue: true, node: false });
+      setCards(
+        <Container>
+          {harvardArt}
+          {vueCalculator}
+        </Container>
       );
     }
-    if (this.state.vue) {
-      return (
-        <main className="projects" id="mobile-projects">
-          <ProjectsHeader
-            renderAll={this.renderAll}
-            renderReact={this.renderReact}
-            renderVue={this.renderVue}
-            renderNode={this.renderNode}
-          />
-          <section className="projects-container">
-            <article className="project">
-              <img
-                src={require("../../assets/harvard-art.png")}
-                alt="Home page of Harvard Art Museum Project"
-                className="project-image"
-              />
-              <div className="middle">
-                <p className="text">Harvard Art Museum</p>
-                <a
-                  href="https://github.com/saadricklamar/harvard-art"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="learn-more">Learn More</button>
-                </a>
-              </div>
-            </article>
-            <article className="project">
-              <img
-                src={require("../../assets/vue-calculator.png")}
-                alt="Home page of Vue Calculator project"
-                className="project-image"
-              />
-              <div className="middle">
-                <p className="text">Vue Calculator</p>
-                <a
-                  href="https://github.com/saadricklamar/vue-calculator"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="learn-more">Learn More</button>
-                </a>
-              </div>
-            </article>
-          </section>
-        </main>
-      );
+    if (id === "node") {
+      setNavButtons({ all: false, react: false, vue: false, node: true });
+      setCards(<Container>{philosophersBackEnd}</Container>);
     }
-  }
-}
+  };
+
+  return (
+    <Main className="projects">
+      <Header>
+        <NavButton id="all" onClick={handleClick} active={navButtons.all}>
+          All
+        </NavButton>
+        <NavButton id="react" onClick={handleClick} active={navButtons.react}>
+          React
+        </NavButton>
+        <NavButton id="vue" onClick={handleClick} active={navButtons.vue}>
+          Vue.js
+        </NavButton>
+        <NavButton id="node" onClick={handleClick} active={navButtons.node}>
+          Node.js
+        </NavButton>
+      </Header>
+      {cards}
+    </Main>
+  );
+};
 
 export default Projects;

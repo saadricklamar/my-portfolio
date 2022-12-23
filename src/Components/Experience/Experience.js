@@ -15,7 +15,6 @@ import {
   WorkCard,
   WorkSection,
 } from "./styles";
-import "./Experience.scss";
 
 const Experience = () => {
   let [loyal, FocusLoyal] = useState(false);
