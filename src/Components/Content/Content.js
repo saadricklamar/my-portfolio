@@ -1,5 +1,4 @@
-import React, { useEffect, useReducer } from "react";
-import "./Content.scss";
+import React from "react";
 import Experience from "../Experience/Experience";
 import Projects from "../Projects/Projects";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
