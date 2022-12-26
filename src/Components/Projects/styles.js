@@ -28,7 +28,8 @@ export const Card = styled.section`
   &:hover .overlay {
     cursor: pointer;
     opacity: 1;
-    background: #faf9f6;
+    /* background: #fffffffa; */
+    background: rgba(1, 1, 1, 0.7);
   }
 `;
 
@@ -53,31 +54,29 @@ export const Overlay = styled.div`
 `;
 
 export const ProjectName = styled.p`
-  color: black;
+  color: white;
   font-size: 1.2rem;
-  font-weight: bold;
-  font-weight: normal;
+  font-weight: bolder;
   margin: 12% auto 0 auto;
   padding-top: 20px;
   text-align: center;
 `;
 
 export const Button = styled.button`
-  background: #f9f9f7;
+  background: #f82a7b;
   border: 1px solid #f82a7b;
   border-radius: 5px;
   font-size: 1rem;
+  font-weight: bolder;
   height: 40px;
   position: relative;
   top: 60px;
   width: 50%;
   text-transform: uppercase;
+  color: white;
 
   &:hover {
-    background: #f82a7b;
-    color: white;
     cursor: pointer;
-    font-weight: 800;
   }
 `;
 

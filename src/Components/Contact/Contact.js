@@ -46,6 +46,9 @@ export class Contact extends Component {
       );
       e.target.reset();
       this.setState({ userMessage: "Thank you! I'll be in touch." });
+      setTimeout(() => {
+        this.setState({ userMessage: "" });
+      }, 4000);
     }
   };
 

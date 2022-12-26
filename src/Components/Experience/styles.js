@@ -93,6 +93,7 @@ export const WorkSection = styled.section`
 
 export const ListContainer = styled.ul`
   text-align: left;
+  margin: 5px 0 10px 0;
 `;
 
 export const ListItem = styled.li`

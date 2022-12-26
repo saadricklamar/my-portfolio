@@ -45,7 +45,7 @@ const Experience = () => {
   let workSection = (
     <WorkSection>
       <JobTitle>
-        Front End Engineer{" "}
+        Software Engineer, Frontend{" "}
         <Span>
           @{" "}
           <Link href="https://loyalhealth.com/" target="blank">

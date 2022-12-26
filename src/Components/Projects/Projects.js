@@ -37,7 +37,7 @@ export const Projects = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button>LEARN MORE</Button>
+          <Button>VIEW GITHUB</Button>
         </a>
       </Overlay>
     </Card>
@@ -56,7 +56,7 @@ export const Projects = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button>LEARN MORE</Button>
+          <Button>VIEW GITHUB</Button>
         </a>
       </Overlay>
     </Card>
@@ -75,7 +75,7 @@ export const Projects = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button>LEARN MORE</Button>
+          <Button>VIEW GITHUB</Button>
         </a>
       </Overlay>
     </Card>
@@ -94,7 +94,7 @@ export const Projects = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button>LEARN MORE</Button>
+          <Button>VIEW GITHUB</Button>
         </a>
       </Overlay>
     </Card>
@@ -113,7 +113,7 @@ export const Projects = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button>LEARN MORE</Button>
+          <Button>VIEW GITHUB</Button>
         </a>
       </Overlay>
     </Card>
@@ -132,7 +132,7 @@ export const Projects = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button>Learn More</Button>
+          <Button>VIEW GITHUB</Button>
         </a>
       </Overlay>
     </Card>
