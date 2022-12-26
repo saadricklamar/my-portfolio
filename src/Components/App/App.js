@@ -24,15 +24,48 @@ export const App = () => {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      setEvent(true);
-    };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleScroll = () => {
+    setEvent(true);
+    const y = window.scrollY;
+    if (y > 400 && y < 900) {
+      setNavButtons({
+        about: true,
+        experience: false,
+        projects: false,
+        contact: false,
+      });
+    }
+    if (y > 1300 && y < 1700) {
+      setNavButtons({
+        about: false,
+        experience: true,
+        projects: false,
+        contact: false,
+      });
+    }
+    if (y > 2000 && y < 2400) {
+      setNavButtons({
+        about: false,
+        experience: false,
+        projects: true,
+        contact: false,
+      });
+    }
+    if (y > 2800) {
+      setNavButtons({
+        about: false,
+        experience: false,
+        projects: false,
+        contact: true,
+      });
+    }
+  };
 
   return (
     <div className="App" id="mobile-home">
@@ -65,11 +98,7 @@ export const App = () => {
           </button>
         </Link>
       </header>
-      <Content
-        clickOrScroll={clickOrScroll}
-        navButtons={navButtons}
-        setNavButtons={setNavButtons}
-      />
+      <Content clickOrScroll={clickOrScroll} navButtons={navButtons} />
     </div>
   );
 };

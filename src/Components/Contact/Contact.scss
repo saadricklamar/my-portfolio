@@ -77,32 +77,11 @@ h3 {
 // Fade User Messages //
 
 .fade-out {
-  color: #f82a7b;
+  color: white;
   font-weight: bold;
   font-size: 1.5rem;
   margin: 0 auto;
   padding: 0;
-  animation: fadeinout 20s linear forwards;
-}
-
-@-webkit-keyframes fadeinout {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeinout {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
 }
 
 // Social Media Icons //

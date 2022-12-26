@@ -25,75 +25,33 @@ import {
   Welcome,
 } from "./styles";
 
-export const Content = ({ clickOrScroll, navButtons, setNavButtons }) => {
-  const handleClick = (e) => {
-    const id = e.currentTarget.id;
-    id === "about"
-      ? setNavButtons({ about: true })
-      : setNavButtons({ about: false });
-    id === "experience"
-      ? setNavButtons({ experience: true })
-      : setNavButtons({ experience: false });
-    id === "project"
-      ? setNavButtons({ projects: true })
-      : setNavButtons({ projects: false });
-    id === "contact"
-      ? setNavButtons({ contact: true })
-      : setNavButtons({ contact: false });
-  };
-
+export const Content = ({ clickOrScroll, navButtons }) => {
   return (
     <div className="content" id="mobile-about">
       <MobileHeader />
       <Sticky top="#header" enabled={true} bottomBoundary="#content" innerZ={3}>
         <Header>
           <Link to="App" smooth={true} duration={300}>
-            <HomeIcon icon={faHome} onClick={handleClick} id="home" />
+            <HomeIcon icon={faHome} id="home" />
           </Link>
           <Link to="content" smooth={true} duration={300}>
-            <NavButton
-              id="about"
-              active={navButtons.about}
-              onClick={handleClick}
-            >
-              About
-            </NavButton>
+            <NavButton active={navButtons.about}>About</NavButton>
           </Link>
           <Link to="Experience" smooth={true} duration={300}>
-            <NavButton
-              id="experience"
-              active={navButtons.experience}
-              onClick={handleClick}
-            >
-              Experience
-            </NavButton>
+            <NavButton active={navButtons.experience}>Experience</NavButton>
           </Link>
           <Link to="projects" smooth={true} duration={300}>
-            <NavButton
-              id="project"
-              active={navButtons.projects}
-              onClick={handleClick}
-            >
-              Projects
-            </NavButton>
+            <NavButton active={navButtons.projects}>Projects</NavButton>
           </Link>
           <Link to="contact-page" smooth={true} duration={300}>
-            <NavButton
-              id="contact"
-              active={navButtons.contact}
-              onClick={handleClick}
-            >
-              Contact
-            </NavButton>
+            <NavButton active={navButtons.contact}>Contact</NavButton>
           </Link>
           <a
             href={require("../../assets/SaadBaradanResume.pdf")}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <NavButton id="resume" active={false}>
-              Resume
-            </NavButton>
+            <NavButton active={false}>Resume</NavButton>
           </a>
         </Header>
       </Sticky>
@@ -103,37 +61,18 @@ export const Content = ({ clickOrScroll, navButtons, setNavButtons }) => {
           <Flex>
             <Paragraph>
               <Welcome>Welcome</Welcome>, and thank you for stopping by. I'm a
-              Front End Engineer with a passion for building fluid, intuitive,
-              and dynamic UIs. My favorite languages are TypeScript and
-              JavaScript. My favorite frameworks are React and Vue.js.
-              {/* <a href="https://reactjs.org/" target="blank" id="react-link">
-                {" "}
-                React
-              </a>{" "}
-              and
-              <a href="https://vuejs.org/" target="blank" id="vue-link">
-                {" "}
-                Vue.js
-              </a>
-              . My favorite design tools are
-              <a href="https://www.figma.com/" target="blank" id="figma-link">
-                {" "}
-                Figma
-              </a>{" "}
-              and{" "}
-              <a href="https://www.canva.com/" target="blank" id="canva-link">
-                {" "}
-                Canva
-              </a> */}
+              Denver based Front End Engineer who is passionate about building
+              thoughtful, intuitive, and dynamic UIs. My favorite languages are
+              TypeScript and JavaScript. My favorite frameworks are React and
+              Vue.js.
               <br />
               <br /> When I'm not coding, you can find me teaching philosophy,
-              traveling the world with my wife, hiking, reading, walking my dog,
-              Gizmo, and practicing photography, which you can view{" "}
-              <PhotoGallery />.
+              traveling the world with my wife, hiking, walking my dog, Gizmo,
+              and practicing photography, which you can view <PhotoGallery />.
               <br />
               <br />
-              You can learn more about me by viewing my Experience, Projects,
-              and Resume.
+              You can learn more about me by viewing my Experience and Projects
+              pages or by checking out my Resume.
             </Paragraph>
           </Flex>
         </LeftContainer>
