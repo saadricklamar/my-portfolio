@@ -3,7 +3,6 @@ import Experience from "../Experience/Experience";
 import Projects from "../Projects/Projects";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import Contact from "../Contact/Contact";
-import MobileHeader from "../MobileHeader/MobileHeader";
 import { Link } from "react-scroll";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Sticky from "react-stickynode";
@@ -28,7 +27,6 @@ import {
 export const Content = ({ clickOrScroll, navButtons }) => {
   return (
     <div className="content" id="mobile-about">
-      <MobileHeader />
       <Sticky top="#header" enabled={true} bottomBoundary="#content" innerZ={3}>
         <Header>
           <Link to="App" smooth={true} duration={300}>

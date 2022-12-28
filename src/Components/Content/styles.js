@@ -11,6 +11,9 @@ export const Header = styled.header`
   align-items: baseline;
   padding-right: 30%;
   height: 60px;
+  @media (max-width: 420px) {
+    display: none;
+  }
 `;
 
 export const HomeIcon = styled(FontAwesomeIcon)`
@@ -50,6 +53,9 @@ export const Main = styled.main`
   position: relative;
   margin-left: -50vw;
   left: 50%;
+  @media (max-width: 420px) {
+    flex-direction: column;
+  }
 `;
 
 export const LeftContainer = styled.section`
@@ -60,6 +66,9 @@ export const LeftContainer = styled.section`
 export const RightContainer = styled.section`
   width: 70%;
   background: #17cddf;
+  @media (max-width: 420px) {
+    width: 100%;
+  }
 `;
 
 export const Flex = styled.section`
@@ -152,84 +161,3 @@ export const StyledImg = styled.img`
   height: 50px;
   width: 50px;
 `;
-
-// // Media Queiries //
-
-// @media (max-width: 750px) {
-//   .content-header {
-//     padding-right: 10%;
-//     height: 60px;
-//   }
-// }
-
-// @media (max-width: 550px) {
-//   .content-header {
-//     padding-right: 5%;
-//     height: 50px;
-//   }
-//   .nav-buttons {
-//     font-size: 1rem;
-//   }
-//   .home-icon {
-//     font-size: 1rem;
-//     padding-top: 100%;
-//   }
-//   .details-content {
-//     width: 60%;
-//     padding-left: 5%;
-//     padding-top: 5%;
-//     margin-left: 12%;
-//     margin-top: 5%;
-//   }
-//   .welcome-greeting {
-//     font-size: 30px;
-//   }
-//   .about-me-details {
-//     font-size: 1rem;
-//   }
-// }
-
-// @media (max-width: 420px) {
-//   .content-header {
-//     display: none;
-//   }
-//   .details-content {
-//     width: 80%;
-//     padding-top: 10%;
-//     margin-left: 5%;
-//   }
-// }
-
-// @media (max-width: 380px) {
-//   h2 {
-//     text-align: center;
-//     padding-left: 0;
-//     padding-top: 15%;
-//   }
-
-//   .content-header {
-//     padding-right: 5%;
-//     height: 40px;
-//   }
-
-//   .nav-buttons {
-//     font-size: 0.6rem;
-//     padding-top: 30px;
-//   }
-
-//   .home-icon {
-//     font-size: 0.8rem;
-//     padding-top: 70%;
-//   }
-//   .details-content {
-//     width: 70%;
-//     padding-top: 5%;
-//     margin-left: 8%;
-//   }
-// }
-
-// @media (max-width: 325px) {
-//   .details-content {
-//     padding-top: 0px;
-//   }
-// }

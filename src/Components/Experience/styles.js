@@ -12,6 +12,9 @@ export const Header = styled.header`
   margin-top: 100px;
   align-items: center;
   border-bottom: 2px solid black;
+  @media (max-width: 420px) {
+    justify-content: center;
+  }
 `;
 
 export const StyledImg = styled.img`
@@ -27,6 +30,10 @@ export const WorkCard = styled.section`
   display: flex;
   flex-direction: row;
   width: 800px;
+  @media (max-width: 420px) {
+    width: 350px;
+    flex-direction: column;
+  }
 `;
 
 export const ButtonContainer = styled.section`
@@ -35,6 +42,13 @@ export const ButtonContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  @media (max-width: 420px) {
+    flex-direction: row;
+    height: 100px;
+    width: 300px;
+    justify-content: flex-end;
+    margin: 10px 0 0 20px;
+  }
 `;
 
 export const LogoButton = styled.button`
@@ -45,6 +59,9 @@ export const LogoButton = styled.button`
   &:hover {
     cursor: pointer;
   }
+  @media (max-width: 420px) {
+    flex-direction: column;
+  }
 `;
 
 export const Triangle = styled.div`
@@ -54,6 +71,16 @@ export const Triangle = styled.div`
   border-right: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-top: 20px solid transparent;
+  @media (max-width: 420px) {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border: ${(props) => (props.focus ? "1px solid #f82a7b" : "none")};
+    width: 60px;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 5px;
+  }
 `;
 
 export const JobTitle = styled.h3`
@@ -85,10 +112,15 @@ export const WorkSection = styled.section`
   flex-direction: column;
   align-items: baseline;
   width: 658px;
-  margin: 0px 0 0 20px;
+  margin: 0 0 0 20px;
   border-radius: 5px;
   margin-top: 25px;
   padding: 0 0 10px 20px;
+  @media (max-width: 420px) {
+    width: 300px;
+    padding: 5px 10px;
+    margin: 15px;
+  }
 `;
 
 export const ListContainer = styled.ul`
@@ -100,92 +132,3 @@ export const ListItem = styled.li`
   list-style-type: disclosure-closed;
   margin: 5px;
 `;
-
-//Media Queries Styling
-// @media (max-width: 1250px) {
-//   .accordion {
-//     width: 90%;
-//   }
-//   .panel {
-//     width: 86%;
-//   }
-//   .arrow {
-//     margin-left: 90%;
-//   }
-//   #experience-container {
-//     margin-left: 10%;
-//   }
-// }
-
-// @media (max-width: 950px) {
-//   .accordion {
-//     width: 90%;
-//   }
-//   .panel {
-//     width: 85.7%;
-//   }
-//   .arrow {
-//     margin-left: 90%;
-//   }
-//   #experience-container {
-//     margin-left: 10%;
-//   }
-// }
-
-// @media (max-width: 825px) {
-//   .accordion {
-//     width: 90%;
-//     font-size: 18px;
-//   }
-//   .panel {
-//     width: 84.6%;
-//   }
-//   .arrow {
-//     bottom: 30px;
-//   }
-//   #experience-container {
-//     margin-left: 10%;
-//   }
-// }
-
-// @media (max-width: 650px) {
-//   .accordion {
-//     width: 90%;
-//     font-size: 14px;
-//   }
-//   .panel {
-//     width: 82.1%;
-//   }
-//   .arrow {
-//     bottom: 30px;
-//   }
-//   #experience-container {
-//     margin-left: 10%;
-//   }
-// }
-
-// @media (max-width: 450px) {
-//   .accordion {
-//     width: 90%;
-//     font-size: 11px;
-//   }
-//   .panel {
-//     width: 80.5%;
-//     font-size: 12px;
-//   }
-//   .arrow {
-//     bottom: 40px;
-//     padding: 2px;
-//   }
-//   #experience-container {
-//     margin-left: 10%;
-//   }
-//   #iqgeo-details,
-//   #loyal-details,
-//   #zillow-details {
-//     font-size: 12px;
-//   }
-//   u {
-//     font-size: 11px;
-//   }
-// }
