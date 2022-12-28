@@ -28,8 +28,11 @@ export const Card = styled.section`
   &:hover .overlay {
     cursor: pointer;
     opacity: 1;
-    /* background: #fffffffa; */
     background: rgba(1, 1, 1, 0.7);
+  }
+
+  @media (max-width: 420px) {
+    margin-bottom: 10px;
   }
 `;
 
@@ -104,21 +107,10 @@ export const NavButton = styled.button`
     cursor: pointer;
     transition: 1s ease;
   }
+
+  @media (max-width: 420px) {
+    height: 40px;
+    font-size: 1.3rem;
+    width: 75px;
+  }
 `;
-
-// @media (max-width: 800px) {
-//     .project-buttons,
-//     #focus {
-//       width: 120px;
-//       margin: 15% 1% 5% 0;
-//     }
-//   }
-
-//   @media (max-width: 420px) {
-//     .project-buttons,
-//     #focus {
-//       width: 90px;
-//       font-size: 1rem;
-//       margin: 15% 0 5% 0;
-//     }
-//   }
