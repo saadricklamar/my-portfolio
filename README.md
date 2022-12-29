@@ -1,6 +1,6 @@
 ## Live website 
 
-https://find-saad.herokuapp.com/
+[my-portfolio](https://saadricklamar.github.io/my-portfolio/)
 
 ## Tech Stack
 
