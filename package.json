@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://saadricklamar.github.io/my-portfolio",
+  "homepage": "https://saadricklamar.github.io/my-portfolio",
   "engines": {
     "npm": "6.4.1",
     "node": "10.15.0"
