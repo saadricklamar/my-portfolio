@@ -2,6 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://{saadrick-lamar}.github.io/{my-portfolio}",
   "engines": {
     "npm": "6.4.1",
     "node": "10.15.0"
@@ -37,7 +38,9 @@
     "test": "react-scripts test",
     "watch": "npm-watch",
     "eject": "react-scripts eject",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build" 
   },
   "watch": {
     "build": {
@@ -66,6 +69,7 @@
     "@babel/core": "^7.20.5",
     "@babel/eslint-parser": "^7.19.1",
     "cypress": "^9.2.0",
+    "gh-pages": "^4.0.0",
     "jest": "^24.9.0"
   }
 }
