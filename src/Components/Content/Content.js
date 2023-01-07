@@ -64,7 +64,8 @@ export const Content = ({ clickOrScroll, navButtons }) => {
               TypeScript and JavaScript. My favorite frameworks are React and
               Vue.js.
               <br />
-              <br /> When I'm not coding, you can find me teaching philosophy,
+              <br />
+              When I'm not coding, you can find me teaching philosophy,
               traveling the world with my wife, hiking, walking my dog, Gizmo,
               and practicing photography, which you can view <PhotoGallery />.
               <br />
@@ -100,6 +101,13 @@ export const Content = ({ clickOrScroll, navButtons }) => {
             </SkillCard>
             <SkillCard>
               <StyledImg
+                src={require("../../assets/redux.svg").default}
+                alt="Redux logo"
+              />
+              <SkillText>Redux</SkillText>
+            </SkillCard>
+            <SkillCard>
+              <StyledImg
                 src={require("../../assets/vue.svg").default}
                 alt="Vue.js logo"
               />
@@ -125,6 +133,27 @@ export const Content = ({ clickOrScroll, navButtons }) => {
                 alt="SASS logo"
               />
               <SkillText>SASS</SkillText>
+            </SkillCard>
+            <SkillCard>
+              <StyledImg
+                src={require("../../assets/Jest.svg").default}
+                alt="Jest logo"
+              />
+              <SkillText>Jest</SkillText>
+            </SkillCard>
+            <SkillCard>
+              <StyledImg
+                src={require("../../assets/enzyme.png")}
+                alt="Enzyme logo"
+              />
+              <SkillText>Enzyme</SkillText>
+            </SkillCard>
+            <SkillCard>
+              <StyledImg
+                src={require("../../assets/cypress.jpeg")}
+                alt="Cypress testing framework logo"
+              />
+              <SkillText>Cypress</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
@@ -161,13 +190,7 @@ export const Content = ({ clickOrScroll, navButtons }) => {
               />
               <SkillText>Circle CI</SkillText>
             </SkillCard>
-            <SkillCard>
-              <StyledImg
-                src={require("../../assets/Jest.svg").default}
-                alt="Jest logo"
-              />
-              <SkillText>Jest</SkillText>
-            </SkillCard>
+
             <SkillCard>
               <StyledImg
                 src={require("../../assets/empath.svg").default}
@@ -188,6 +211,13 @@ export const Content = ({ clickOrScroll, navButtons }) => {
                 alt="Brain thinking smiley face icon symbolizing being positive"
               />
               <SkillText>Positive</SkillText>
+            </SkillCard>
+            <SkillCard>
+              <StyledImg
+                src={require("../../assets/listening.svg").default}
+                alt="Brain thinking smiley face icon symbolizing being positive"
+              />
+              <SkillText>Listener</SkillText>
             </SkillCard>
           </SkillContainer>
         </RightContainer>

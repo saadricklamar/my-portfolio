@@ -95,9 +95,10 @@ export const Welcome = styled.span`
 
 export const Paragraph = styled.p`
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 19px;
   width: 70%;
   font-weight: 500;
+  white-space: break-spaces;
 `;
 
 // Right Container
@@ -132,14 +133,14 @@ export const SkillsTitle = styled.p`
   font-size: 30px;
   font-weight: 600;
   color: white;
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
 `;
 
 export const SkillCard = styled.div`
   display: flex;
   flex-direction: column;
-  width: 82px;
-  height: 82px;
+  width: 90px;
+  height: 90px;
   background: white;
   box-shadow: 0px 4px 8px rgb(134 151 168 / 10%);
   border: 1px solid #eee;
@@ -151,7 +152,7 @@ export const SkillCard = styled.div`
 `;
 
 export const SkillText = styled.p`
-  font-size: 12px;
+  font-size: 14px;
   margin: 0px;
   font-weight: 600;
 `;
