@@ -112,10 +112,9 @@ export const WorkSection = styled.section`
   flex-direction: column;
   align-items: baseline;
   width: 658px;
-  margin: 0 0 0 20px;
+  margin: 25px 0 0 15px;
   border-radius: 5px;
-  margin-top: 25px;
-  padding: 0 0 10px 20px;
+  padding: 0 8px 10px 20px;
   @media (max-width: 420px) {
     width: 300px;
     padding: 5px 10px;

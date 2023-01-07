@@ -65,8 +65,12 @@ const Experience = () => {
           designers, and product managers on a daily basis
         </ListItem>
         <ListItem>
-          Help drive technical and design direction for consumer facing
-          applications used by dozens of health systems
+          Deploy modern, performant, and maintainable code to Production on a
+          biweekly basis
+        </ListItem>
+        <ListItem>
+          Help drive technical and design direction for applications used by
+          dozens of health systems
         </ListItem>
         <ListItem>
           Provide mentorship to summer interns through weekly meetings and pair
@@ -74,8 +78,8 @@ const Experience = () => {
           practices and principles
         </ListItem>
         <ListItem>
-          Drive implementation of Micro-Frontend Architecture for numerous
-          consumer facing applications
+          Help implement Micro-Frontend Architecture to create a new unified
+          Platform application
         </ListItem>
         <ListItem>
           Lead conversion of application codebase from JavaScript to TypeScript
@@ -100,24 +104,31 @@ const Experience = () => {
         </JobTitle>
         <ListContainer>
           <ListItem>
-            Utilize JavaScript, HTML5/CSS3, & React to enhance GUIs and build
-            out new features
+            Utilize JavaScript, HTML/CSS, & React to build out new features and
+            troubleshoot bugs
           </ListItem>
           <ListItem>
-            Use UX/UI tools such as Adobe and Figma to create various design
-            documents in collaboration with managers & clients
+            Use Python & PostgreSQL to bring in new data and enhance Back End
+            functionality
           </ListItem>
           <ListItem>
-            Utilize Python & PostgreSQL to bring in new data and enhance Back
-            End functionality
+            Implement various geospatial libraries like OpenLayers, Leaflet, &
+            Turf.js
           </ListItem>
           <ListItem>
             Use Linux to develop, test, and deploy software to various
             environments (QA, STG, & PROD)
           </ListItem>
           <ListItem>
-            Use FogBugz & Jira to track, troubleshoot, and resolve bugs for
-            clients in a timely manner
+            Use Adobe and Figma to create various design documents in
+            collaboration with clients
+          </ListItem>
+          <ListItem>
+            Implement new installs of IQGeo products for clients
+          </ListItem>
+          <ListItem>
+            Collaborate remotely with colleagues across US and international
+            time zones
           </ListItem>
         </ListContainer>
       </WorkSection>
@@ -146,16 +157,16 @@ const Experience = () => {
             provided by Zillow
           </ListItem>
           <ListItem>
-            Top productivity and metric performer for entire tenure qualifying
-            for every bonus
-          </ListItem>
-          <ListItem>
             Use CRM's such as Salesforce and Big Purple dot to manage Zillow
             clients
           </ListItem>
           <ListItem>
             Recruit and interview real estate agents for advertising
             opportunities
+          </ListItem>
+          <ListItem>
+            Top productivity and metric performer for entire tenure qualifying
+            for every bonus
           </ListItem>
         </ListContainer>
       </WorkSection>
