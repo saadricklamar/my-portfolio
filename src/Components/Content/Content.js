@@ -66,8 +66,8 @@ export const Content = ({ clickOrScroll, navButtons }) => {
               <br />
               <br />
               When I'm not coding, you can find me teaching philosophy,
-              traveling the world, hiking, walking my dog, consuming the NBA,
-              and practicing photography, which you can view <PhotoGallery />.
+              traveling the world, hiking, walking my dog, Gizmo, and practicing
+              photography, which you can view <PhotoGallery />.
               <br />
               <br />
               You can learn more about me by viewing my Experience and Projects
