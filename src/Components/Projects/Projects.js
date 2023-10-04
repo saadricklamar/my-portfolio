@@ -100,16 +100,16 @@ export const Projects = () => {
     </Card>
   );
 
-  const shakesBeer = (
+  const wilsonPicker = (
     <Card>
       <Image
-        src={require("../../assets/shakesbeer.png")}
-        alt="Home page of Shakesbeer project"
+        src={require("../../assets/wilsonpicker.png")}
+        alt="Home page of Wilson Picker project"
       />
       <Overlay className="overlay">
-        <ProjectName>ShakesBeer</ProjectName>
+        <ProjectName>Wilson Picker</ProjectName>
         <a
-          href="https://github.com/saadricklamar/shakesbeer"
+          href="https://github.com/saadricklamar/wilson-picker"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -142,11 +142,11 @@ export const Projects = () => {
     setCards(
       <Container>
         {cycleCity}
+        {wilsonPicker}
         {harvardArt}
-        {vueCalculator}
         {movieTracker}
-        {shakesBeer}
         {philosophersBackEnd}
+        {vueCalculator}
       </Container>
     );
   }, []);
@@ -158,11 +158,11 @@ export const Projects = () => {
       setCards(
         <Container>
           {cycleCity}
+          {wilsonPicker}
           {harvardArt}
-          {vueCalculator}
           {movieTracker}
-          {shakesBeer}
           {philosophersBackEnd}
+          {vueCalculator}
         </Container>
       );
     }
@@ -171,8 +171,8 @@ export const Projects = () => {
       setCards(
         <Container>
           {cycleCity}
+          {wilsonPicker}
           {movieTracker}
-          {shakesBeer}
         </Container>
       );
     }

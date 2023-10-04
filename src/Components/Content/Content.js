@@ -65,7 +65,7 @@ export const Content = ({ clickOrScroll, navButtons }) => {
               Vue.js.
               <br />
               <br />
-              When I'm not coding, you can find me teaching philosophy,
+              When I'm not coding, you can find me teaching Philosophy,
               traveling the world, hiking, walking my dog, Gizmo, and practicing
               photography, which you can view <PhotoGallery />.
               <br />
