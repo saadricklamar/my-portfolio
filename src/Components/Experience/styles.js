@@ -104,6 +104,7 @@ export const Date = styled.span`
   font-size: 14px;
   color: black;
   display: flex;
+  margin-left: 5px;
 `;
 
 export const WorkSection = styled.section`

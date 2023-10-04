@@ -26,7 +26,7 @@ const Experience = () => {
   }, []);
 
   const handleClick = (e) => {
-    const id = e.currentTarget.id;
+    const { id } = e.currentTarget;
     if (id === "loyal") {
       FocusLoyal(true);
       FocusIqGeo(false);
@@ -53,29 +53,32 @@ const Experience = () => {
           </Link>
         </Span>
         <br />
-        <Date>January 2022 - Present</Date>
+        <Date>Jan 2022 - Oct 2023</Date>
       </JobTitle>
       <ListContainer>
         <ListItem>
-          Utilize TypeScript, React, & Cypress to build out new features,
-          troubleshoot bugs, and re-factor codebase
+          Utilize TypeScript and React to build new features, fix bugs, and
+          re-factor codebases
         </ListItem>
         <ListItem>
           Communicate & collaborate with multi-disciplinary teams of engineers,
           designers, and product managers on a daily basis
         </ListItem>
         <ListItem>
-          Deploy modern, performant, and maintainable code to Production on a
-          biweekly basis
+          Deploy modern, performant, and maintainable code to production on a
+          weekly basis
+        </ListItem>
+        <ListItem>
+          Use Cypress, Playwright, and Checkly to build out integration and unit
+          tests
         </ListItem>
         <ListItem>
           Help drive technical and design direction for applications used by
           dozens of health systems
         </ListItem>
         <ListItem>
-          Provide mentorship to summer interns through weekly meetings and pair
-          programming sessions to better understand software engineering
-          practices and principles
+          Provide mentorship to summer interns throughly weekly check-ins and
+          pair programming sessions
         </ListItem>
         <ListItem>
           Help implement Micro-Frontend Architecture to create a new unified
@@ -100,15 +103,15 @@ const Experience = () => {
             </Link>
           </Span>
           <br />
-          <Date>January 2020 - January 2022</Date>
+          <Date>Jan 2020 - Jan 2022</Date>
         </JobTitle>
         <ListContainer>
           <ListItem>
             Utilize JavaScript, HTML/CSS, & React to build out new features and
-            troubleshoot bugs
+            fix bugs
           </ListItem>
           <ListItem>
-            Use Python & PostgreSQL to bring in new data and enhance Back End
+            Use Python & PostgreSQL to bring in new data and enhance back end
             functionality
           </ListItem>
           <ListItem>
@@ -145,7 +148,7 @@ const Experience = () => {
             </Link>
           </Span>
           <br />
-          <Date>September 2015 - January 2019</Date>
+          <Date>Sep 2015 - Jan 2019</Date>
         </JobTitle>
         <ListContainer>
           <ListItem>
