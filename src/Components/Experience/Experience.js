@@ -17,28 +17,37 @@ import {
 } from "./styles";
 
 const Experience = () => {
-  let [loyal, FocusLoyal] = useState(false);
-  let [iqgeo, FocusIqGeo] = useState(false);
-  let [zillow, FocusZillow] = useState(false);
+  let [loyal, focusLoyal] = useState(false);
+  let [iqgeo, focusIqgeo] = useState(false);
+  let [zillow, focusZillow] = useState(false);
+  let [ccco, focusCcco] = useState(false);
 
   useEffect(() => {
-    FocusLoyal(true);
+    focusLoyal(true);
   }, []);
 
   const handleClick = (e) => {
     const { id } = e.currentTarget;
     if (id === "loyal") {
-      FocusLoyal(true);
-      FocusIqGeo(false);
-      FocusZillow(false);
+      focusLoyal(true);
+      focusIqgeo(false);
+      focusZillow(false);
+      focusCcco(false);
     } else if (id === "iqgeo") {
-      FocusIqGeo(true);
-      FocusLoyal(false);
-      FocusZillow(false);
+      focusIqgeo(true);
+      focusLoyal(false);
+      focusZillow(false);
+      focusCcco(false);
+    } else if (id === "ccco") {
+      focusCcco(true);
+      focusIqgeo(false);
+      focusLoyal(false);
+      focusZillow(false);
     } else {
-      FocusZillow(true);
-      FocusIqGeo(false);
-      FocusLoyal(false);
+      focusZillow(true);
+      focusIqgeo(false);
+      focusLoyal(false);
+      focusCcco(false);
     }
   };
 
@@ -136,6 +145,44 @@ const Experience = () => {
         </ListContainer>
       </WorkSection>
     );
+  } else if (ccco) {
+    workSection = (
+      <WorkSection>
+        <JobTitle>
+          Instructor of Philosophy{" "}
+          <Span>
+            @{" "}
+            <Link href="https://cccs.edu/" target="blank">
+              CCCS
+            </Link>
+          </Span>
+          <br />
+          <Date>Jul 2017 - Aug 2023</Date>
+        </JobTitle>
+        <ListContainer>
+          <ListItem>
+            Teaching the following courses:
+            <ul>
+              <li>Intro to Logic (PHI 1013)</li>
+              <li>Intro to Ethics (PHI 1012)</li>
+              <li>Intro to Philosophy (PHI 1011)</li>
+              <li>Environmental Ethics (PHI 2018)</li>
+              <li>Business Ethics (PHI 2005)</li>
+            </ul>
+          </ListItem>
+          <ListItem>
+            Build course content including exercise sets, quizzes, essay
+            assignments, syllabus, and discussions
+          </ListItem>
+          <ListItem>
+            Utilizing academic CRM’s such as Desire2Learn & Blackboard Online
+          </ListItem>
+          <ListItem>
+            Engaging in CCCO’s Course Development & Feedback Program
+          </ListItem>
+        </ListContainer>
+      </WorkSection>
+    );
   } else if (zillow) {
     workSection = (
       <WorkSection>
@@ -201,6 +248,13 @@ const Experience = () => {
                 alt="Working icon"
               />
               <Triangle focus={iqgeo} />
+            </LogoButton>
+            <LogoButton focus={ccco} onClick={handleClick} id="ccco">
+              <StyledImg
+                src={require("../../assets/cccslogo.png")}
+                alt="Working icon"
+              />
+              <Triangle focus={ccco} />
             </LogoButton>
             <LogoButton focus={zillow} onClick={handleClick} id="zillow">
               <StyledImg

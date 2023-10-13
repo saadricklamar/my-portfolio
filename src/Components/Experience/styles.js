@@ -37,6 +37,7 @@ export const WorkCard = styled.section`
 `;
 
 export const ButtonContainer = styled.section`
+  margin-top: 20px;
   height: 300px;
   width: 100px;
   display: flex;
@@ -45,7 +46,7 @@ export const ButtonContainer = styled.section`
   @media (max-width: 420px) {
     flex-direction: row;
     height: 100px;
-    width: 300px;
+    width: 350px;
     justify-content: flex-end;
     margin: 10px 0 0 20px;
   }
@@ -61,6 +62,10 @@ export const LogoButton = styled.button`
   }
   @media (max-width: 420px) {
     flex-direction: column;
+  }
+  &#ccco {
+    margin-left: -5px;
+    margin-bottom: 5px;
   }
 `;
 
