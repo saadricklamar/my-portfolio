@@ -45,7 +45,7 @@ export const Content = ({ clickOrScroll, navButtons }) => {
             <NavButton active={navButtons.contact}>Contact</NavButton>
           </Link>
           <a
-            href={require("../../assets/SaadBaradanResume.pdf")}
+            href={require("../../assets/SaadBResume.pdf")}
             target="_blank"
             rel="noopener noreferrer"
           >
