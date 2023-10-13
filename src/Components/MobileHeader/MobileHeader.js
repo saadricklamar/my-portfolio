@@ -49,7 +49,7 @@ function MobileHeader() {
           </li>
           <li>
             <a
-              href={require("../../assets/SaadBaradanResume.pdf")}
+              href={require("../../assets/SaadBResume.pdf")}
               target="_blank"
               rel="noopener noreferrer"
               id="mobile-resume"
