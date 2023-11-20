@@ -113,7 +113,7 @@ export const Date = styled.span`
 `;
 
 export const WorkSection = styled.section`
-  background: #17cddf2e;
+  background: #07e1f978;
   display: flex;
   flex-direction: column;
   align-items: baseline;

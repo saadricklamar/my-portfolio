@@ -78,23 +78,25 @@ const Experience = () => {
           weekly basis
         </ListItem>
         <ListItem>
-          Use Cypress, Playwright, and Checkly to build out integration and unit
-          tests
+          Collaborate with backend engineers to analyze, troubleshoot, and
+          consume RESTful APIs
         </ListItem>
         <ListItem>
-          Help drive technical and design direction for applications used by
-          dozens of health systems
+          Work with designers to review, improve, and implement Figma designs
         </ListItem>
         <ListItem>
-          Provide mentorship to summer interns throughly weekly check-ins and
-          pair programming sessions
+          Use Cypress & Playwright to build out integration and unit tests
         </ListItem>
         <ListItem>
-          Help implement Micro-Frontend Architecture to create a new unified
-          Platform application
+          Develop a curriculum for summer interns and provide mentorship
+          throughly weekly check-ins and pair programming sessions
         </ListItem>
         <ListItem>
-          Lead conversion of application codebase from JavaScript to TypeScript
+          Troubleshoot production issues and provide status updates to
+          stakeholders
+        </ListItem>
+        <ListItem>
+          Lead team to being 1st to accomplish various tech debt initiatives
         </ListItem>
       </ListContainer>
     </WorkSection>
@@ -124,16 +126,20 @@ const Experience = () => {
             functionality
           </ListItem>
           <ListItem>
+            Use Linux to develop, test, and deploy software to various
+            environments
+          </ListItem>
+          <ListItem>
+            Work directly with clients to design, build, test, and deploy new
+            features
+          </ListItem>
+          <ListItem>
+            Manage and multi-task between 2-3 projects and client stakeholders
+            at one time
+          </ListItem>
+          <ListItem>
             Implement various geospatial libraries like OpenLayers, Leaflet, &
             Turf.js
-          </ListItem>
-          <ListItem>
-            Use Linux to develop, test, and deploy software to various
-            environments (QA, STG, & PROD)
-          </ListItem>
-          <ListItem>
-            Use Adobe and Figma to create various design documents in
-            collaboration with clients
           </ListItem>
           <ListItem>
             Implement new installs of IQGeo products for clients
