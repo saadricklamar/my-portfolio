@@ -74,10 +74,10 @@ export const App = () => {
           <TextLoop
             children={[
               "Hello",
-              "مرحبا",
               "Ciao",
               "你好",
               "Hola",
+              "مرحبا",
               "Sveiki",
               "नमस्ते",
               "Hej",

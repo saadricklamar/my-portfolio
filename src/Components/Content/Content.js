@@ -21,6 +21,7 @@ import {
   SkillText,
   SkillsTitle,
   StyledImg,
+  StyledComponentImg,
   Welcome,
 } from "./styles";
 
@@ -135,6 +136,19 @@ export const Content = ({ clickOrScroll, navButtons }) => {
               <SkillText>SASS</SkillText>
             </SkillCard>
             <SkillCard>
+              <StyledComponentImg
+                src={require("../../assets/styled-components.svg").default}
+                alt="Styled components logo"
+              />
+            </SkillCard>
+            <SkillCard>
+              <StyledImg
+                src={require("../../assets/jquery.svg").default}
+                alt="Jquery logo"
+              />
+              <SkillText>jQuery</SkillText>
+            </SkillCard>
+            <SkillCard>
               <StyledImg
                 src={require("../../assets/Jest.svg").default}
                 alt="Jest logo"
@@ -151,9 +165,16 @@ export const Content = ({ clickOrScroll, navButtons }) => {
             <SkillCard>
               <StyledImg
                 src={require("../../assets/cypress.jpeg")}
-                alt="Cypress testing framework logo"
+                alt="Cypress logo"
               />
               <SkillText>Cypress</SkillText>
+            </SkillCard>
+            <SkillCard>
+              <StyledImg
+                src={require("../../assets/playwright.svg").default}
+                alt="Playwright logo"
+              />
+              <SkillText>Playwright</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
@@ -161,6 +182,13 @@ export const Content = ({ clickOrScroll, navButtons }) => {
                 alt="Webpack logo"
               />
               <SkillText>Webpack</SkillText>
+            </SkillCard>
+            <SkillCard>
+              <StyledImg
+                src={require("../../assets/node.svg").default}
+                alt="Node.js logo"
+              />
+              <SkillText>Node.js</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
@@ -204,6 +232,13 @@ export const Content = ({ clickOrScroll, navButtons }) => {
                 alt="Hands locked together icon symbolizing colloboration"
               />
               <SkillText>Collaborative</SkillText>
+            </SkillCard>
+            <SkillCard>
+              <StyledImg
+                src={require("../../assets/multi-tasker.svg").default}
+                alt="Person with many hands symbolizing being a multi-tasker"
+              />
+              <SkillText>Multi-tasker</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg

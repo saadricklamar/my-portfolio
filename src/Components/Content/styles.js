@@ -162,3 +162,9 @@ export const StyledImg = styled.img`
   height: 50px;
   width: 50px;
 `;
+
+export const StyledComponentImg = styled.img`
+  margin: 7px auto 5px auto;
+  height: 75px;
+  width: 75px;
+`;
