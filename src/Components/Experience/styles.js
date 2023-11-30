@@ -113,7 +113,7 @@ export const Date = styled.span`
 `;
 
 export const WorkSection = styled.section`
-  background: #07e1f978;
+  background: lavender;
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -134,6 +134,6 @@ export const ListContainer = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  list-style-type: disclosure-closed;
+  list-style-type: disc;
   margin: 5px;
 `;
