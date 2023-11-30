@@ -39,7 +39,7 @@ span {
     content: "↓";
     margin-left: 20px;
     opacity: 0;
-    position: fixed;
+    position: absolute;
   }
 
   &:hover:after {
