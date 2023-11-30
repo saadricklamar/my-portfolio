@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.ec2d3d5d.css",
-    "main.js": "/my-portfolio/static/js/main.2715b613.js",
+    "main.css": "/my-portfolio/static/css/main.029de5b7.css",
+    "main.js": "/my-portfolio/static/js/main.9d4442ee.js",
     "static/media/first-blue.jpg": "/my-portfolio/static/media/first-blue.790391adca801b37b2b3.jpg",
     "static/media/blue-lake.jpg": "/my-portfolio/static/media/blue-lake.daa54c86fdceef57036e.jpg",
     "static/media/dead-horse.JPEG": "/my-portfolio/static/media/dead-horse.6c4855836be460343323.JPEG",
@@ -55,11 +55,11 @@
     "static/media/js.svg": "/my-portfolio/static/media/js.218515feb76f692771fe00cfeadc46c8.svg",
     "static/media/webpack.svg": "/my-portfolio/static/media/webpack.7340ce295f8804bd0f14bae75700ebf3.svg",
     "static/media/html.svg": "/my-portfolio/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
-    "main.ec2d3d5d.css.map": "/my-portfolio/static/css/main.ec2d3d5d.css.map",
-    "main.2715b613.js.map": "/my-portfolio/static/js/main.2715b613.js.map"
+    "main.029de5b7.css.map": "/my-portfolio/static/css/main.029de5b7.css.map",
+    "main.9d4442ee.js.map": "/my-portfolio/static/js/main.9d4442ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec2d3d5d.css",
-    "static/js/main.2715b613.js"
+    "static/css/main.029de5b7.css",
+    "static/js/main.9d4442ee.js"
   ]
 }
