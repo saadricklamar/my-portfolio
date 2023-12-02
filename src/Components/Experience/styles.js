@@ -120,6 +120,7 @@ export const WorkSection = styled.section`
   width: 658px;
   margin: 25px 0 0 15px;
   border-radius: 5px;
+  border: 1px solid gray;
   padding: 0 8px 10px 20px;
   @media (max-width: 420px) {
     width: 300px;
