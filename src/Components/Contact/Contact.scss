@@ -64,7 +64,7 @@ h3 {
   margin-top: 5%;
   width: 100px;
 
-  &:hover {
+  &:hover:enabled {
     background: white;
     color: #282c34;
     cursor: pointer;
@@ -106,8 +106,8 @@ h3 {
   padding-top: 5%;
 }
 
-span {
-  color: #f82a7b;
+.copy-right {
+  color: black;
   font-weight: bold;
 }
 
