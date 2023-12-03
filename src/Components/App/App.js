@@ -87,7 +87,7 @@ export const App = () => {
             springConfig={{ stiffness: 70, damping: 15 }}
             mask={true}
           />
-          , I'm <span>Saad Baradan.</span>
+          , I'm <span>Saad Baradan</span>.
           <br />
           I'm a Front End Engineer.
         </h1>

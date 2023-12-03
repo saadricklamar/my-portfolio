@@ -1,38 +1,34 @@
-import React, { Component } from "react";
+import React, { useReducer, useEffect } from "react";
 import * as emailjs from "emailjs-com";
 import ReactTooltip from "react-tooltip";
 import "./Contact.scss";
 
-export class Contact extends Component {
-  constructor() {
-    super();
-    this.state = {
+export const Contact = () => {
+  const [form, setForm] = useReducer(
+    (state, updates) => ({ ...state, ...updates }),
+    {
       name: "",
       email: "",
       message: "",
       formCompleted: false,
       isDisabled: true,
       userMessage: "",
-    };
-  }
-
-  handleFormChange = (e) => {
-    const { name, value } = e.target;
-    this.setState({ [name]: value });
-    if (
-      this.state.name !== "" &&
-      this.state.email !== "" &&
-      this.state.message !== ""
-    ) {
-      this.setState({ formCompleted: true });
     }
-  };
+  );
 
-  handleSubmit = (e) => {
+  useEffect(() => {
+    if (form.name !== "" && form.email !== "" && form.message !== "") {
+      setForm({ formCompleted: true });
+    } else {
+      setForm({ formCompleted: false });
+    }
+  }, [form.name, form.email, form.message]);
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, email, message, formCompleted } = this.state;
+    const { name, email, message, formCompleted } = form;
     if (formCompleted) {
-      this.setState({ isDisabled: false });
+      setForm({ isDisabled: false });
       let templateParams = {
         name: name,
         email: email,
@@ -45,81 +41,87 @@ export class Contact extends Component {
         "user_QRhXIxXogP1PX8gcIGBn5"
       );
       e.target.reset();
-      this.setState({ userMessage: "Thank you! I'll be in touch." });
+      setForm({
+        userMessage: "Thank you! I'll be in touch.",
+        formCompleted: false,
+        name: "",
+        email: "",
+        message: "",
+      });
       setTimeout(() => {
-        this.setState({ userMessage: "" });
+        setForm({ userMessage: "" });
       }, 4000);
     }
   };
 
-  render() {
-    return (
-      <main className="contact-page" id="mobile-contact">
-        <form
-          className="contact-form"
-          onSubmit={this.handleSubmit}
-          disabled={this.state.isDisabled}
+  return (
+    <main className="contact-page" id="mobile-contact">
+      <form
+        className="contact-form"
+        onSubmit={handleSubmit}
+        disabled={form.isDisabled}
+      >
+        <h3>Want to work together or have a question?</h3>
+        <input
+          className="name"
+          name="name"
+          placeholder="Name..."
+          onChange={(e) => setForm({ name: e.target.value })}
+        ></input>
+        <input
+          className="email"
+          name="email"
+          placeholder="Email..."
+          onChange={(e) => setForm({ email: e.target.value })}
+        ></input>
+        <textarea
+          className="message"
+          placeholder="Enter Your Message..."
+          name="message"
+          onChange={(e) => setForm({ message: e.target.value })}
+        ></textarea>
+        <button className="submit" disabled={!form.formCompleted}>
+          Submit
+        </button>
+      </form>
+      <p className="fade-out">{form.userMessage}</p>
+      <section className="social-media">
+        <ReactTooltip />
+        <a
+          href="https://github.com/saadricklamar"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-tip="My Github"
         >
-          <h3>Want to work together or have a question?</h3>
-          <input
-            className="name"
-            name="name"
-            placeholder="Name"
-            onChange={this.handleFormChange}
-          ></input>
-          <input
-            className="email"
-            name="email"
-            placeholder="Email"
-            onChange={this.handleFormChange}
-          ></input>
-          <textarea
-            className="message"
-            placeholder="Enter Your Message"
-            name="message"
-            onChange={this.handleFormChange}
-          ></textarea>
-          <button className="submit">Submit</button>
-        </form>
-        <p className="fade-out">{this.state.userMessage}</p>
-        <section className="social-media">
-          <ReactTooltip />
-          <a
-            href="https://github.com/saadricklamar"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-tip="My Github"
-          >
-            <img
-              src={require("../../assets/git.svg").default}
-              alt="Mocha logo"
-              width="75"
-              height="75"
-              className="social-icon"
-            />
-          </a>
-          <ReactTooltip />
-          <a
-            href="https://www.linkedin.com/in/saad-baradan/"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-tip="My Linkedin"
-          >
-            <img
-              src={require("../../assets/linkedin.svg").default}
-              alt="Mocha logo"
-              width="75"
-              height="75"
-              className="social-icon"
-            />
-          </a>
-        </section>
-        <p className="copyright">
-          SAAD BARADAN <span> &#169;2023</span>
-        </p>
-      </main>
-    );
-  }
-}
+          <img
+            src={require("../../assets/git.svg").default}
+            alt="Mocha logo"
+            width="75"
+            height="75"
+            className="social-icon"
+          />
+        </a>
+        <ReactTooltip />
+        <a
+          href="https://www.linkedin.com/in/saad-baradan/"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-tip="My Linkedin"
+        >
+          <img
+            src={require("../../assets/linkedin.svg").default}
+            alt="Mocha logo"
+            width="75"
+            height="75"
+            className="social-icon"
+          />
+        </a>
+      </section>
+      <p className="copyright">
+        SAAD BARADAN <span className="copy-right"> &#169;2024</span>
+      </p>
+    </main>
+  );
+};
 
 export default Contact;
