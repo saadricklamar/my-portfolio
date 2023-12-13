@@ -118,7 +118,7 @@ export const Contact = () => {
         </a>
       </section>
       <p className="copyright">
-        SAAD BARADAN <span className="copy-right"> &#169;2024</span>
+        SAAD BARADAN <span className="copyright-symbol"> &#169;2024</span>
       </p>
     </main>
   );

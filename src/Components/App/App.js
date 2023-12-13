@@ -11,7 +11,7 @@ export const App = () => {
     {
       about: true,
       experience: false,
-      projects: false,
+      solutions: false,
       contact: false,
     }
   );
@@ -37,7 +37,7 @@ export const App = () => {
       setNavButtons({
         about: true,
         experience: false,
-        projects: false,
+        solutions: false,
         contact: false,
       });
     }
@@ -45,7 +45,7 @@ export const App = () => {
       setNavButtons({
         about: false,
         experience: true,
-        projects: false,
+        solutions: false,
         contact: false,
       });
     }
@@ -53,7 +53,7 @@ export const App = () => {
       setNavButtons({
         about: false,
         experience: false,
-        projects: true,
+        solutions: true,
         contact: false,
       });
     }
@@ -61,7 +61,7 @@ export const App = () => {
       setNavButtons({
         about: false,
         experience: false,
-        projects: false,
+        solutions: false,
         contact: true,
       });
     }

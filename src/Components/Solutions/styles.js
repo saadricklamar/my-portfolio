@@ -28,7 +28,7 @@ export const Card = styled.section`
   &:hover .overlay {
     cursor: pointer;
     opacity: 1;
-    background: rgba(1, 1, 1, 0.7);
+    background: whitesmoke;
   }
 
   @media (max-width: 420px) {
@@ -57,12 +57,16 @@ export const Overlay = styled.div`
 `;
 
 export const ProjectName = styled.p`
-  color: white;
+  color: black;
   font-size: 1.2rem;
   font-weight: bolder;
   margin: 12% auto 0 auto;
   padding-top: 20px;
   text-align: center;
+`;
+
+export const TechUsed = styled.p`
+  color: #f82a7b;
 `;
 
 export const Button = styled.button`
@@ -73,7 +77,7 @@ export const Button = styled.button`
   font-weight: bolder;
   height: 40px;
   position: relative;
-  top: 60px;
+  top: 20px;
   width: 50%;
   text-transform: uppercase;
   color: white;
@@ -83,7 +87,7 @@ export const Button = styled.button`
   }
 `;
 
-export const Header = styled.header`
+export const Nav = styled.header`
   display: flex;
   justify-content: center;
   margin: 5% auto 0 auto;
