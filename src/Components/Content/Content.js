@@ -1,6 +1,6 @@
 import React from "react";
 import Experience from "../Experience/Experience";
-import Projects from "../Projects/Projects";
+import Projects from "../Solutions/Solutions";
 import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import Contact from "../Contact/Contact";
 import { Link } from "react-scroll";
@@ -39,8 +39,8 @@ export const Content = ({ clickOrScroll, navButtons }) => {
           <Link to="Experience" smooth={true} duration={300}>
             <NavButton active={navButtons.experience}>Experience</NavButton>
           </Link>
-          <Link to="projects" smooth={true} duration={300}>
-            <NavButton active={navButtons.projects}>Projects</NavButton>
+          <Link to="solutions" smooth={true} duration={300}>
+            <NavButton active={navButtons.solutions}>Solutions</NavButton>
           </Link>
           <Link to="contact-page" smooth={true} duration={300}>
             <NavButton active={navButtons.contact}>Contact</NavButton>
@@ -71,8 +71,8 @@ export const Content = ({ clickOrScroll, navButtons }) => {
               photography, which you can view <PhotoGallery />.
               <br />
               <br />
-              You can learn more about me by viewing my Experience and Projects
-              pages or by checking out my Resume.
+              You can learn more about where I've worked and the solutions I've
+              built by viewing my Experience and Solutions pages.
             </Paragraph>
           </Flex>
         </LeftContainer>
@@ -113,6 +113,13 @@ export const Content = ({ clickOrScroll, navButtons }) => {
                 alt="Vue.js logo"
               />
               <SkillText>Vue.js</SkillText>
+            </SkillCard>
+            <SkillCard>
+              <StyledImg
+                src={require("../../assets/stenciljs.jpeg")}
+                alt="StencilJS logo"
+              />
+              <SkillText>Stencil.js</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
@@ -168,13 +175,6 @@ export const Content = ({ clickOrScroll, navButtons }) => {
                 alt="Cypress logo"
               />
               <SkillText>Cypress</SkillText>
-            </SkillCard>
-            <SkillCard>
-              <StyledImg
-                src={require("../../assets/playwright.svg").default}
-                alt="Playwright logo"
-              />
-              <SkillText>Playwright</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg

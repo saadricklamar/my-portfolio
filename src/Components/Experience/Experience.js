@@ -17,37 +17,27 @@ import {
 } from "./styles";
 
 const Experience = () => {
-  let [loyal, focusLoyal] = useState(false);
-  let [iqgeo, focusIqgeo] = useState(false);
-  let [zillow, focusZillow] = useState(false);
-  let [ccco, focusCcco] = useState(false);
+  const [focus, setFocus] = useState({
+    loyal: false,
+    iqgeo: false,
+    zillow: false,
+    ccco: false,
+  });
 
   useEffect(() => {
-    focusLoyal(true);
+    setFocus({ loyal: true });
   }, []);
 
   const handleClick = (e) => {
     const { id } = e.currentTarget;
     if (id === "loyal") {
-      focusLoyal(true);
-      focusIqgeo(false);
-      focusZillow(false);
-      focusCcco(false);
+      setFocus({ loyal: true, iqgeo: false, zillow: false, ccco: false });
     } else if (id === "iqgeo") {
-      focusIqgeo(true);
-      focusLoyal(false);
-      focusZillow(false);
-      focusCcco(false);
+      setFocus({ iqgeo: true, loyal: false, zillow: false, ccco: false });
     } else if (id === "ccco") {
-      focusCcco(true);
-      focusIqgeo(false);
-      focusLoyal(false);
-      focusZillow(false);
+      setFocus({ ccco: true, iqgeo: false, loyal: false, zillow: false });
     } else {
-      focusZillow(true);
-      focusIqgeo(false);
-      focusLoyal(false);
-      focusCcco(false);
+      setFocus({ zillow: true, iqgeo: false, loyal: false, ccco: false });
     }
   };
 
@@ -102,7 +92,7 @@ const Experience = () => {
     </WorkSection>
   );
 
-  if (iqgeo) {
+  if (focus.iqgeo) {
     workSection = (
       <WorkSection>
         <JobTitle>
@@ -151,7 +141,7 @@ const Experience = () => {
         </ListContainer>
       </WorkSection>
     );
-  } else if (ccco) {
+  } else if (focus.ccco) {
     workSection = (
       <WorkSection>
         <JobTitle>
@@ -189,7 +179,7 @@ const Experience = () => {
         </ListContainer>
       </WorkSection>
     );
-  } else if (zillow) {
+  } else if (focus.zillow) {
     workSection = (
       <WorkSection>
         <JobTitle>
@@ -241,33 +231,33 @@ const Experience = () => {
         </Header>
         <WorkCard>
           <ButtonContainer>
-            <LogoButton focus={loyal} onClick={handleClick} id="loyal">
+            <LogoButton focus={focus.loyal} onClick={handleClick} id="loyal">
               <StyledImg
                 src={require("../../assets/loyal.svg").default}
                 alt="Working icon"
               />
-              <Triangle focus={loyal} />
+              <Triangle focus={focus.loyal} />
             </LogoButton>
-            <LogoButton focus={iqgeo} onClick={handleClick} id="iqgeo">
+            <LogoButton focus={focus.iqgeo} onClick={handleClick} id="iqgeo">
               <StyledImg
                 src={require("../../assets/iqgeo.svg").default}
                 alt="Working icon"
               />
-              <Triangle focus={iqgeo} />
+              <Triangle focus={focus.iqgeo} />
             </LogoButton>
-            <LogoButton focus={ccco} onClick={handleClick} id="ccco">
+            <LogoButton focus={focus.ccco} onClick={handleClick} id="ccco">
               <StyledImg
                 src={require("../../assets/cccslogo.png")}
                 alt="Working icon"
               />
-              <Triangle focus={ccco} />
+              <Triangle focus={focus.ccco} />
             </LogoButton>
-            <LogoButton focus={zillow} onClick={handleClick} id="zillow">
+            <LogoButton focus={focus.zillow} onClick={handleClick} id="zillow">
               <StyledImg
                 src={require("../../assets/zillow.svg").default}
                 alt="Working icon"
               />
-              <Triangle focus={zillow} />
+              <Triangle focus={focus.zillow} />
             </LogoButton>
           </ButtonContainer>
           <section>{workSection}</section>
