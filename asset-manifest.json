@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.1e1d6ccc.css",
-    "main.js": "/my-portfolio/static/js/main.0f060a98.js",
+    "main.css": "/my-portfolio/static/css/main.c8937238.css",
+    "main.js": "/my-portfolio/static/js/main.0c6b93b8.js",
     "static/media/first-blue.jpg": "/my-portfolio/static/media/first-blue.790391adca801b37b2b3.jpg",
     "static/media/blue-lake.jpg": "/my-portfolio/static/media/blue-lake.daa54c86fdceef57036e.jpg",
     "static/media/dead-horse.JPEG": "/my-portfolio/static/media/dead-horse.6c4855836be460343323.JPEG",
@@ -13,17 +13,17 @@
     "static/media/arches.jpg": "/my-portfolio/static/media/arches.7408256c2114a03a77e2.jpg",
     "static/media/cactus.jpg": "/my-portfolio/static/media/cactus.ccaed2972d29b4c137ca.jpg",
     "static/media/american-lakes.jpg": "/my-portfolio/static/media/american-lakes.f363557164fecb76c85b.jpg",
-    "static/media/harvard-art.png": "/my-portfolio/static/media/harvard-art.82dc97c16f19415ed937.png",
-    "static/media/cycle-city.png": "/my-portfolio/static/media/cycle-city.fba8f57be14bd5d1f1ff.png",
     "static/media/las-cruces.jpeg": "/my-portfolio/static/media/las-cruces.37457d17e6315bc5c9fe.jpeg",
     "static/media/dallas-divide.jpeg": "/my-portfolio/static/media/dallas-divide.3e085c95f68cafa48ce6.jpeg",
-    "static/media/wilsonpicker.png": "/my-portfolio/static/media/wilsonpicker.d9c59f820ff330b644ac.png",
     "static/media/selfie.jpg": "/my-portfolio/static/media/selfie.a02c7a8cdc38dc5dfbb3.jpg",
-    "static/media/movie-tracker.png": "/my-portfolio/static/media/movie-tracker.27d2aff69601f275b227.png",
-    "static/media/vue-calculator.png": "/my-portfolio/static/media/vue-calculator.27db7d844e2e0b2753f1.png",
-    "static/media/philosophers.png": "/my-portfolio/static/media/philosophers.dc2c4cc6de1771cb5a6a.png",
+    "static/media/workflow-manager.png": "/my-portfolio/static/media/workflow-manager.89ec438cecac46b14db8.png",
+    "static/media/revenue-optimizer.png": "/my-portfolio/static/media/revenue-optimizer.562f4e87357996062dc7.png",
+    "static/media/imaige-ai.png": "/my-portfolio/static/media/imaige-ai.0400a8fa4f3aea3b26a5.png",
+    "static/media/iqgeo-inspection-survey.png": "/my-portfolio/static/media/iqgeo-inspection-survey.4b0c7958672e13450c99.png",
     "static/media/SaadBResume.pdf": "/my-portfolio/static/media/SaadBResume.f45238441d6e79b860aa.pdf",
     "static/media/linux.svg": "/my-portfolio/static/media/linux.3281c7522a652e196efd0c21c084a563.svg",
+    "static/media/care-data.png": "/my-portfolio/static/media/care-data.26a9538c967b53f1624b.png",
+    "static/media/care-search.png": "/my-portfolio/static/media/care-search.149dfa354a21207f5647.png",
     "static/media/enzyme.png": "/my-portfolio/static/media/enzyme.7231f21eb9b422778ccf.png",
     "static/media/cypress.jpeg": "/my-portfolio/static/media/cypress.5e7e0915c163e520c58f.jpeg",
     "static/media/cccslogo.png": "/my-portfolio/static/media/cccslogo.959278e0bf21c6a4fb05.png",
@@ -32,7 +32,6 @@
     "static/media/loyal.svg": "/my-portfolio/static/media/loyal.decbef49c176cf2a6f45780e7d0a4cee.svg",
     "static/media/styled-components.svg": "/my-portfolio/static/media/styled-components.6e34e546e24de94bd5d818b2b75cafd1.svg",
     "static/media/positive.svg": "/my-portfolio/static/media/positive.3da9ca648f81f95e7ab130aebff7191d.svg",
-    "static/media/playwright.svg": "/my-portfolio/static/media/playwright.969c0ce1e806bbc9abba43b53f9ddf56.svg",
     "static/media/iqgeo.svg": "/my-portfolio/static/media/iqgeo.4e10efc47368aa962137669c315055e9.svg",
     "static/media/node.svg": "/my-portfolio/static/media/node.fbb7745334637b3e2e538b9f48d5b9bd.svg",
     "static/media/sass.svg": "/my-portfolio/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
@@ -55,11 +54,11 @@
     "static/media/js.svg": "/my-portfolio/static/media/js.218515feb76f692771fe00cfeadc46c8.svg",
     "static/media/webpack.svg": "/my-portfolio/static/media/webpack.7340ce295f8804bd0f14bae75700ebf3.svg",
     "static/media/html.svg": "/my-portfolio/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
-    "main.1e1d6ccc.css.map": "/my-portfolio/static/css/main.1e1d6ccc.css.map",
-    "main.0f060a98.js.map": "/my-portfolio/static/js/main.0f060a98.js.map"
+    "main.c8937238.css.map": "/my-portfolio/static/css/main.c8937238.css.map",
+    "main.0c6b93b8.js.map": "/my-portfolio/static/js/main.0c6b93b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e1d6ccc.css",
-    "static/js/main.0f060a98.js"
+    "static/css/main.c8937238.css",
+    "static/js/main.0c6b93b8.js"
   ]
 }
