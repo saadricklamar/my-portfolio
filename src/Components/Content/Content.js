@@ -116,6 +116,13 @@ export const Content = ({ clickOrScroll, navButtons }) => {
             </SkillCard>
             <SkillCard>
               <StyledImg
+                src={require("../../assets/stenciljs.jpeg")}
+                alt="StencilJS logo"
+              />
+              <SkillText>Stencil.js</SkillText>
+            </SkillCard>
+            <SkillCard>
+              <StyledImg
                 src={require("../../assets/html.svg").default}
                 alt="Html logo"
               />
@@ -168,13 +175,6 @@ export const Content = ({ clickOrScroll, navButtons }) => {
                 alt="Cypress logo"
               />
               <SkillText>Cypress</SkillText>
-            </SkillCard>
-            <SkillCard>
-              <StyledImg
-                src={require("../../assets/playwright.svg").default}
-                alt="Playwright logo"
-              />
-              <SkillText>Playwright</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg

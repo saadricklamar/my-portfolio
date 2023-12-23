@@ -32,7 +32,7 @@ export const Solutions = () => {
       />
       <Overlay className="overlay">
         <ProjectName>Care Data</ProjectName>
-        <TechUsed>React / TypeScript</TechUsed>
+        <TechUsed>TypeScript / React</TechUsed>
         <a
           href="https://loyalhealth.com/data-management/"
           target="_blank"
@@ -52,7 +52,7 @@ export const Solutions = () => {
       />
       <Overlay className="overlay">
         <ProjectName>Care Search</ProjectName>
-        <TechUsed>React / TypeScript</TechUsed>
+        <TechUsed>TypeScript / React</TechUsed>
         <a
           href="https://loyalhealth.com/care-search/"
           target="_blank"
@@ -92,7 +92,7 @@ export const Solutions = () => {
       />
       <Overlay className="overlay">
         <ProjectName>Workflow Manager</ProjectName>
-        <TechUsed>React / JavaScript</TechUsed>
+        <TechUsed>JavaScript / React</TechUsed>
         <a
           href="https://www.iqgeo.com/product/workflow-manager"
           target="_blank"
@@ -132,7 +132,7 @@ export const Solutions = () => {
       />
       <Overlay className="overlay">
         <ProjectName>Imaige AI</ProjectName>
-        <TechUsed>Ionic / Stencil / TypeScript</TechUsed>
+        <TechUsed>TypeScript / Stencil / Electron</TechUsed>
         <a
           href="https://imaige.com/products/"
           target="_blank"
