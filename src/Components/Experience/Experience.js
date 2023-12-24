@@ -18,26 +18,59 @@ import {
 
 const Experience = () => {
   const [focus, setFocus] = useState({
+    imaige: false,
     loyal: false,
     iqgeo: false,
-    zillow: false,
+    snhu: false,
     ccco: false,
   });
 
   useEffect(() => {
-    setFocus({ loyal: true });
+    setFocus({ imaige: true });
   }, []);
 
   const handleClick = (e) => {
     const { id } = e.currentTarget;
-    if (id === "loyal") {
-      setFocus({ loyal: true, iqgeo: false, zillow: false, ccco: false });
+    if (id === "imaige") {
+      setFocus({
+        imaige: true,
+        loyal: false,
+        iqgeo: false,
+        snhu: false,
+        ccco: false,
+      });
+    } else if (id === "loyal") {
+      setFocus({
+        imaige: false,
+        loyal: true,
+        iqgeo: false,
+        snhu: false,
+        ccco: false,
+      });
     } else if (id === "iqgeo") {
-      setFocus({ iqgeo: true, loyal: false, zillow: false, ccco: false });
+      setFocus({
+        imaige: false,
+        iqgeo: true,
+        loyal: false,
+        snhu: false,
+        ccco: false,
+      });
     } else if (id === "ccco") {
-      setFocus({ ccco: true, iqgeo: false, loyal: false, zillow: false });
+      setFocus({
+        imaige: false,
+        ccco: true,
+        iqgeo: false,
+        loyal: false,
+        snhu: false,
+      });
     } else {
-      setFocus({ zillow: true, iqgeo: false, loyal: false, ccco: false });
+      setFocus({
+        imaige: false,
+        snhu: true,
+        iqgeo: false,
+        loyal: false,
+        ccco: false,
+      });
     }
   };
 
@@ -52,7 +85,7 @@ const Experience = () => {
           </Link>
         </Span>
         <br />
-        <Date>Jan 2022 - Oct 2023</Date>
+        <Date>Jan 2022 - Oct 2023, (Full-time)</Date>
       </JobTitle>
       <ListContainer>
         <ListItem>
@@ -104,7 +137,7 @@ const Experience = () => {
             </Link>
           </Span>
           <br />
-          <Date>Jan 2020 - Jan 2022</Date>
+          <Date>Jan 2020 - Jan 2022, (Full-time)</Date>
         </JobTitle>
         <ListContainer>
           <ListItem>
@@ -153,7 +186,7 @@ const Experience = () => {
             </Link>
           </Span>
           <br />
-          <Date>Jul 2017 - Aug 2023</Date>
+          <Date>Jul 2017 - Aug 2023, (Part-time)</Date>
         </JobTitle>
         <ListContainer>
           <ListItem>
@@ -179,40 +212,85 @@ const Experience = () => {
         </ListContainer>
       </WorkSection>
     );
-  } else if (focus.zillow) {
+  } else if (focus.imaige) {
     workSection = (
       <WorkSection>
         <JobTitle>
-          Client Engagement Specialist{" "}
+          Front End Engineer{" "}
           <Span>
             @{" "}
-            <Link href="https://www.zillow.com/" target="blank">
-              Zillow
+            <Link href="https://imaige.com/products/" target="blank">
+              Imaige AI
             </Link>
           </Span>
           <br />
-          <Date>Sep 2015 - Jan 2019</Date>
+          <Date>December 2023 - Present, (Contract)</Date>
         </JobTitle>
         <ListContainer>
           <ListItem>
-            Provide customer service outreach to consumers seeking real estate
-            via phone, text, and email
+            Utilize TypeScript, StencilJS, and Electron to build out new
+            features, resolve bugs, and re-factor codebase
           </ListItem>
           <ListItem>
-            Coach real estate agents on the products, tools, and services
-            provided by Zillow
+            Communicate & collaborate with a cross-functional team of QA, Back
+            End, and AI engineers on a daily basis
           </ListItem>
           <ListItem>
-            Use CRM's such as Salesforce and Big Purple dot to manage Zillow
-            clients
+            Build a library of re-usable and cross-platform Web Components using
+            TypeScript and StencilJS
+          </ListItem>
+          <ListItem>Use Figma designs to build out new features</ListItem>
+          <ListItem>
+            Use Jira to manage and resolve tickets in a timely manner
           </ListItem>
           <ListItem>
-            Recruit and interview real estate agents for advertising
-            opportunities
+            Collaborate with client stakeholders to design, build, and demo new
+            features
           </ListItem>
           <ListItem>
-            Top productivity and metric performer for entire tenure qualifying
-            for every bonus
+            Use YAML to manage, update, and troubleshoot various deployment
+            configuration files
+          </ListItem>
+        </ListContainer>
+      </WorkSection>
+    );
+  } else if (focus.snhu) {
+    workSection = (
+      <WorkSection>
+        <JobTitle>
+          Instructor of Philosophy{" "}
+          <Span>
+            @{" "}
+            <Link href="https://degrees.snhu.edu/" target="blank">
+              SNHU
+            </Link>
+          </Span>
+          <br />
+          <Date>June 2023 - Present, (Part-time)</Date>
+        </JobTitle>
+        <ListContainer>
+          <ListItem>
+            Teaching the following online courses:
+            <ul>
+              <li>Ethics in Global Society (PHI 218)</li>
+              <li>Ethical Decision-Making & Problem-Solving (PHI 260)</li>
+            </ul>
+          </ListItem>
+          <ListItem>
+            Utilize academic CRMs such as Desire2Learn & BrightSpace
+          </ListItem>
+          <ListItem>
+            Build course content including announcements, diagrams, and video
+            lectures
+          </ListItem>
+          <ListItem>
+            Engage in continuing education seminars and trainings
+          </ListItem>
+          <ListItem>
+            Host office hours and tutoring sessions through zoom
+          </ListItem>
+          <ListItem>
+            Provide course construction feedback and improvements
           </ListItem>
         </ListContainer>
       </WorkSection>
@@ -231,33 +309,40 @@ const Experience = () => {
         </Header>
         <WorkCard>
           <ButtonContainer>
+            <LogoButton focus={focus.imaige} onClick={handleClick} id="imaige">
+              <StyledImg
+                src={require("../../assets/imaige.png")}
+                alt="Imaige AI logo"
+              />
+              <Triangle focus={focus.imaige} />
+            </LogoButton>
             <LogoButton focus={focus.loyal} onClick={handleClick} id="loyal">
               <StyledImg
                 src={require("../../assets/loyal.svg").default}
-                alt="Working icon"
+                alt="Loyal Health logo"
               />
               <Triangle focus={focus.loyal} />
             </LogoButton>
             <LogoButton focus={focus.iqgeo} onClick={handleClick} id="iqgeo">
               <StyledImg
                 src={require("../../assets/iqgeo.svg").default}
-                alt="Working icon"
+                alt="IQGeo logo"
               />
               <Triangle focus={focus.iqgeo} />
+            </LogoButton>
+            <LogoButton focus={focus.snhu} onClick={handleClick} id="snhu">
+              <StyledImg
+                src={require("../../assets/snhu.png")}
+                alt="SNHU logo"
+              />
+              <Triangle focus={focus.snhu} />
             </LogoButton>
             <LogoButton focus={focus.ccco} onClick={handleClick} id="ccco">
               <StyledImg
                 src={require("../../assets/cccslogo.png")}
-                alt="Working icon"
+                alt="CCCS logo"
               />
               <Triangle focus={focus.ccco} />
-            </LogoButton>
-            <LogoButton focus={focus.zillow} onClick={handleClick} id="zillow">
-              <StyledImg
-                src={require("../../assets/zillow.svg").default}
-                alt="Working icon"
-              />
-              <Triangle focus={focus.zillow} />
             </LogoButton>
           </ButtonContainer>
           <section>{workSection}</section>
