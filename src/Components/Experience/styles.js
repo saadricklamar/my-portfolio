@@ -24,6 +24,10 @@ export const StyledImg = styled.img`
   &:focus {
     fill: purple;
   }
+  @media (max-width: 420px) {
+    height: 45px;
+    width: 45px;
+  }
 `;
 
 export const WorkCard = styled.section`
@@ -37,7 +41,7 @@ export const WorkCard = styled.section`
 `;
 
 export const ButtonContainer = styled.section`
-  margin-top: 20px;
+  margin-top: 40px;
   height: 300px;
   width: 100px;
   display: flex;
@@ -63,9 +67,15 @@ export const LogoButton = styled.button`
   @media (max-width: 420px) {
     flex-direction: column;
   }
+  &#snhu {
+    margin-left: -5px;
+    margin-bottom: 15px;
+  }
+  &#imaige {
+    margin-bottom: 15px;
+  }
   &#ccco {
     margin-left: -5px;
-    margin-bottom: 5px;
   }
 `;
 
@@ -81,7 +91,7 @@ export const Triangle = styled.div`
     border-right: none;
     border-top: none;
     border: ${(props) => (props.focus ? "1px solid #f82a7b" : "none")};
-    width: 60px;
+    width: 45px;
     display: flex;
     align-self: flex-start;
     margin-top: 5px;
