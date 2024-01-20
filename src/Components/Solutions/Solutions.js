@@ -132,7 +132,7 @@ export const Solutions = () => {
       />
       <Overlay className="overlay">
         <ProjectName>Imaige AI</ProjectName>
-        <TechUsed>TypeScript / Stencil / Electron</TechUsed>
+        <TechUsed>TypeScript / React / Electron</TechUsed>
         <a
           href="https://imaige.com/products/"
           target="_blank"

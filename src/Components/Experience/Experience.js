@@ -228,28 +228,34 @@ const Experience = () => {
         </JobTitle>
         <ListContainer>
           <ListItem>
-            Utilize TypeScript, StencilJS, and Electron to build out new
-            features, resolve bugs, and re-factor codebase
+            Use TypeScript, React, & Electron to build new features for Imaige
+            AI’s desktop application
           </ListItem>
           <ListItem>
-            Communicate & collaborate with a cross-functional team of QA, Back
-            End, and AI engineers on a daily basis
+            Configure, debug, and publish client builds to the Apple and
+            Microsoft stores
           </ListItem>
           <ListItem>
-            Build a library of re-usable and cross-platform Web Components using
-            TypeScript and StencilJS
-          </ListItem>
-          <ListItem>Use Figma designs to build out new features</ListItem>
-          <ListItem>
-            Use Jira to manage and resolve tickets in a timely manner
+            Use Bitbucket & YAML to manage Frontend build pipelines
           </ListItem>
           <ListItem>
-            Collaborate with client stakeholders to design, build, and demo new
-            features
+            Utilize TypeScript & StencilJS to build and maintain Google Chrome
+            extensions
           </ListItem>
           <ListItem>
-            Use YAML to manage, update, and troubleshoot various deployment
-            configuration files
+            Mentor Junior engineers by onboarding them and doing weekly paired
+            programming sessions
+          </ListItem>
+          <ListItem>
+            Collaborate with a cross-functional team of QA, Back End, and AI
+            engineers on a daily basis
+          </ListItem>
+          <ListItem>
+            Use Jira to manage and resolve new feature and bug tickets in a
+            timely manner
+          </ListItem>
+          <ListItem>
+            Work with designers to review, improve, and implement Figma designs
           </ListItem>
         </ListContainer>
       </WorkSection>

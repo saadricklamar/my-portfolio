@@ -77,6 +77,9 @@ export const LogoButton = styled.button`
   &#ccco {
     margin-left: -5px;
   }
+  &#loyal {
+    margin-left: 3px;
+  }
 `;
 
 export const Triangle = styled.div`
