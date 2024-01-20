@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.c8937238.css",
-    "main.js": "/my-portfolio/static/js/main.e7658cdb.js",
+    "main.js": "/my-portfolio/static/js/main.535134a8.js",
     "static/media/first-blue.jpg": "/my-portfolio/static/media/first-blue.790391adca801b37b2b3.jpg",
     "static/media/blue-lake.jpg": "/my-portfolio/static/media/blue-lake.daa54c86fdceef57036e.jpg",
     "static/media/dead-horse.JPEG": "/my-portfolio/static/media/dead-horse.6c4855836be460343323.JPEG",
@@ -20,7 +20,7 @@
     "static/media/revenue-optimizer.png": "/my-portfolio/static/media/revenue-optimizer.562f4e87357996062dc7.png",
     "static/media/imaige-ai.png": "/my-portfolio/static/media/imaige-ai.0400a8fa4f3aea3b26a5.png",
     "static/media/iqgeo-inspection-survey.png": "/my-portfolio/static/media/iqgeo-inspection-survey.4b0c7958672e13450c99.png",
-    "static/media/SaadBResume.pdf": "/my-portfolio/static/media/SaadBResume.c7def09112a7768565dc.pdf",
+    "static/media/SaadBResume.pdf": "/my-portfolio/static/media/SaadBResume.fcc6ed68dbb656ff9015.pdf",
     "static/media/linux.svg": "/my-portfolio/static/media/linux.3281c7522a652e196efd0c21c084a563.svg",
     "static/media/care-data.png": "/my-portfolio/static/media/care-data.26a9538c967b53f1624b.png",
     "static/media/care-search.png": "/my-portfolio/static/media/care-search.149dfa354a21207f5647.png",
@@ -55,10 +55,10 @@
     "static/media/webpack.svg": "/my-portfolio/static/media/webpack.7340ce295f8804bd0f14bae75700ebf3.svg",
     "static/media/html.svg": "/my-portfolio/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
     "main.c8937238.css.map": "/my-portfolio/static/css/main.c8937238.css.map",
-    "main.e7658cdb.js.map": "/my-portfolio/static/js/main.e7658cdb.js.map"
+    "main.535134a8.js.map": "/my-portfolio/static/js/main.535134a8.js.map"
   },
   "entrypoints": [
     "static/css/main.c8937238.css",
-    "static/js/main.e7658cdb.js"
+    "static/js/main.535134a8.js"
   ]
 }
