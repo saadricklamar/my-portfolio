@@ -141,11 +141,11 @@ const Experience = () => {
         </JobTitle>
         <ListContainer>
           <ListItem>
-            Utilize JavaScript, HTML/CSS, & React to build out new features and
-            fix bugs
+            Utilize JavaScript, HTML/CSS, & React to build out new frontend
+            features and fix bugs
           </ListItem>
           <ListItem>
-            Use Python & PostgreSQL to bring in new data and enhance back end
+            Use Python & PostgreSQL to bring in new data and enhance backend
             functionality
           </ListItem>
           <ListItem>
@@ -228,34 +228,33 @@ const Experience = () => {
         </JobTitle>
         <ListContainer>
           <ListItem>
-            Use TypeScript, React, & Electron to build new features for Imaige
-            AI’s desktop application
+            Lead Frontend development on Imaige AI’s desktop application using
+            TypeScript, React, & Electron
           </ListItem>
           <ListItem>
             Configure, debug, and publish client builds to the Apple and
             Microsoft stores
           </ListItem>
           <ListItem>
-            Use Bitbucket & YAML to manage Frontend build pipelines
+            Use Bitbucket & YAML to build & manage Frontend build pipelines
           </ListItem>
           <ListItem>
-            Utilize TypeScript & StencilJS to build and maintain Google Chrome
-            extensions
-          </ListItem>
-          <ListItem>
-            Mentor Junior engineers by onboarding them and doing weekly paired
-            programming sessions
+            Utilize TypeScript & StencilJS to build Google Chrome extensions
           </ListItem>
           <ListItem>
             Collaborate with a cross-functional team of QA, Back End, and AI
             engineers on a daily basis
           </ListItem>
           <ListItem>
-            Use Jira to manage and resolve new feature and bug tickets in a
-            timely manner
+            Work with designers to review and implement Figma designs
           </ListItem>
           <ListItem>
-            Work with designers to review, improve, and implement Figma designs
+            Mentor Junior engineers by onboarding them and doing weekly paired
+            programming sessions
+          </ListItem>
+          <ListItem>
+            Use Jira to manage and resolve new feature and bug tickets in a
+            timely manner
           </ListItem>
         </ListContainer>
       </WorkSection>
