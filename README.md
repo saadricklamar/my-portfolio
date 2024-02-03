@@ -1,7 +1,3 @@
-## Live website 
-
-[my-portfolio](https://saadricklamar.github.io/my-portfolio/)
-
 ## Tech Used
 
 * [JavaScript](https://www.javascript.com/)
@@ -12,6 +8,3 @@
 * [Jest](https://jestjs.io/)
 * [Enzyme](https://airbnb.io/enzyme/)
 * [Cypress](https://www.cypress.io/)
-
-
-
