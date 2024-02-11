@@ -17,7 +17,7 @@ export const Container = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   margin: 1% auto;
-  width: 75%;
+  width: 70%;
 `;
 
 export const Card = styled.section`
