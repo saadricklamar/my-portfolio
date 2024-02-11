@@ -131,7 +131,7 @@ export const Solutions = () => {
         alt="Imaige AI application"
       />
       <Overlay className="overlay">
-        <ProjectName>Imaige AI</ProjectName>
+        <ProjectName>Photo Assistant</ProjectName>
         <TechUsed>TypeScript / React / Electron</TechUsed>
         <a
           href="https://imaige.com/products/"
