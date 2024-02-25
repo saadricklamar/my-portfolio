@@ -29,7 +29,7 @@ export const Contact = () => {
     const { name, email, message, formCompleted } = form;
     if (formCompleted) {
       setForm({ isDisabled: false });
-      let templateParams = {
+      const templateParams = {
         name: name,
         email: email,
         message: message,

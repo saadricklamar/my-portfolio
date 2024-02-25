@@ -31,40 +31,28 @@ export const App = () => {
   }, []);
 
   const handleScroll = () => {
-    setEvent(true);
+    const sectionOffsets = [300, 1200, 1900, 2700];
     const y = window.scrollY;
-    if (y > 400 && y < 900) {
-      setNavButtons({
-        about: true,
-        experience: false,
-        solutions: false,
-        contact: false,
-      });
+
+    const activeSectionIndex = sectionOffsets.findIndex(
+      (offset, index) =>
+        y > offset && y < (sectionOffsets[index + 1] || Infinity)
+    );
+
+    const newNavButtons = {
+      about: false,
+      experience: false,
+      solutions: false,
+      contact: false,
+    };
+
+    if (activeSectionIndex !== -1) {
+      const sectionNames = Object.keys(newNavButtons);
+      newNavButtons[sectionNames[activeSectionIndex]] = true;
     }
-    if (y > 1300 && y < 1700) {
-      setNavButtons({
-        about: false,
-        experience: true,
-        solutions: false,
-        contact: false,
-      });
-    }
-    if (y > 2000 && y < 2400) {
-      setNavButtons({
-        about: false,
-        experience: false,
-        solutions: true,
-        contact: false,
-      });
-    }
-    if (y > 2800) {
-      setNavButtons({
-        about: false,
-        experience: false,
-        solutions: false,
-        contact: true,
-      });
-    }
+
+    setNavButtons(newNavButtons);
+    setEvent(true);
   };
 
   return (
