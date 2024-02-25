@@ -31,47 +31,13 @@ const Experience = () => {
 
   const handleClick = (e) => {
     const { id } = e.currentTarget;
-    if (id === "imaige") {
-      setFocus({
-        imaige: true,
-        loyal: false,
-        iqgeo: false,
-        snhu: false,
-        ccco: false,
-      });
-    } else if (id === "loyal") {
-      setFocus({
-        imaige: false,
-        loyal: true,
-        iqgeo: false,
-        snhu: false,
-        ccco: false,
-      });
-    } else if (id === "iqgeo") {
-      setFocus({
-        imaige: false,
-        iqgeo: true,
-        loyal: false,
-        snhu: false,
-        ccco: false,
-      });
-    } else if (id === "ccco") {
-      setFocus({
-        imaige: false,
-        ccco: true,
-        iqgeo: false,
-        loyal: false,
-        snhu: false,
-      });
-    } else {
-      setFocus({
-        imaige: false,
-        snhu: true,
-        iqgeo: false,
-        loyal: false,
-        ccco: false,
-      });
-    }
+    setFocus({
+      imaige: id === "imaige",
+      loyal: id === "loyal",
+      iqgeo: id === "iqgeo",
+      snhu: id === "snhu",
+      ccco: id === "ccco",
+    });
   };
 
   let workSection = (
@@ -141,12 +107,11 @@ const Experience = () => {
         </JobTitle>
         <ListContainer>
           <ListItem>
-            Utilize JavaScript, HTML/CSS, & React to build out new frontend
+            Utilize Vanilla JavaScript, jQuery, & React to build out new
             features and fix bugs
           </ListItem>
           <ListItem>
-            Use Python & PostgreSQL to bring in new data and enhance backend
-            functionality
+            Use Python, Psycopg2, & PostgreSQL to build and enhance RESTful APIs
           </ListItem>
           <ListItem>
             Use Linux to develop, test, and deploy software to various
@@ -220,7 +185,7 @@ const Experience = () => {
           <Span>
             @{" "}
             <Link href="https://imaige.com/products/" target="blank">
-              Imaige AI
+              Imaige
             </Link>
           </Span>
           <br />
@@ -228,18 +193,18 @@ const Experience = () => {
         </JobTitle>
         <ListContainer>
           <ListItem>
-            Lead Frontend development on Imaige AI’s desktop application using
-            TypeScript, React, & Electron
-          </ListItem>
-          <ListItem>
-            Configure, debug, and publish client builds to the Apple and
-            Microsoft stores
-          </ListItem>
-          <ListItem>
-            Use Bitbucket & YAML to build & manage Frontend build pipelines
+            Lead Frontend development of Imaige AI’s desktop & web client
+            applications using TypeScript, React, & Electron
           </ListItem>
           <ListItem>
             Utilize TypeScript & StencilJS to build Google Chrome extensions
+          </ListItem>
+          <ListItem>
+            Configure, sign, and publish Mac and Windows client desktop builds
+            for bi-weekly production releases
+          </ListItem>
+          <ListItem>
+            Use Bitbucket & YAML to build & manage Frontend build pipelines
           </ListItem>
           <ListItem>
             Collaborate with a cross-functional team of QA, Back End, and AI
