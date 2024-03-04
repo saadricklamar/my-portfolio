@@ -51,7 +51,7 @@ const Experience = () => {
           </Link>
         </Span>
         <br />
-        <Date>Jan 2022 - Oct 2023, (Full-time)</Date>
+        <Date>Jan 2022 - Oct 2023</Date>
       </JobTitle>
       <ListContainer>
         <ListItem>
@@ -103,7 +103,7 @@ const Experience = () => {
             </Link>
           </Span>
           <br />
-          <Date>Jan 2020 - Jan 2022, (Full-time)</Date>
+          <Date>Jan 2020 - Jan 2022</Date>
         </JobTitle>
         <ListContainer>
           <ListItem>
@@ -189,7 +189,7 @@ const Experience = () => {
             </Link>
           </Span>
           <br />
-          <Date>December 2023 - Present, (Contract)</Date>
+          <Date>November 2023 - Present</Date>
         </JobTitle>
         <ListContainer>
           <ListItem>
