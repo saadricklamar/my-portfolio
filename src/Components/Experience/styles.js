@@ -67,9 +67,9 @@ export const LogoButton = styled.button`
   @media (max-width: 420px) {
     flex-direction: column;
   }
-  &#snhu {
+  &#zillow {
     margin-left: -5px;
-    margin-bottom: 15px;
+    margin-top: 15px;
   }
   &#imaige {
     margin-bottom: 15px;
