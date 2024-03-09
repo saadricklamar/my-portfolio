@@ -21,7 +21,7 @@ const Experience = () => {
     imaige: false,
     loyal: false,
     iqgeo: false,
-    snhu: false,
+    zillow: false,
     ccco: false,
   });
 
@@ -35,7 +35,7 @@ const Experience = () => {
       imaige: id === "imaige",
       loyal: id === "loyal",
       iqgeo: id === "iqgeo",
-      snhu: id === "snhu",
+      zillow: id === "zillow",
       ccco: id === "ccco",
     });
   };
@@ -151,7 +151,7 @@ const Experience = () => {
             </Link>
           </Span>
           <br />
-          <Date>Jul 2017 - Aug 2023, (Part-time)</Date>
+          <Date>Jul 2017 - Present, (Part-time)</Date>
         </JobTitle>
         <ListContainer>
           <ListItem>
@@ -224,43 +224,43 @@ const Experience = () => {
         </ListContainer>
       </WorkSection>
     );
-  } else if (focus.snhu) {
+  } else if (focus.zillow) {
     workSection = (
       <WorkSection>
         <JobTitle>
-          Instructor of Philosophy{" "}
+          Client Engagement Specialist{" "}
           <Span>
             @{" "}
-            <Link href="https://degrees.snhu.edu/" target="blank">
-              SNHU
+            <Link href="https://www.zillow.com" target="blank">
+              Zillow
             </Link>
           </Span>
           <br />
-          <Date>June 2023 - Present, (Part-time)</Date>
+          <Date>September 2015 - January 2019</Date>
         </JobTitle>
         <ListContainer>
           <ListItem>
-            Teaching the following online courses:
-            <ul>
-              <li>Ethics in Global Society (PHI 218)</li>
-              <li>Ethical Decision-Making & Problem-Solving (PHI 260)</li>
-            </ul>
+            Provide customer service outreach to consumers seeking real estate
+            via phone, text, and email
           </ListItem>
           <ListItem>
-            Utilize academic CRMs such as Desire2Learn & BrightSpace
+            Coach real estate agents on the products, tools, and services
+            provided by Zillow Group
           </ListItem>
           <ListItem>
-            Build course content including announcements, diagrams, and video
-            lectures
+            Use CRM’s such as Salesforce and Big Purple Dot to manage Zillow
+            Group clients
           </ListItem>
           <ListItem>
-            Engage in continuing education seminars and trainings
+            Recruit and interview real estate agents for advertising
+            opportunities
           </ListItem>
           <ListItem>
             Host office hours and tutoring sessions through zoom
           </ListItem>
           <ListItem>
-            Provide course construction feedback and improvements
+            Top productivity and metric performer for entire tenure qualifying
+            for every max quarterly bonus
           </ListItem>
         </ListContainer>
       </WorkSection>
@@ -300,19 +300,19 @@ const Experience = () => {
               />
               <Triangle focus={focus.iqgeo} />
             </LogoButton>
-            <LogoButton focus={focus.snhu} onClick={handleClick} id="snhu">
-              <StyledImg
-                src={require("../../assets/snhu.png")}
-                alt="SNHU logo"
-              />
-              <Triangle focus={focus.snhu} />
-            </LogoButton>
             <LogoButton focus={focus.ccco} onClick={handleClick} id="ccco">
               <StyledImg
                 src={require("../../assets/cccslogo.png")}
                 alt="CCCS logo"
               />
               <Triangle focus={focus.ccco} />
+            </LogoButton>
+            <LogoButton focus={focus.zillow} onClick={handleClick} id="zillow">
+              <StyledImg
+                src={require("../../assets/zillow.png")}
+                alt="zillow logo"
+              />
+              <Triangle focus={focus.zillow} />
             </LogoButton>
           </ButtonContainer>
           <section>{workSection}</section>
