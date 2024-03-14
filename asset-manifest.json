@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.c8937238.css",
-    "main.js": "/my-portfolio/static/js/main.f0e2baa3.js",
+    "main.js": "/my-portfolio/static/js/main.2c902757.js",
     "static/media/first-blue.jpg": "/my-portfolio/static/media/first-blue.790391adca801b37b2b3.jpg",
     "static/media/blue-lake.jpg": "/my-portfolio/static/media/blue-lake.daa54c86fdceef57036e.jpg",
     "static/media/dead-horse.JPEG": "/my-portfolio/static/media/dead-horse.6c4855836be460343323.JPEG",
@@ -20,7 +20,7 @@
     "static/media/revenue-optimizer.png": "/my-portfolio/static/media/revenue-optimizer.562f4e87357996062dc7.png",
     "static/media/imaige-ai.png": "/my-portfolio/static/media/imaige-ai.0400a8fa4f3aea3b26a5.png",
     "static/media/iqgeo-inspection-survey.png": "/my-portfolio/static/media/iqgeo-inspection-survey.4b0c7958672e13450c99.png",
-    "static/media/SaadBResume.pdf": "/my-portfolio/static/media/SaadBResume.89aed6450f0dd16a0c99.pdf",
+    "static/media/SaadBResume.pdf": "/my-portfolio/static/media/SaadBResume.4f6537457ecb9495e1ef.pdf",
     "static/media/linux.svg": "/my-portfolio/static/media/linux.3281c7522a652e196efd0c21c084a563.svg",
     "static/media/care-data.png": "/my-portfolio/static/media/care-data.26a9538c967b53f1624b.png",
     "static/media/care-search.png": "/my-portfolio/static/media/care-search.149dfa354a21207f5647.png",
@@ -28,12 +28,10 @@
     "static/media/cypress.jpeg": "/my-portfolio/static/media/cypress.5e7e0915c163e520c58f.jpeg",
     "static/media/cccslogo.png": "/my-portfolio/static/media/cccslogo.959278e0bf21c6a4fb05.png",
     "static/media/collaborative.svg": "/my-portfolio/static/media/collaborative.d27d2bf5f85b9b82df540e48e77dd24a.svg",
-    "static/media/postgresql.svg": "/my-portfolio/static/media/postgresql.77ffaea8a58131454c4f9b0918eec8ea.svg",
     "static/media/loyal.svg": "/my-portfolio/static/media/loyal.decbef49c176cf2a6f45780e7d0a4cee.svg",
     "static/media/styled-components.svg": "/my-portfolio/static/media/styled-components.6e34e546e24de94bd5d818b2b75cafd1.svg",
     "static/media/positive.svg": "/my-portfolio/static/media/positive.3da9ca648f81f95e7ab130aebff7191d.svg",
     "static/media/iqgeo.svg": "/my-portfolio/static/media/iqgeo.4e10efc47368aa962137669c315055e9.svg",
-    "static/media/node.svg": "/my-portfolio/static/media/node.fbb7745334637b3e2e538b9f48d5b9bd.svg",
     "static/media/sass.svg": "/my-portfolio/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
     "static/media/worked.svg": "/my-portfolio/static/media/worked.b88e0904d2eaed75b677a34ca17ac374.svg",
     "static/media/react.svg": "/my-portfolio/static/media/react.1520bd67b9711ed91ace46b169bc2491.svg",
@@ -54,10 +52,10 @@
     "static/media/webpack.svg": "/my-portfolio/static/media/webpack.7340ce295f8804bd0f14bae75700ebf3.svg",
     "static/media/html.svg": "/my-portfolio/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
     "main.c8937238.css.map": "/my-portfolio/static/css/main.c8937238.css.map",
-    "main.f0e2baa3.js.map": "/my-portfolio/static/js/main.f0e2baa3.js.map"
+    "main.2c902757.js.map": "/my-portfolio/static/js/main.2c902757.js.map"
   },
   "entrypoints": [
     "static/css/main.c8937238.css",
-    "static/js/main.f0e2baa3.js"
+    "static/js/main.2c902757.js"
   ]
 }
