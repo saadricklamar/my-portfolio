@@ -123,6 +123,13 @@ export const Content = ({ clickOrScroll, navButtons }) => {
             </SkillCard>
             <SkillCard>
               <StyledImg
+                src={require("../../assets/electron.png")}
+                alt="Electron logo"
+              />
+              <SkillText>Electron</SkillText>
+            </SkillCard>
+            <SkillCard>
+              <StyledImg
                 src={require("../../assets/html.svg").default}
                 alt="Html logo"
               />
@@ -147,6 +154,13 @@ export const Content = ({ clickOrScroll, navButtons }) => {
                 src={require("../../assets/styled-components.svg").default}
                 alt="Styled components logo"
               />
+            </SkillCard>
+            <SkillCard>
+              <StyledImg
+                src={require("../../assets/tailwindcss.jpeg")}
+                alt="Tailwind CSS logo"
+              />
+              <SkillText>Tailwind CSS</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
@@ -182,20 +196,6 @@ export const Content = ({ clickOrScroll, navButtons }) => {
                 alt="Webpack logo"
               />
               <SkillText>Webpack</SkillText>
-            </SkillCard>
-            <SkillCard>
-              <StyledImg
-                src={require("../../assets/node.svg").default}
-                alt="Node.js logo"
-              />
-              <SkillText>Node.js</SkillText>
-            </SkillCard>
-            <SkillCard>
-              <StyledImg
-                src={require("../../assets/postgresql.svg").default}
-                alt="Postgres SQL logo"
-              />
-              <SkillText>PostgreSQL</SkillText>
             </SkillCard>
             <SkillCard>
               <StyledImg
