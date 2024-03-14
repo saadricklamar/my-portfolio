@@ -55,8 +55,8 @@ const Experience = () => {
       </JobTitle>
       <ListContainer>
         <ListItem>
-          Utilize TypeScript and React to build new features, fix bugs, and
-          re-factor codebases
+          Utilize TypeScript, Styled Components, and React to build new
+          features, fix bugs, and re-factor codebases
         </ListItem>
         <ListItem>
           Communicate & collaborate with multi-disciplinary teams of engineers,
@@ -197,7 +197,8 @@ const Experience = () => {
             applications using TypeScript, React, & Electron
           </ListItem>
           <ListItem>
-            Utilize TypeScript & StencilJS to build Google Chrome extensions
+            Utilize TypeScript, Tailwind CSS, & StencilJS to build Google Chrome
+            extensions
           </ListItem>
           <ListItem>
             Configure, sign, and publish Mac and Windows client desktop builds
