@@ -19,7 +19,6 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "node-sass": "^7.0.3",
     "npm-watch": "^0.7.0",
-    "nuka-carousel": "^4.6.0",
     "react": "^17.0.2",
     "react-dom": "^16.12.0",
     "react-scripts": "5.0.1",
@@ -28,7 +27,6 @@
     "react-text-loop": "^2.3.0",
     "react-tooltip": "^3.11.1",
     "react-tsparticles": "^1.18.12",
-    "reactjs-popup": "^1.5.0",
     "serve": "^11.3.0",
     "styled-components": "^5.3.6"
   },
@@ -39,8 +37,8 @@
     "watch": "npm-watch",
     "eject": "react-scripts eject",
     "cypress:open": "cypress open",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build" 
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "watch": {
     "build": {
