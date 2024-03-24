@@ -66,6 +66,10 @@ export const LogoButton = styled.button`
   }
   @media (max-width: 420px) {
     flex-direction: column;
+
+    &#zillow {
+      margin-top: 0px !important;
+    }
   }
   &#zillow {
     margin-left: -5px;
