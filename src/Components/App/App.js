@@ -1,26 +1,25 @@
-import React, { useState, useEffect, useReducer } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.scss";
 import Content from "../Content/Content";
 import { Link } from "react-scroll";
 import TextLoop from "react-text-loop";
 
 export const App = () => {
-  const [clickOrScroll, setEvent] = useState(false);
-  const [navButtons, setNavButtons] = useReducer(
-    (state, updates) => ({ ...state, ...updates }),
-    {
+  const [combinedState, setCombinedState] = useState({
+    navButtons: {
       about: true,
       experience: false,
       solutions: false,
       contact: false,
-    }
-  );
+    },
+    event: false,
+  });
 
   const setSlider = () => {
-    setEvent(true);
-    setNavButtons({
-      about: true,
-    });
+    setCombinedState((prevState) => ({
+      ...prevState,
+      event: true,
+    }));
   };
 
   useEffect(() => {
@@ -51,8 +50,11 @@ export const App = () => {
       newNavButtons[sectionNames[activeSectionIndex]] = true;
     }
 
-    setNavButtons(newNavButtons);
-    setEvent(true);
+    setCombinedState((prevState) => ({
+      ...prevState,
+      navButtons: newNavButtons,
+      event: true,
+    }));
   };
 
   return (
@@ -86,7 +88,10 @@ export const App = () => {
           </button>
         </Link>
       </header>
-      <Content clickOrScroll={clickOrScroll} navButtons={navButtons} />
+      <Content
+        clickOrScroll={combinedState.event}
+        navButtons={combinedState.navButtons}
+      />
     </div>
   );
 };

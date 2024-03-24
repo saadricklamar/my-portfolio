@@ -1,7 +1,6 @@
 import React from "react";
 import Experience from "../Experience/Experience";
 import Projects from "../Solutions/Solutions";
-import PhotoGallery from "../PhotoGallery/PhotoGallery";
 import Contact from "../Contact/Contact";
 import { Link } from "react-scroll";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -30,19 +29,19 @@ export const Content = ({ clickOrScroll, navButtons }) => {
     <div className="content" id="mobile-about">
       <Sticky top="#header" enabled={true} bottomBoundary="#content" innerZ={3}>
         <Header>
-          <Link to="App" smooth={true} duration={300}>
+          <Link to="App" smooth={true} duration={500}>
             <HomeIcon icon={faHome} id="home" />
           </Link>
-          <Link to="content" smooth={true} duration={300}>
+          <Link to="content" smooth={true} duration={500}>
             <NavButton active={navButtons.about}>About</NavButton>
           </Link>
-          <Link to="Experience" smooth={true} duration={300}>
+          <Link to="Experience" smooth={true} duration={500}>
             <NavButton active={navButtons.experience}>Experience</NavButton>
           </Link>
-          <Link to="solutions" smooth={true} duration={300}>
+          <Link to="solutions" smooth={true} duration={500}>
             <NavButton active={navButtons.solutions}>Solutions</NavButton>
           </Link>
-          <Link to="contact-page" smooth={true} duration={300}>
+          <Link to="contact-page" smooth={true} duration={500}>
             <NavButton active={navButtons.contact}>Contact</NavButton>
           </Link>
           <a
@@ -67,8 +66,8 @@ export const Content = ({ clickOrScroll, navButtons }) => {
               <br />
               <br />
               When I'm not coding, you can find me teaching Philosophy,
-              traveling the world, hiking, walking my dog, Gizmo, and practicing
-              photography, which you can view <PhotoGallery />.
+              traveling the world, hiking, walking my dog, Gizmo, reading,
+              watching the NBA, and practicing photography.
               <br />
               <br />
               You can learn more about where I've worked and the solutions I've

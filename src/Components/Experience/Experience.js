@@ -59,6 +59,9 @@ const Experience = () => {
           features, fix bugs, and re-factor codebases
         </ListItem>
         <ListItem>
+          Use Storybook to build a library of reusable UI components
+        </ListItem>
+        <ListItem>
           Communicate & collaborate with multi-disciplinary teams of engineers,
           designers, and product managers on a daily basis
         </ListItem>
@@ -79,10 +82,6 @@ const Experience = () => {
         <ListItem>
           Develop a curriculum for summer interns and provide mentorship
           throughly weekly check-ins and pair programming sessions
-        </ListItem>
-        <ListItem>
-          Troubleshoot production issues and provide status updates to
-          stakeholders
         </ListItem>
         <ListItem>
           Lead team to being 1st to accomplish various tech debt initiatives
