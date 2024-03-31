@@ -12,7 +12,7 @@ export const Main = styled.main`
   left: 50%;
 `;
 
-export const Container = styled.section`
+export const CardContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -56,7 +56,7 @@ export const Overlay = styled.div`
   background-color: white;
 `;
 
-export const ProjectName = styled.p`
+export const SolutionName = styled.p`
   color: black;
   font-size: 1.2rem;
   font-weight: bolder;
