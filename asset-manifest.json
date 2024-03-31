@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.33eebdc3.css",
-    "main.js": "/my-portfolio/static/js/main.31c4a333.js",
+    "main.js": "/my-portfolio/static/js/main.f6659713.js",
     "static/media/selfie.jpg": "/my-portfolio/static/media/selfie.a02c7a8cdc38dc5dfbb3.jpg",
     "static/media/workflow-manager.png": "/my-portfolio/static/media/workflow-manager.89ec438cecac46b14db8.png",
     "static/media/revenue-optimizer.png": "/my-portfolio/static/media/revenue-optimizer.562f4e87357996062dc7.png",
     "static/media/imaige-ai.png": "/my-portfolio/static/media/imaige-ai.0400a8fa4f3aea3b26a5.png",
     "static/media/iqgeo-inspection-survey.png": "/my-portfolio/static/media/iqgeo-inspection-survey.4b0c7958672e13450c99.png",
-    "static/media/SaadBResume.pdf": "/my-portfolio/static/media/SaadBResume.4f6537457ecb9495e1ef.pdf",
+    "static/media/SaadBResume.pdf": "/my-portfolio/static/media/SaadBResume.eb07d23d0c625ec5a29b.pdf",
     "static/media/linux.svg": "/my-portfolio/static/media/linux.3281c7522a652e196efd0c21c084a563.svg",
     "static/media/care-data.png": "/my-portfolio/static/media/care-data.26a9538c967b53f1624b.png",
     "static/media/care-search.png": "/my-portfolio/static/media/care-search.149dfa354a21207f5647.png",
     "static/media/enzyme.png": "/my-portfolio/static/media/enzyme.7231f21eb9b422778ccf.png",
     "static/media/cypress.jpeg": "/my-portfolio/static/media/cypress.5e7e0915c163e520c58f.jpeg",
-    "static/media/cccslogo.png": "/my-portfolio/static/media/cccslogo.959278e0bf21c6a4fb05.png",
+    "static/media/cccs.png": "/my-portfolio/static/media/cccs.959278e0bf21c6a4fb05.png",
     "static/media/collaborative.svg": "/my-portfolio/static/media/collaborative.d27d2bf5f85b9b82df540e48e77dd24a.svg",
     "static/media/loyal.svg": "/my-portfolio/static/media/loyal.decbef49c176cf2a6f45780e7d0a4cee.svg",
     "static/media/styled-components.svg": "/my-portfolio/static/media/styled-components.6e34e546e24de94bd5d818b2b75cafd1.svg",
     "static/media/positive.svg": "/my-portfolio/static/media/positive.3da9ca648f81f95e7ab130aebff7191d.svg",
     "static/media/iqgeo.svg": "/my-portfolio/static/media/iqgeo.4e10efc47368aa962137669c315055e9.svg",
     "static/media/sass.svg": "/my-portfolio/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
-    "static/media/worked.svg": "/my-portfolio/static/media/worked.b88e0904d2eaed75b677a34ca17ac374.svg",
+    "static/media/computer.svg": "/my-portfolio/static/media/computer.b88e0904d2eaed75b677a34ca17ac374.svg",
     "static/media/react.svg": "/my-portfolio/static/media/react.1520bd67b9711ed91ace46b169bc2491.svg",
     "static/media/redux.svg": "/my-portfolio/static/media/redux.954b3f427d28b3746c04a3f317fcdcde.svg",
     "static/media/listening.svg": "/my-portfolio/static/media/listening.cf33ae700c53edcd10e269df5054f66c.svg",
@@ -39,10 +39,10 @@
     "static/media/webpack.svg": "/my-portfolio/static/media/webpack.7340ce295f8804bd0f14bae75700ebf3.svg",
     "static/media/html.svg": "/my-portfolio/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
     "main.33eebdc3.css.map": "/my-portfolio/static/css/main.33eebdc3.css.map",
-    "main.31c4a333.js.map": "/my-portfolio/static/js/main.31c4a333.js.map"
+    "main.f6659713.js.map": "/my-portfolio/static/js/main.f6659713.js.map"
   },
   "entrypoints": [
     "static/css/main.33eebdc3.css",
-    "static/js/main.31c4a333.js"
+    "static/js/main.f6659713.js"
   ]
 }
