@@ -35,10 +35,10 @@ export const Contact = () => {
         message: message,
       };
       emailjs.send(
-        "saadbaradan_gmail_com",
-        "template_p46w7sB4",
+        process.env.REACT_APP_EMAIL_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         templateParams,
-        "user_QRhXIxXogP1PX8gcIGBn5"
+        process.env.REACT_APP_USER_ID
       );
       e.target.reset();
       setForm({
