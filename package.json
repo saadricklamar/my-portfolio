@@ -67,6 +67,7 @@
     "@babel/core": "^7.20.5",
     "@babel/eslint-parser": "^7.19.1",
     "cypress": "^9.2.0",
+    "dotenv-webpack": "^8.1.0",
     "gh-pages": "^4.0.0",
     "jest": "^24.9.0"
   }
