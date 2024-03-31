@@ -1,0 +1,102 @@
+import ImaigeLogo from "../assets/imaige.png";
+import LoyalLogo from "../assets/loyal.svg";
+import IQGeoLogo from "../assets/iqgeo.svg";
+import CCCSLogo from "../assets/cccs.png";
+import ZillowLogo from "../assets/zillow.png";
+
+export const experienceData = [
+  {
+    id: "imaige",
+    logo: ImaigeLogo,
+    website: "https://imaige.com/products/",
+    jobTitle: "Front End Engineer",
+    company: "Imaige AI",
+    date: "Nov 2023 - Present",
+    responsibilities: [
+      "Lead Frontend development of Imaige AI’s desktop & web client applications using TypeScript, React, & Electron",
+      "Utilize TypeScript, Tailwind CSS, & StencilJS to build Google Chrome extensions",
+      "Configure, sign, and publish Mac and Windows client desktop builds for bi-weekly production releases",
+      "Use Bitbucket & YAML to build & manage Frontend build pipelines",
+      "Collaborate with a cross-functional team of QA, Back End, and AI engineers on a daily basis",
+      "Work with designers to review and implement Figma designs",
+      "Mentor Junior engineers by onboarding them and doing weekly paired programming sessions",
+      "Use Jira to manage and resolve new feature and bug tickets in a timely manner",
+    ],
+  },
+  {
+    id: "loyal",
+    logo: LoyalLogo,
+    website: "https://loyalhealth.com/",
+    jobTitle: "Software Engineer, Frontend",
+    company: "Loyal Health",
+    date: "Jan 2022 - Oct 2023",
+    responsibilities: [
+      "Utilize TypeScript, Styled Components, and React to build new features, fix bugs, and re-factor codebases",
+      "Use Storybook to build a library of reusable UI components",
+      "Communicate & collaborate with multi-disciplinary teams of engineers, designers, and product managers on a daily basis",
+      "Deploy modern, performant, and maintainable code to production on a weekly basis",
+      "Collaborate with backend engineers to analyze, troubleshoot, and consume RESTful APIs",
+      "Work with designers to review, improve, and implement Figma designs",
+      "Use Cypress & Playwright to build out integration and unit tests",
+      "Develop a curriculum for summer interns and provide mentorship through weekly check-ins and pair programming sessions",
+      "Lead team to being 1st to accomplish various tech debt initiatives",
+    ],
+  },
+  {
+    id: "iqgeo",
+    logo: IQGeoLogo,
+    website: "https://www.iqgeo.com/",
+    jobTitle: "Delivery Software Engineer",
+    company: "IQGeo",
+    date: "Jan 2020 - Jan 2022",
+    responsibilities: [
+      "Utilize Vanilla JavaScript, jQuery, & React to build out new features and fix bugs",
+      "Use Python, Psycopg2, & PostgreSQL to build and enhance RESTful APIs",
+      "Integrate various mapping & geospatial libraries like OpenLayers, Leaflet, & Turf.js",
+      "Use Linux to develop, test, and deploy software to various environments",
+      "Work directly with clients to design, build, test, and deploy new features",
+      "Manage and multi-task between 2-3 projects and client stakeholders at one time",
+      "Implement new installs of IQGeo products for clients",
+      "Collaborate remotely with colleagues across US and international time zones",
+    ],
+  },
+  {
+    id: "ccco",
+    logo: CCCSLogo,
+    website: "https://cccs.edu/",
+    jobTitle: "Instructor of Philosophy",
+    company: "CCCS",
+    date: "Jul 2017 - Present, (Part-time)",
+    responsibilities: [
+      "Teaching the following courses:",
+      "Build course content including exercise sets, quizzes, essay assignments, syllabus, and discussions",
+      "Utilizing academic CRM’s such as Desire2Learn & Blackboard Online",
+      "Engaging in CCCO’s Course Development & Feedback Program",
+      "Host office hours and tutoring sessions through Zoom",
+    ],
+    courses: [
+      "Intro to Logic (PHI 1013)",
+      "Intro to Ethics (PHI 1012)",
+      "Intro to Philosophy (PHI 1011)",
+      "Environmental Ethics (PHI 2018)",
+      "Business Ethics (PHI 2005)",
+    ],
+  },
+  {
+    id: "zillow",
+    logo: ZillowLogo,
+    website: "https://www.zillow.com",
+    jobTitle: "Client Engagement Specialist",
+    company: "Zillow",
+    date: "September 2015 - January 2019",
+    responsibilities: [
+      "Provide customer service outreach to consumers seeking real estate via phone, text, and email",
+      "Qualify potential buyers & sellers and convert qualified leads to real estate agents",
+      "Coach real estate agents on the products, tools, and services provided by Zillow Group",
+      "Use Salesforce to manage and complete client outreach tasks",
+      "Use CRM’s such as Big Purple Dot to manage Zillow Group clients",
+      "Recruit and interview real estate agents for advertising opportunities",
+      "Top productivity and metric performer for entire tenure qualifying for every max quarterly bonus",
+    ],
+  },
+];
