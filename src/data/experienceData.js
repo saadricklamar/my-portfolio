@@ -1,7 +1,13 @@
+import ImaigeLogo from "../assets/imaige.png";
+import LoyalLogo from "../assets/loyal.svg";
+import IQGeoLogo from "../assets/iqgeo.svg";
+import CCCSLogo from "../assets/cccs.png";
+import ZillowLogo from "../assets/zillow.png";
+
 export const experienceData = [
   {
     id: "imaige",
-    logo: require("../assets/imaige.png"),
+    logo: ImaigeLogo,
     website: "https://imaige.com/products/",
     jobTitle: "Front End Engineer",
     company: "Imaige AI",
@@ -19,7 +25,7 @@ export const experienceData = [
   },
   {
     id: "loyal",
-    logo: require("../assets/loyal.svg").default,
+    logo: LoyalLogo,
     website: "https://loyalhealth.com/",
     jobTitle: "Software Engineer, Frontend",
     company: "Loyal Health",
@@ -38,7 +44,7 @@ export const experienceData = [
   },
   {
     id: "iqgeo",
-    logo: require("../assets/iqgeo.svg").default,
+    logo: IQGeoLogo,
     website: "https://www.iqgeo.com/",
     jobTitle: "Delivery Software Engineer",
     company: "IQGeo",
@@ -56,7 +62,7 @@ export const experienceData = [
   },
   {
     id: "ccco",
-    logo: require("../assets/cccslogo.png"),
+    logo: CCCSLogo,
     website: "https://cccs.edu/",
     jobTitle: "Instructor of Philosophy",
     company: "CCCS",
@@ -78,7 +84,7 @@ export const experienceData = [
   },
   {
     id: "zillow",
-    logo: require("../assets/zillow.png"),
+    logo: ZillowLogo,
     website: "https://www.zillow.com",
     jobTitle: "Client Engagement Specialist",
     company: "Zillow",

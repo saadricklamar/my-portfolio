@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ComputerIcon from "../../assets/computer.svg";
 import { experienceData } from "../../data/experienceData";
 import {
   ButtonContainer,
@@ -30,10 +31,7 @@ const Experience = () => {
     <Main className="Experience" id="mobile-experience">
       <section>
         <Header>
-          <StyledImg
-            src={require("../../assets/worked.svg").default}
-            alt="Working icon"
-          />{" "}
+          <StyledImg src={ComputerIcon} alt="Desktop computer icon" />{" "}
           <h1>Where I've Worked</h1>
         </Header>
         <WorkCard>
