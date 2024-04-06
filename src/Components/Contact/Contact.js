@@ -1,9 +1,25 @@
-import React, { useReducer, useEffect } from "react";
+import React, { useState, useReducer, useEffect } from "react";
 import * as emailjs from "emailjs-com";
 import ReactTooltip from "react-tooltip";
-import "./Contact.scss";
+import GithubIcon from "../../assets/git.svg";
+import LinkedinIcon from "../../assets/linkedin.svg";
+import {
+  ContactForm,
+  ContactPage,
+  CopyRight,
+  CopySymbol,
+  EmailInput,
+  FadeMessage,
+  Header,
+  MessageInput,
+  NameInput,
+  SocialIcon,
+  SocialMediaIcons,
+  SubmitButton,
+} from "./styles";
 
 export const Contact = () => {
+  const [isEmailValid, setIsEmailValid] = useState(true);
   const [form, setForm] = useReducer(
     (state, updates) => ({ ...state, ...updates }),
     {
@@ -27,7 +43,7 @@ export const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, email, message, formCompleted } = form;
-    if (formCompleted) {
+    if (formCompleted && isEmailValid) {
       setForm({ isDisabled: false });
       const templateParams = {
         name: name,
@@ -54,38 +70,39 @@ export const Contact = () => {
     }
   };
 
+  const handleEmailChange = (e) => {
+    const { value } = e.target;
+    const emailRegex = /^[^\s@]+@(?!.*?\.\.)[^\s@]+\.[^\s@]+$/;
+    setIsEmailValid(value === "" || emailRegex.test(value));
+    setForm({ email: value });
+  };
+
   return (
-    <main className="contact-page" id="mobile-contact">
-      <form
-        className="contact-form"
-        onSubmit={handleSubmit}
-        disabled={form.isDisabled}
-      >
-        <h3>Want to work together or have a question?</h3>
-        <input
-          className="name"
+    <ContactPage className="contact-page" id="mobile-contact">
+      <ContactForm onSubmit={handleSubmit} disabled={form.isDisabled}>
+        <Header>Want to work together or have a question?</Header>
+        <NameInput
           name="name"
           placeholder="Name..."
           onChange={(e) => setForm({ name: e.target.value })}
-        ></input>
-        <input
-          className="email"
+        />
+        <EmailInput
           name="email"
           placeholder="Email..."
-          onChange={(e) => setForm({ email: e.target.value })}
-        ></input>
-        <textarea
-          className="message"
+          onChange={handleEmailChange}
+          isEmailValid={isEmailValid}
+        />
+        <MessageInput
           placeholder="Enter Your Message..."
           name="message"
           onChange={(e) => setForm({ message: e.target.value })}
-        ></textarea>
-        <button className="submit" disabled={!form.formCompleted}>
+        />
+        <SubmitButton disabled={!form.formCompleted || !isEmailValid}>
           Submit
-        </button>
-      </form>
-      <p className="fade-out">{form.userMessage}</p>
-      <section className="social-media">
+        </SubmitButton>
+      </ContactForm>
+      <FadeMessage>{form.userMessage}</FadeMessage>
+      <SocialMediaIcons>
         <ReactTooltip />
         <a
           href="https://github.com/saadricklamar"
@@ -93,9 +110,9 @@ export const Contact = () => {
           rel="noopener noreferrer"
           data-tip="My Github"
         >
-          <img
-            src={require("../../assets/git.svg").default}
-            alt="Mocha logo"
+          <SocialIcon
+            src={GithubIcon}
+            alt="Github logo"
             width="75"
             height="75"
             className="social-icon"
@@ -108,19 +125,19 @@ export const Contact = () => {
           rel="noopener noreferrer"
           data-tip="My Linkedin"
         >
-          <img
-            src={require("../../assets/linkedin.svg").default}
-            alt="Mocha logo"
+          <SocialIcon
+            src={LinkedinIcon}
+            alt="Linkedin logo"
             width="75"
             height="75"
             className="social-icon"
           />
         </a>
-      </section>
-      <p className="copyright">
-        SAAD BARADAN <span className="copyright-symbol"> &#169;2024</span>
-      </p>
-    </main>
+      </SocialMediaIcons>
+      <CopyRight>
+        SAAD BARADAN <CopySymbol> &#169;2024</CopySymbol>
+      </CopyRight>
+    </ContactPage>
   );
 };
 
