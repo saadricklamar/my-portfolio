@@ -114,7 +114,7 @@ export const SkillContainer = styled.div`
   justify-content: space-evenly;
   flex-wrap: wrap;
   position: relative;
-  right: -600px;
+  right: -1000px;
   -webkit-animation: slide 0.5s backwards;
   -webkit-animation-delay: 0.5s;
   animation: slide 0.5s forwards;

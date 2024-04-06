@@ -36,7 +36,7 @@ export const Solutions = () => {
   };
 
   return (
-    <Main className="solutions">
+    <Main id="Solutions">
       <Nav>
         <NavButton
           id="all"

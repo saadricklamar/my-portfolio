@@ -28,7 +28,7 @@ const Experience = () => {
   const currentExperience = experienceData.find((exp) => exp.id === focus);
 
   return (
-    <Main className="Experience" id="mobile-experience">
+    <Main id="Experience">
       <section>
         <Header>
           <StyledImg src={ComputerIcon} alt="Desktop computer icon" />{" "}

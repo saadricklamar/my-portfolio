@@ -1,13 +1,16 @@
-* {
-  font-family: "Titillium Web", sans-serif;
-}
+import styled, { createGlobalStyle } from "styled-components";
 
-.App {
+export const GlobalStyle = createGlobalStyle`
+  * {
+    font-family: 'Titillium Web', sans-serif;
+  }
+`;
+export const LandingContainer = styled.div`
   text-align: center;
   margin-bottom: 0;
-}
+`;
 
-.App-header {
+export const LandingHeader = styled.header`
   align-items: center;
   background-color: #282c34;
   color: white;
@@ -17,13 +20,21 @@
   justify-content: center;
   min-height: 100vh;
   padding: 0;
-}
 
-span {
+  @media (max-width: 700px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 535px) {
+    font-size: 0.7rem;
+  }
+`;
+
+export const Name = styled.span`
   color: #f82a7b;
-}
+`;
 
-.home-button {
+export const LandingButton = styled.button`
   background: transparent;
   border: 2px solid white;
   color: white;
@@ -56,42 +67,9 @@ span {
     width: 230px;
     padding-right: 20px;
   }
-}
 
-// Media Queiries //
-
-@media (max-width: 700px) {
-  .home-button {
-    font-size: 1rem;
-    height: 40px;
-    transition: all 1s ease;
-    width: 160px;
-
-    &:hover:before {
-      left: 61%;
-      opacity: 1;
-    }
-
-    &:hover {
-      width: 200px;
-      padding-right: 20px;
-    }
-  }
-
-  .App-header {
+  @media (max-width: 535px) {
+    width: 150px;
     font-size: 1rem;
   }
-}
-
-@media (max-width: 535px) {
-  .home-button {
-    &:hover:before {
-      left: 65%;
-      opacity: 1;
-    }
-  }
-
-  .App-header {
-    font-size: 0.7rem;
-  }
-}
+`;
