@@ -78,7 +78,7 @@ export const Contact = () => {
   };
 
   return (
-    <ContactPage className="contact-page" id="mobile-contact">
+    <ContactPage id="Contact">
       <ContactForm onSubmit={handleSubmit} disabled={form.isDisabled}>
         <Header>Want to work together or have a question?</Header>
         <NameInput

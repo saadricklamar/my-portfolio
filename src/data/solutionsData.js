@@ -1,8 +1,15 @@
+import ImaigeAI from "../assets/imaige-ai.png";
+import CareData from "../assets/care-data.png";
+import CareSearch from "../assets/care-search.png";
+import InspectionSurvey from "../assets/iqgeo-inspection-survey.png";
+import WorkflowManager from "../assets/workflow-manager.png";
+import RevenueOptimizer from "../assets/revenue-optimizer.png";
+
 export const solutions = [
   {
     company: "imaigeAI",
     name: "Photo Assistant",
-    imgSrc: require("../assets/imaige-ai.png"),
+    imgSrc: ImaigeAI,
     alt: "Imaige AI application",
     techUsed: "TypeScript / React / Electron",
     link: "https://imaige.com/products/",
@@ -10,7 +17,7 @@ export const solutions = [
   {
     company: "loyal",
     name: "Care Data",
-    imgSrc: require("../assets/care-data.png"),
+    imgSrc: CareData,
     alt: "Loyal's data management application",
     techUsed: "TypeScript / React",
     link: "https://loyalhealth.com/data-management/",
@@ -18,7 +25,7 @@ export const solutions = [
   {
     company: "loyal",
     name: "Care Search",
-    imgSrc: require("../assets/care-search.png"),
+    imgSrc: CareSearch,
     alt: "Loyal's care search application",
     techUsed: "TypeScript / React",
     link: "https://loyalhealth.com/care-search/",
@@ -26,7 +33,7 @@ export const solutions = [
   {
     company: "iqgeo",
     name: "Inspection & Survey",
-    imgSrc: require("../assets/iqgeo-inspection-survey.png"),
+    imgSrc: InspectionSurvey,
     alt: "IQGeo's inspection & survey application",
     techUsed: "JavaScript / jQuery",
     link: "https://www.iqgeo.com/product/inspection-survey",
@@ -34,7 +41,7 @@ export const solutions = [
   {
     company: "iqgeo",
     name: "Workflow Manager",
-    imgSrc: require("../assets/workflow-manager.png"),
+    imgSrc: WorkflowManager,
     alt: "IQGeo's workflow manager application.",
     techUsed: "JavaScript / React",
     link: "https://www.iqgeo.com/product/workflow-manager",
@@ -42,7 +49,7 @@ export const solutions = [
   {
     company: "iqgeo",
     name: "Network Revenue Optimizer",
-    imgSrc: require("../assets/revenue-optimizer.png"),
+    imgSrc: RevenueOptimizer,
     alt: "IQGeo's network revenue optimizer application",
     techUsed: "JavaScript / jQuery",
     link: "https://www.iqgeo.com/product/network-revenue-optimizer",
