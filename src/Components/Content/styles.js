@@ -11,6 +11,11 @@ export const Header = styled.header`
   align-items: baseline;
   padding-right: 30%;
   height: 60px;
+
+  @media (max-width: 1000px) {
+    padding-right: 0%;
+  }
+
   @media (max-width: 420px) {
     display: none;
   }
