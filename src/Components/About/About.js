@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Experience from "../Experience/Experience";
 import Projects from "../Solutions/Solutions";
 import Contact from "../Contact/Contact";
+import WeatherWidget from "../WeatherWidget/WeatherWidget";
 import { Link } from "react-scroll";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { skillsData } from "../../data/skillsData";
@@ -79,6 +80,7 @@ export const About = ({ clickOrScroll, setClickOrScroll }) => {
           <a href={SaadBResume} target="_blank" rel="noopener noreferrer">
             <NavButton active={false}>Resume</NavButton>
           </a>
+          <WeatherWidget />
         </Header>
       </Sticky>
       <Main>
