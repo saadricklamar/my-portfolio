@@ -6,8 +6,8 @@ import WeatherWidget from "../WeatherWidget/WeatherWidget";
 import { Link } from "react-scroll";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { skillsData } from "../../data/skillsData";
-import SaadBResume from "../../assets/SaadBResume.pdf";
-import Selfie from "../../assets/selfie.jpg";
+import SaadBResume from "../../assets/personal/SaadBResume.pdf";
+import Selfie from "../../assets/personal/selfie.jpg";
 import Sticky from "react-stickynode";
 import {
   Flex,
@@ -89,10 +89,10 @@ export const About = ({ clickOrScroll, setClickOrScroll }) => {
           <Flex>
             <Paragraph>
               <Welcome>Welcome</Welcome>, and thank you for stopping by. I'm a
-              Denver based Front End Engineer who is passionate about building
-              thoughtful, intuitive, and dynamic UIs. My favorite languages are
-              TypeScript and JavaScript. My favorite frameworks are React and
-              Vue.js.
+              Denver based Senior Frontend Engineer who is passionate about
+              building thoughtful, intuitive, and dynamic UIs. Currently, I'm
+              leading Frontend development for Imaige AI's suite of image
+              processing solutions.
               <br />
               <br />
               When I'm not coding, you can find me teaching Philosophy,

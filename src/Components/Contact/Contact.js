@@ -1,8 +1,8 @@
 import React, { useState, useReducer, useEffect } from "react";
 import * as emailjs from "emailjs-com";
 import ReactTooltip from "react-tooltip";
-import GithubIcon from "../../assets/git.svg";
-import LinkedinIcon from "../../assets/linkedin.svg";
+import GithubIcon from "../../assets/app-icons/git.svg";
+import LinkedinIcon from "../../assets/app-icons/linkedin.svg";
 import {
   ContactForm,
   ContactPage,

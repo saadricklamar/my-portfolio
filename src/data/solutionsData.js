@@ -1,15 +1,15 @@
-import ImaigeAI from "../assets/imaige-ai.png";
-import CareData from "../assets/care-data.png";
-import CareSearch from "../assets/care-search.png";
-import InspectionSurvey from "../assets/iqgeo-inspection-survey.png";
-import WorkflowManager from "../assets/workflow-manager.png";
-import RevenueOptimizer from "../assets/revenue-optimizer.png";
+import PhotoAssistant from "../assets/experience-images/photo-assistant.png";
+import CareData from "../assets/experience-images/care-data.png";
+import CareSearch from "../assets/experience-images/care-search.png";
+import InspectionSurvey from "../assets/experience-images/iqgeo-inspection-survey.png";
+import WorkflowManager from "../assets/experience-images/workflow-manager.png";
+import RevenueOptimizer from "../assets/experience-images/revenue-optimizer.png";
 
 export const solutions = [
   {
     company: "imaigeAI",
     name: "Photo Assistant",
-    imgSrc: ImaigeAI,
+    imgSrc: PhotoAssistant,
     alt: "Imaige AI application",
     techUsed: "TypeScript / React / Electron",
     link: "https://imaige.com/products/",

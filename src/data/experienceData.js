@@ -1,15 +1,15 @@
-import ImaigeLogo from "../assets/imaige.png";
-import LoyalLogo from "../assets/loyal.svg";
-import IQGeoLogo from "../assets/iqgeo.svg";
-import CCCSLogo from "../assets/cccs.png";
-import ZillowLogo from "../assets/zillow.png";
+import ImaigeLogo from "../assets/experience-images/imaige.png";
+import LoyalLogo from "../assets/experience-images/loyal.svg";
+import IQGeoLogo from "../assets/experience-images/iqgeo.svg";
+import CCCSLogo from "../assets/experience-images/cccs.png";
+import ZillowLogo from "../assets/experience-images/zillow.png";
 
 export const experienceData = [
   {
     id: "imaige",
     logo: ImaigeLogo,
     website: "https://imaige.com/products/",
-    jobTitle: "Front End Engineer",
+    jobTitle: "Frontend Engineer",
     company: "Imaige AI",
     date: "Nov 2023 - Present",
     responsibilities: [

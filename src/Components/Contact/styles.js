@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import CautionIcon from "../../assets/caution-icon.svg";
+import CautionIcon from "../../assets/app-icons/caution.svg";
 
 export const ContactPage = styled.main`
   align-items: center;
