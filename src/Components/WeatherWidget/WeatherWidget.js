@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import SnowIcon from "../../assets/weather-icons/clouds.svg";
 import { ClipLoader } from "react-spinners";
+import { determineWeatherIcon } from "../../util/util";
 import { TempDisplay, TempContainer, WeatherIcon } from "./styles";
 
 const WeatherWidget = () => {
@@ -44,11 +44,17 @@ const WeatherWidget = () => {
 
   return (
     <TempContainer>
-      <WeatherIcon src={SnowIcon} aria-label="weather-icon" alt="weather" />
       {loading ? (
         <ClipLoader color="white" size="14px" />
       ) : (
-        <TempDisplay>{determineTemperature()}&#176;</TempDisplay>
+        <>
+          <WeatherIcon
+            src={determineWeatherIcon(weatherData.values?.weatherCode)}
+            aria-label="weather-icon"
+            alt="weather"
+          />
+          <TempDisplay>{determineTemperature()}&#176;</TempDisplay>
+        </>
       )}
     </TempContainer>
   );
