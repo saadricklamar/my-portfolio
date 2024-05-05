@@ -50,17 +50,35 @@ const Experience = () => {
           </ButtonContainer>
           <section>
             <WorkSection>
-              <JobTitle>
-                {currentExperience.jobTitle}{" "}
-                <Span>
-                  @{" "}
-                  <Link href={currentExperience.website} target="blank">
-                    {currentExperience.company}
-                  </Link>
-                </Span>
-                <br />
-                <Date>{currentExperience.date}</Date>
-              </JobTitle>
+              {currentExperience.jobTitle2 && (
+                <>
+                  <JobTitle>
+                    {currentExperience.jobTitle2}{" "}
+                    <Span>
+                      @{" "}
+                      <Link href={currentExperience.website} target="blank">
+                        {currentExperience.company}
+                      </Link>
+                    </Span>
+                    <br />
+                    <Date>{currentExperience.date2}</Date>
+                  </JobTitle>
+                  <span>- Frontend Engineer ({currentExperience.date}) -</span>
+                </>
+              )}
+              {!currentExperience.jobTitle2 && (
+                <JobTitle>
+                  {currentExperience.jobTitle}{" "}
+                  <Span>
+                    @{" "}
+                    <Link href={currentExperience.website} target="blank">
+                      {currentExperience.company}
+                    </Link>
+                  </Span>
+                  <br />
+                  <Date>{currentExperience.date}</Date>
+                </JobTitle>
+              )}
               <ListContainer>
                 {currentExperience.responsibilities.map(
                   (responsibility, index) => (

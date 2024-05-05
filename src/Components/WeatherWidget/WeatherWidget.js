@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { ClipLoader } from "react-spinners";
 import { determineWeatherIcon } from "../../util/util";
+import ReactTooltip from "react-tooltip";
+import NotAvailableIcon from "../../assets/weather-icons/not-available.svg";
 import { TempDisplay, TempContainer, WeatherIcon } from "./styles";
 
 const WeatherWidget = () => {
+  const reverse = require("reverse-geocode");
   const geoOptions = {
     enableHighAccuracy: true,
     timeout: 10000,
@@ -12,24 +15,28 @@ const WeatherWidget = () => {
 
   const [weatherData, setWeatherData] = useState({});
   const [loading, setLoading] = useState(true);
+  const [dataError, setError] = useState(false);
+  const [coordinates, setCoordinates] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const pos = await new Promise((resolve, reject) => {
-          navigator.geolocation.getCurrentPosition(resolve, reject, geoOptions);
-        });
-        const { latitude, longitude } = pos.coords;
-        const response = await fetch(
-          `https://api.tomorrow.io/v4/weather/realtime?location=${latitude},${longitude}&apikey=${process.env.REACT_APP_WEATHER_API_KEY}`
-        );
-        const weather = await response.json();
-        setWeatherData(weather.data);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching weather data:", error);
-        setLoading(false);
+      const position = await new Promise((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(resolve, reject, geoOptions);
+      });
+
+      const { latitude, longitude } = position.coords;
+      setCoordinates(position.coords);
+
+      const response = await fetch(
+        `https://api.tomorrow.io/v4/weather/realtime?location=${latitude},${longitude}&apikey=${process.env.REACT_APP_WEATHER_API_KEY}`
+      );
+      if (!response.ok) {
+        setError(true);
       }
+
+      const weather = await response.json();
+      setWeatherData(weather.data);
+      setLoading(false);
     };
 
     fetchData();
@@ -39,7 +46,7 @@ const WeatherWidget = () => {
   }, []);
 
   const determineTemperature = () => {
-    return ((weatherData.values?.temperature * 9) / 5 + 32).toFixed(0);
+    return ((weatherData?.values.temperature * 9) / 5 + 32).toFixed(0);
   };
 
   return (
@@ -48,12 +55,34 @@ const WeatherWidget = () => {
         <ClipLoader color="white" size="14px" />
       ) : (
         <>
-          <WeatherIcon
-            src={determineWeatherIcon(weatherData.values?.weatherCode)}
-            aria-label="weather-icon"
-            alt="weather"
-          />
-          <TempDisplay>{determineTemperature()}&#176;</TempDisplay>
+          {!dataError && (
+            <>
+              <ReactTooltip place="bottom" />
+              <WeatherIcon
+                src={determineWeatherIcon(weatherData?.values.weatherCode)}
+                aria-label="weather-icon"
+                alt="weather"
+                data-tip={`${
+                  reverse.lookup(
+                    coordinates.latitude,
+                    coordinates.longitude,
+                    "us"
+                  ).city
+                }`}
+              />
+              <TempDisplay>{determineTemperature()}&#176;</TempDisplay>
+            </>
+          )}
+          {dataError && (
+            <>
+              <ReactTooltip place="bottom" />
+              <WeatherIcon
+                src={NotAvailableIcon}
+                alt="Weather data not available icon"
+                data-tip="Weather data unavailable"
+              />
+            </>
+          )}
         </>
       )}
     </TempContainer>
