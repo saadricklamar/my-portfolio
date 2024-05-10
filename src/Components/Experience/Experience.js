@@ -63,7 +63,13 @@ const Experience = () => {
                     <br />
                     <Date>{currentExperience.date2}</Date>
                   </JobTitle>
-                  <span>- Frontend Engineer ({currentExperience.date}) -</span>
+                  <p style={{ margin: "0px" }}>
+                    <span style={{ fontWeight: "bold" }}>
+                      {" "}
+                      Frontend Engineer{" "}
+                    </span>{" "}
+                    ({currentExperience.date})
+                  </p>
                 </>
               )}
               {!currentExperience.jobTitle2 && (
