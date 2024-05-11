@@ -91,8 +91,8 @@ export const About = ({ clickOrScroll, setClickOrScroll }) => {
               <Welcome>Welcome</Welcome>, and thank you for stopping by. I'm a
               Denver based Senior Frontend Engineer who is passionate about
               building thoughtful, intuitive, and dynamic UIs. Currently, I'm
-              leading Frontend development for Imaige AI's suite of image
-              processing solutions.
+              leading Frontend development for Imaige AI's suite of photo
+              curation applications.
               <br />
               <br />
               When I'm not coding, you can find me teaching Philosophy,
