@@ -36,7 +36,7 @@ export const Landing = () => {
           />
           , I'm <Name>Saad Baradan</Name>.
           <br />
-          I'm a Front End Engineer.
+          I'm a Frontend Engineer.
         </h1>
 
         <Link to="About" smooth={true} duration={500}>

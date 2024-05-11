@@ -106,7 +106,7 @@ export const Triangle = styled.div`
 `;
 
 export const JobTitle = styled.h3`
-  margin: 20px 0 0 0;
+  margin: 0px;
 `;
 
 export const Link = styled.a`
@@ -138,7 +138,7 @@ export const WorkSection = styled.section`
   margin: 25px 0 0 15px;
   border-radius: 5px;
   border: 1px solid gray;
-  padding: 0 8px 10px 20px;
+  padding: 20px 8px 10px 20px;
   @media (max-width: 420px) {
     width: 300px;
     padding: 5px 10px;

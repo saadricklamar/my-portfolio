@@ -1,26 +1,28 @@
-import ImaigeLogo from "../assets/imaige.png";
-import LoyalLogo from "../assets/loyal.svg";
-import IQGeoLogo from "../assets/iqgeo.svg";
-import CCCSLogo from "../assets/cccs.png";
-import ZillowLogo from "../assets/zillow.png";
+import ImaigeLogo from "../assets/experience-images/imaige.png";
+import LoyalLogo from "../assets/experience-images/loyal.svg";
+import IQGeoLogo from "../assets/experience-images/iqgeo.svg";
+import CCCSLogo from "../assets/experience-images/cccs.png";
+import ZillowLogo from "../assets/experience-images/zillow.png";
 
 export const experienceData = [
   {
     id: "imaige",
     logo: ImaigeLogo,
     website: "https://imaige.com/products/",
-    jobTitle: "Front End Engineer",
+    jobTitle: "Frontend Engineer",
+    jobTitle2: "Senior Frontend Engineer",
     company: "Imaige AI",
-    date: "Nov 2023 - Present",
+    date: "Nov 2023 - April 2023",
+    date2: "May 2024 - Present",
     responsibilities: [
-      "Lead Frontend development of Imaige AI’s desktop & web client applications using TypeScript, React, & Electron",
+      "Lead Frontend development for Imaige AI’s suite of photo curation applications",
+      "Serve as Frontend thought leader leading research, prototyping, & architecture to improve scalability and performance",
+      "Use TypeScript, React, & Electron to build new features for our Photo Assistant desktop application",
+      "Use Vanilla JS, jQuery, & PHP to build new features for our light weight web-client application",
       "Utilize TypeScript, Tailwind CSS, & StencilJS to build Google Chrome extensions",
-      "Configure, sign, and publish Mac and Windows client desktop builds for bi-weekly production releases",
-      "Use Bitbucket & YAML to build & manage Frontend build pipelines",
-      "Collaborate with a cross-functional team of QA, Back End, and AI engineers on a daily basis",
-      "Work with designers to review and implement Figma designs",
-      "Mentor Junior engineers by onboarding them and doing weekly paired programming sessions",
-      "Use Jira to manage and resolve new feature and bug tickets in a timely manner",
+      "Use Bitbucket and YAML to build and manage Frontend build pipelines",
+      "Collaborate with a cross-functional team of designers, Backend, QA, & AI engineers",
+      "Mentor Junior Engineers by onboarding them and doing weekly paired programming sessions",
     ],
   },
   {
