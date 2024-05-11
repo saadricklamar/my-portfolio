@@ -78,6 +78,7 @@ const WeatherWidget = () => {
               <ReactTooltip place="bottom" />
               <WeatherIcon
                 src={NotAvailableIcon}
+                aria-label="Weather data not available icon"
                 alt="Weather data not available icon"
                 data-tip="Weather data unavailable"
               />
