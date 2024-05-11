@@ -60,8 +60,8 @@ const WeatherWidget = () => {
               <ReactTooltip place="bottom" />
               <WeatherIcon
                 src={determineWeatherIcon(weatherData?.values.weatherCode)}
-                aria-label="weather-icon"
-                alt="weather"
+                aria-label="Weather icon representing your local temperature"
+                alt="Weather icon representing your local temperature"
                 data-tip={`${
                   reverse.lookup(
                     coordinates.latitude,
