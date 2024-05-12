@@ -17,33 +17,58 @@ const WeatherWidget = () => {
   const [loading, setLoading] = useState(true);
   const [dataError, setError] = useState(false);
   const [coordinates, setCoordinates] = useState({});
+  const [locationPermission, setLocationPermission] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
-      const position = await new Promise((resolve, reject) => {
-        navigator.geolocation.getCurrentPosition(resolve, reject, geoOptions);
-      });
+      setLoading(true);
+      try {
+        const position = await new Promise((resolve, reject) => {
+          navigator.geolocation.getCurrentPosition(resolve, reject, geoOptions);
+        });
+        const { latitude, longitude } = position.coords;
+        setCoordinates(position.coords);
 
-      const { latitude, longitude } = position.coords;
-      setCoordinates(position.coords);
+        const response = await fetch(
+          `https://api.tomorrow.io/v4/weather/realtime?location=${latitude},${longitude}&apikey=${process.env.REACT_APP_WEATHER_API_KEY}`
+        );
 
-      const response = await fetch(
-        `https://api.tomorrow.io/v4/weather/realtime?location=${latitude},${longitude}&apikey=${process.env.REACT_APP_WEATHER_API_KEY}`
-      );
-      if (!response.ok) {
+        const weather = await response.json();
+        setWeatherData(weather.data);
+        setLoading(false);
+        setError(false);
+      } catch (error) {
+        console.error("Error fetching weather data:", error);
         setError(true);
+        setLoading(false);
       }
-
-      const weather = await response.json();
-      setWeatherData(weather.data);
-      setLoading(false);
     };
 
     fetchData();
 
     const intervalId = setInterval(fetchData, 30 * 60 * 1000);
     return () => clearInterval(intervalId);
-  }, []);
+  }, [locationPermission]);
+
+  useEffect(() => {
+    const handlePermissionChange = (permissionStatus) => {
+      setLocationPermission(permissionStatus.state);
+    };
+
+    navigator.permissions
+      .query({ name: "geolocation" })
+      .then(handlePermissionChange);
+
+    const watchPermissionChange = () => {
+      navigator.permissions
+        .query({ name: "geolocation" })
+        .then(handlePermissionChange);
+    };
+
+    const permissionChangeInterval = setInterval(watchPermissionChange, 1000);
+
+    return () => clearInterval(permissionChangeInterval);
+  }, [locationPermission]);
 
   const determineTemperature = () => {
     return ((weatherData?.values.temperature * 9) / 5 + 32).toFixed(0);
