@@ -1,5 +1,6 @@
 import JavaScriptLogo from "../assets/app-icons/js.svg";
 import TypeScriptLogo from "../assets/app-icons/ts.svg";
+import PHPLogo from "../assets/app-icons/php.png";
 import ReactLogo from "../assets/app-icons/react.svg";
 import ReduxLogo from "../assets/app-icons/redux.svg";
 import VueLogo from "../assets/app-icons/vue.svg";
@@ -8,7 +9,6 @@ import ElectronLogo from "../assets/app-icons/electron.png";
 import HtmlLogo from "../assets/app-icons/html.svg";
 import CssLogo from "../assets/app-icons/css.svg";
 import SassLogo from "../assets/app-icons/sass.svg";
-import StyledComponentsLogo from "../assets/app-icons/styled-components.svg";
 import TailwindCssLogo from "../assets/app-icons/tailwindcss.jpeg";
 import JqueryLogo from "../assets/app-icons/jquery.svg";
 import JestLogo from "../assets/app-icons/jest.svg";
@@ -36,6 +36,12 @@ export const skillsData = [
     alt: "TypeScript logo",
     img: TypeScriptLogo,
     url: "https://www.typescriptlang.org/",
+  },
+  {
+    title: "PHP",
+    alt: "PHP logo",
+    img: PHPLogo,
+    url: "https://www.php.net/",
   },
   {
     title: "React",
@@ -84,12 +90,6 @@ export const skillsData = [
     alt: "SASS logo",
     img: SassLogo,
     url: "https://sass-lang.com/",
-  },
-  {
-    title: "Styled components",
-    alt: "Styled components logo",
-    img: StyledComponentsLogo,
-    url: "https://styled-components.com/",
   },
   {
     title: "Tailwind CSS",

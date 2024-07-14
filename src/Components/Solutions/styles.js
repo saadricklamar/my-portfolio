@@ -67,6 +67,7 @@ export const SolutionName = styled.p`
 
 export const TechUsed = styled.p`
   color: #f82a7b;
+  font-weight: 600;
 `;
 
 export const Button = styled.button`
