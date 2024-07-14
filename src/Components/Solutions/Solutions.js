@@ -16,7 +16,7 @@ import {
 export const Solutions = () => {
   const [navButtons, setNavButtons] = useState({
     all: true,
-    imaigeAI: false,
+    mediavizAI: false,
     iqgeo: false,
     loyal: false,
   });
@@ -29,7 +29,7 @@ export const Solutions = () => {
     setNavButtons((prevNavButtons) => ({
       ...prevNavButtons,
       all: id === "all",
-      imaigeAI: id === "imaigeAI",
+      mediavizAI: id === "mediavizAI",
       iqgeo: id === "iqgeo",
       loyal: id === "loyal",
     }));
@@ -46,11 +46,11 @@ export const Solutions = () => {
           All
         </NavButton>
         <NavButton
-          id="imaigeAI"
-          onClick={() => handleClick("imaigeAI")}
-          active={navButtons.imaigeAI}
+          id="mediavizAI"
+          onClick={() => handleClick("mediavizAI")}
+          active={navButtons.mediavizAI}
         >
-          Imaige
+          MediaViz
         </NavButton>
         <NavButton
           id="loyal"
@@ -74,9 +74,18 @@ export const Solutions = () => {
             <Overlay className="overlay">
               <SolutionName>{solution.name}</SolutionName>
               <TechUsed>{solution.techUsed}</TechUsed>
-              <a href={solution.link} target="_blank" rel="noopener noreferrer">
-                <Button>VIEW SOLUTION</Button>
-              </a>
+
+              {solution.name === "MediaViz" ? (
+                <p>COMING SOON...</p>
+              ) : (
+                <a
+                  href={solution.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button>VIEW SOLUTION</Button>
+                </a>
+              )}
             </Overlay>
           </Card>
         ))}

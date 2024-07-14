@@ -52,23 +52,31 @@ const Experience = () => {
             <WorkSection>
               {currentExperience.jobTitle2 && (
                 <>
-                  <JobTitle>
+                  <JobTitle style={{ display: "flex" }}>
                     {currentExperience.jobTitle2}{" "}
-                    <Span>
+                    <Span
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        marginLeft: "5px",
+                      }}
+                    >
                       @{" "}
-                      <Link href={currentExperience.website} target="blank">
-                        {currentExperience.company}
+                      <Link
+                        href={currentExperience.website}
+                        target="blank"
+                        style={{
+                          marginLeft: "5px",
+                        }}
+                      >
+                        {currentExperience.company},
                       </Link>
+                      <Date>{currentExperience.date2}</Date>
                     </Span>
-                    <br />
-                    <Date>{currentExperience.date2}</Date>
                   </JobTitle>
-                  <p style={{ margin: "0px" }}>
-                    <span style={{ fontWeight: "bold" }}>
-                      {" "}
-                      Frontend Engineer{" "}
-                    </span>{" "}
-                    ({currentExperience.date})
+                  <p style={{ margin: "0px", fontSize: "14px" }}>
+                    <span> - Previously Frontend Engineer </span> (
+                    {currentExperience.date})
                   </p>
                 </>
               )}

@@ -1,18 +1,26 @@
+import MediaViz from "../assets/experience-images/mediaviz.png";
 import PhotoAssistant from "../assets/experience-images/photo-assistant.png";
 import CareData from "../assets/experience-images/care-data.png";
-import CareSearch from "../assets/experience-images/care-search.png";
 import InspectionSurvey from "../assets/experience-images/iqgeo-inspection-survey.png";
 import WorkflowManager from "../assets/experience-images/workflow-manager.png";
 import RevenueOptimizer from "../assets/experience-images/revenue-optimizer.png";
 
 export const solutions = [
   {
-    company: "imaigeAI",
+    company: "mediavizAI",
+    name: "MediaViz",
+    imgSrc: MediaViz,
+    alt: "MediaViz web client",
+    techUsed: "JavaScript / PHP / jQuery",
+    link: "https://imaige.com/products/",
+  },
+  {
+    company: "mediavizAI",
     name: "Photo Assistant",
     imgSrc: PhotoAssistant,
-    alt: "Imaige AI application",
+    alt: "Photo Assistant desktop application",
     techUsed: "TypeScript / React / Electron",
-    link: "https://imaige.com/products/",
+    link: "https://mediaviz.ai/photo-managers/",
   },
   {
     company: "loyal",
@@ -21,14 +29,6 @@ export const solutions = [
     alt: "Loyal's data management application",
     techUsed: "TypeScript / React",
     link: "https://loyalhealth.com/data-management/",
-  },
-  {
-    company: "loyal",
-    name: "Care Search",
-    imgSrc: CareSearch,
-    alt: "Loyal's care search application",
-    techUsed: "TypeScript / React",
-    link: "https://loyalhealth.com/care-search/",
   },
   {
     company: "iqgeo",
