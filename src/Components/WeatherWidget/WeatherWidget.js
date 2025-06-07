@@ -105,7 +105,7 @@ const WeatherWidget = () => {
                 src={NotAvailableIcon}
                 aria-label="Weather data not available icon"
                 alt="Weather data not available icon"
-                data-tip="Weather data unavailable"
+                data-tip="Weather data unavailable. Please enable location services."
               />
             </>
           )}

@@ -1,6 +1,5 @@
 import React, { useState, useReducer, useEffect } from "react";
 import * as emailjs from "emailjs-com";
-import ReactTooltip from "react-tooltip";
 import GithubIcon from "../../assets/app-icons/git.svg";
 import LinkedinIcon from "../../assets/app-icons/linkedin.svg";
 import {
@@ -103,7 +102,6 @@ export const Contact = () => {
       </ContactForm>
       <FadeMessage>{form.userMessage}</FadeMessage>
       <SocialMediaIcons>
-        <ReactTooltip />
         <a
           href="https://github.com/saadricklamar"
           target="_blank"
@@ -118,9 +116,8 @@ export const Contact = () => {
             className="social-icon"
           />
         </a>
-        <ReactTooltip />
         <a
-          href="https://www.linkedin.com/in/saad-baradan/"
+          href="https://www.linkedin.com/in/saad-b-670b49368/"
           target="_blank"
           rel="noopener noreferrer"
           data-tip="My Linkedin"
@@ -135,7 +132,7 @@ export const Contact = () => {
         </a>
       </SocialMediaIcons>
       <CopyRight>
-        SAAD BARADAN <CopySymbol> &#169;2024</CopySymbol>
+        SAAD BARADAN <CopySymbol> &#169;2025</CopySymbol>
       </CopyRight>
     </ContactPage>
   );
