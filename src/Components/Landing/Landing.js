@@ -5,6 +5,7 @@ import TextLoop from "react-text-loop";
 import {
   LandingContainer,
   LandingHeader,
+  TextLoopContainer,
   Name,
   LandingButton,
   GlobalStyle,
@@ -18,14 +19,16 @@ export const Landing = () => {
       <GlobalStyle />
       <LandingHeader>
         <h1>
+           <TextLoopContainer>
           <TextLoop
             children={[
               "Hello",
-              "Ciao",
+              "مرحبا",
+              "Salut",
               "你好",
               "Hola",
-              "مرحبا",
-              "Sveiki",
+              "שלום",
+              "Ciao",  
               "नमस्ते",
               "Hej",
             ]}
@@ -33,7 +36,8 @@ export const Landing = () => {
             adjustingSpeed={500}
             springConfig={{ stiffness: 70, damping: 15 }}
             mask={true}
-          />
+            />
+            </TextLoopContainer>
           , I'm <Name>Saad Baradan</Name>.
           <br />
           I'm a Senior Frontend Engineer.

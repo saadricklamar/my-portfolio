@@ -30,6 +30,11 @@ export const LandingHeader = styled.header`
   }
 `;
 
+export const TextLoopContainer = styled.span`
+  display: inline-block;
+  width: 100px;
+  text-align: right; 
+`
 export const Name = styled.span`
   color: #f82a7b;
 `;
