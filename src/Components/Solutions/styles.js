@@ -16,12 +16,15 @@ export const CardContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1% auto;
+  margin: 5px auto;
   width: 70%;
 `;
 
 export const Card = styled.section`
   height: 200px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 5px;
   &:hover {
     cursor: pointer;
   }
@@ -29,6 +32,7 @@ export const Card = styled.section`
     cursor: pointer;
     opacity: 1;
     background: whitesmoke;
+    border-radius: 5px;
   }
 
   @media (max-width: 420px) {
@@ -43,6 +47,7 @@ export const Image = styled.img`
   opacity: 1;
   transition: 0.5s ease;
   width: 300px;
+  border-radius: 5px;
 `;
 
 export const Overlay = styled.div`
@@ -53,7 +58,8 @@ export const Overlay = styled.div`
   opacity: 0;
   visibility: none;
   transition: 0.5s ease;
-  background-color: white;
+  background-color: whitesmoke;
+  border-radius: 5px;
 `;
 
 export const SolutionName = styled.p`

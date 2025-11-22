@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import About from "../About/About";
 import { Link } from "react-scroll";
 import TextLoop from "react-text-loop";
