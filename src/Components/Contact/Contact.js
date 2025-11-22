@@ -1,4 +1,4 @@
-import React, { useState, useReducer, useEffect } from "react";
+import { useState, useReducer, useEffect } from "react";
 import * as emailjs from "emailjs-com";
 import GithubIcon from "../../assets/app-icons/git.svg";
 import LinkedinIcon from "../../assets/app-icons/linkedin.svg";

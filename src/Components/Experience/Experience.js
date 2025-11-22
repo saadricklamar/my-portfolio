@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ComputerIcon from "../../assets/app-icons/computer.svg";
 import { experienceData } from "../../data/experienceData";
 import {

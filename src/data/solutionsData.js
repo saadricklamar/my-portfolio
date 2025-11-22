@@ -1,26 +1,34 @@
-import MediaViz from "../assets/experience-images/mediaviz.png";
+import MediaViz from "../assets/experience-images/mvai.png";
+import Admin from "../assets/experience-images/admin.png";
 import PhotoAssistant from "../assets/experience-images/photo-assistant.png";
 import CareData from "../assets/experience-images/care-data.png";
-import InspectionSurvey from "../assets/experience-images/iqgeo-inspection-survey.png";
+import InspectionSurvey from "../assets/experience-images/inspection-survey.png";
 import WorkflowManager from "../assets/experience-images/workflow-manager.png";
-import RevenueOptimizer from "../assets/experience-images/revenue-optimizer.png";
 
 export const solutions = [
   {
     company: "mediavizAI",
-    name: "MediaViz",
+    name: "MediaViz Web",
     imgSrc: MediaViz,
     alt: "MediaViz web client",
     techUsed: "JavaScript / PHP / jQuery",
-    link: "https://imaige.com/products/",
+    link: "https://mediaviz.ai/solutions/sports-entertainment/",
   },
   {
     company: "mediavizAI",
     name: "Photo Assistant",
     imgSrc: PhotoAssistant,
     alt: "Photo Assistant desktop application",
-    techUsed: "TypeScript / React / Electron",
-    link: "https://mediaviz.ai/photo-managers/",
+    techUsed: "TypeScript / Stencil.js / Electron",
+    link: "https://mediaviz.ai/solutions/photo-labs-retailers/",
+  },
+  {
+    company: "mediavizAI",
+    name: "MediaViz Admin",
+    imgSrc: Admin,
+    alt: "MediaViz web client",
+    techUsed: "TypeScript / React / Flowbite",
+    link: "https://mediaviz.ai/",
   },
   {
     company: "loyal",
@@ -45,13 +53,5 @@ export const solutions = [
     alt: "IQGeo's workflow manager application.",
     techUsed: "JavaScript / React",
     link: "https://www.iqgeo.com/product/workflow-manager",
-  },
-  {
-    company: "iqgeo",
-    name: "Network Revenue Optimizer",
-    imgSrc: RevenueOptimizer,
-    alt: "IQGeo's network revenue optimizer application",
-    techUsed: "JavaScript / jQuery",
-    link: "https://www.iqgeo.com/product/network-revenue-optimizer",
   },
 ];

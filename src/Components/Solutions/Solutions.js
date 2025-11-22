@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { solutions } from "../../data/solutionsData";
 import {
   Button,
@@ -75,8 +75,8 @@ export const Solutions = () => {
               <SolutionName>{solution.name}</SolutionName>
               <TechUsed>{solution.techUsed}</TechUsed>
 
-              {solution.name === "MediaViz" ? (
-                <p>COMING SOON...</p>
+              {solution.name === "MediaViz Admin" ? (
+                <p>Internal Tool</p>
               ) : (
                 <a
                   href={solution.link}

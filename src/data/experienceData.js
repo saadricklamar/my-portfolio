@@ -1,4 +1,4 @@
-import ImaigeLogo from "../assets/experience-images/imaige.png";
+import ImaigeLogo from "../assets/experience-images/mediaviz.png";
 import LoyalLogo from "../assets/experience-images/loyal.svg";
 import IQGeoLogo from "../assets/experience-images/iqgeo.svg";
 import CCCSLogo from "../assets/experience-images/cccs.png";
