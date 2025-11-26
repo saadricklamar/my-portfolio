@@ -93,6 +93,7 @@ export const Triangle = styled.div`
   border-right: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-top: 20px solid transparent;
+  border-radius: 5px;
   @media (max-width: 420px) {
     border-left: none;
     border-right: none;

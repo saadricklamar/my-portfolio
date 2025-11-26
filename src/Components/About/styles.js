@@ -138,7 +138,7 @@ export const SkillsTitle = styled.p`
   font-size: 30px;
   font-weight: 600;
   color: white;
-  margin: 20px 0 10px 0;
+  margin: 5px 0;
 `;
 
 export const SkillCard = styled.div`

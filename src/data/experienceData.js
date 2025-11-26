@@ -17,12 +17,11 @@ export const experienceData = [
     responsibilities: [
       "Lead Frontend development for MediaViz AI’s suite of photo curation applications",
       "Serve as Frontend thought leader leading research, prototyping, & architecture to improve scalability and performance",
-      "Build and architect new image processing web client through prototype, beta, and pilot phases",
-      "Use Typescript, React, PHP, jQuery, and a variety of Frontend technologies to build new features for our web client and desktop applications",
-      "Utilize TypeScript, Tailwind CSS, & StencilJS to build Google Chrome extensions",
-      "Use Git, Bitbucket, and YAML to build and manage Frontend build pipelines",
+      "Use JavaScript, Typescript, React, Electron, PHP, Stencil.js, jQuery, and a variety of Web technologies to build new features for web clients, desktop applications, and chrome extensions",
+      "Use Bitbucket, GitHub, and YAML to build and manage continuous integration pipelines",
+      "Use Electron Forge & Electron Builder to configure, sign, and publish Mac and Windows desktop builds for bi-weekly production releases",
+      "Use AWS Lightsail and Cloudflare to deploy, optimize, & manage web applications",
       "Collaborate with a cross-functional team of designers, Backend, QA, & AI engineers",
-      "Mentor Junior Engineers by onboarding them and doing weekly paired programming sessions",
     ],
   },
   {

@@ -39,6 +39,7 @@ export const NameInput = styled.input`
   margin: 1% 0 1% 0;
   background: #282c34;
   border: 1px solid #282c34;
+  border-radius: 5px;
   color: white;
   font-size: 0.9rem;
   font-weight: bold;
@@ -64,6 +65,7 @@ export const EmailInput = styled.input`
   background-size: 20px;
   border: ${({ isEmailValid }) =>
     isEmailValid ? "1px solid #282c34" : "2px solid red"};
+  border-radius: 5px;
   color: white;
   font-size: 0.9rem;
   font-weight: bold;
@@ -89,6 +91,7 @@ export const MessageInput = styled.textarea`
   margin-top: 2%;
   background: #282c34;
   border: 1px solid #282c34;
+  border-radius: 5px;
   color: white;
   font-size: 0.9rem;
   font-weight: bold;
