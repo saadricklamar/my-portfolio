@@ -110,7 +110,7 @@ export const About = ({ clickOrScroll, setClickOrScroll }) => {
           <SkillContainer clickOrScroll={clickOrScroll}>
             {skillsData.map((skill) => (
               <SkillCard key={skill.title}>
-                {skill.title !== "Styled components" ? (
+                {skill.title !== "No title" ? (
                   <a href={skill.url} target="_blank" rel="noreferrer">
                     <StyledImg src={skill.img} alt={skill.alt} />
                   </a>
@@ -119,7 +119,7 @@ export const About = ({ clickOrScroll, setClickOrScroll }) => {
                     <StyledComponentImg src={skill.img} alt={skill.alt} />
                   </a>
                 )}
-                {skill.title !== "Styled components" && (
+                {skill.title !== "No title" && (
                   <SkillText>{skill.title}</SkillText>
                 )}
               </SkillCard>

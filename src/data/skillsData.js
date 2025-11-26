@@ -10,19 +10,24 @@ import HtmlLogo from "../assets/app-icons/html.svg";
 import CssLogo from "../assets/app-icons/css.svg";
 import SassLogo from "../assets/app-icons/sass.svg";
 import TailwindCssLogo from "../assets/app-icons/tailwindcss.jpeg";
+import StyledComponentsLogo from "../assets/app-icons/styledcomponents.png";
 import JqueryLogo from "../assets/app-icons/jquery.svg";
 import JestLogo from "../assets/app-icons/jest.svg";
 import EnzymeLogo from "../assets/app-icons/enzyme.png";
 import CypressLogo from "../assets/app-icons/cypress.jpeg";
+import PlayWrightLogo from "../assets/app-icons/playwright.svg";
+import StoryBookLogo from "../assets/app-icons/storybook.svg";
+import FlowbiteLogo from "../assets/app-icons/flowbite.svg";
+import OpenLayersLogo from "../assets/app-icons/openlayers.png";
+import LeafletLogo from "../assets/app-icons/leaflet.png";
+import AwsLightsailLogo from "../assets/app-icons/aws-lightsail.png";
+import CloudflareLogo from "../assets/app-icons/cloudflare.svg";
 import WebpackLogo from "../assets/app-icons/webpack.svg";
-import GitLogo from "../assets/app-icons/git.svg";
-import LinuxLogo from "../assets/app-icons/linux.svg";
+import GitHubLogo from "../assets/app-icons/github.png";
+import BitbucketLogo from "../assets/app-icons/bitbucket.png";
 import CircleCILogo from "../assets/app-icons/circleci.svg";
 import EmpathLogo from "../assets/app-icons/empath.svg";
-import CollaborativeLogo from "../assets/app-icons/collaborative.svg";
-import MultiTaskerLogo from "../assets/app-icons/multi-tasker.svg";
 import PositiveLogo from "../assets/app-icons/positive.svg";
-import ListenerLogo from "../assets/app-icons/listening.svg";
 
 export const skillsData = [
   {
@@ -92,10 +97,16 @@ export const skillsData = [
     url: "https://sass-lang.com/",
   },
   {
-    title: "Tailwind CSS",
+    title: "Tailwind",
     alt: "Tailwind CSS logo",
     img: TailwindCssLogo,
     url: "https://tailwindcss.com/",
+  },
+  {
+    title: "No title",
+    alt: "Styled Components logo",
+    img: StyledComponentsLogo,
+    url: "https://styled-components.com/",
   },
   {
     title: "jQuery",
@@ -117,17 +128,64 @@ export const skillsData = [
     url: "https://www.cypress.io/",
   },
   {
+    title: "Playwright",
+    alt: "Playwright logo",
+    img: PlayWrightLogo,
+    url: "https://playwright.dev/",
+  },
+  {
+    title: "StoryBook",
+    alt: "Storybook logo",
+    img: StoryBookLogo,
+    url: "https://storybook.js.org/",
+  },
+  {
+    title: "Flowbite",
+    alt: "Flowbite logo",
+    img: FlowbiteLogo,
+    url: "https://flowbite.com/",
+  },
+  {
+    title: "OpenLayers",
+    alt: "Openlayers logo",
+    img: OpenLayersLogo,
+    url: "https://openlayers.org/",
+  },
+  {
+    title: "Leaflet",
+    alt: "Leaftlet logo",
+    img: LeafletLogo,
+    url: "https://leafletjs.com/",
+  },
+  {
+    title: "Lightsail",
+    alt: "AWS Lightsail logo",
+    img: AwsLightsailLogo,
+    url: "https://aws.amazon.com/lightsail/",
+  },
+  {
+    title: "Cloudlfare",
+    alt: "Cloudflare logo",
+    img: CloudflareLogo,
+    url: "https://www.cloudflare.com/",
+  },
+  {
     title: "Webpack",
     alt: "Webpack logo",
     img: WebpackLogo,
     url: "https://webpack.js.org/",
   },
-  { title: "Git", alt: "Git logo", img: GitLogo, url: "https://git-scm.com/" },
   {
-    title: "Linux",
-    alt: "Linux logo",
-    img: LinuxLogo,
-    url: "https://www.linux.org/",
+    title: "Github",
+    alt: "Git logo",
+    img: GitHubLogo,
+    url: "https://github.com/",
+  },
+  {
+    title: "Bitbucket",
+    alt: "Bitbucket logo",
+    img: BitbucketLogo,
+    url: "https://bitbucket.org/product/",
   },
   {
     title: "Circle CI",
@@ -141,23 +199,8 @@ export const skillsData = [
     img: EmpathLogo,
   },
   {
-    title: "Collaborative",
-    alt: "Hands locked together icon symbolizing collaboration",
-    img: CollaborativeLogo,
-  },
-  {
-    title: "Multi-tasker",
-    alt: "Person with many hands symbolizing being a multi-tasker",
-    img: MultiTaskerLogo,
-  },
-  {
     title: "Positive",
     alt: "Brain thinking smiley face icon symbolizing being positive",
     img: PositiveLogo,
-  },
-  {
-    title: "Listener",
-    alt: "Brain thinking smiley face icon symbolizing being positive",
-    img: ListenerLogo,
   },
 ];
